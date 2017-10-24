@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ResourceManifest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>98838778-2c3e-40f4-9c6e-026a958eaec2</ID>
+  <Name>MemberAcco</Name>
+  <Type>WSDL</Type>
+  <Version>1</Version>
+  <CreationDate>2017-10-23T14:35:10.5802819-05:00</CreationDate>
+  <UpdateDate>2017-10-23T14:35:10.5802819-05:00</UpdateDate>
+  <LoaderID>SignatureResourceHandler</LoaderID>
+  <MetaDataSignatureFile>43f636f0-c9ca-4650-a19e-527a3123c88a.xml</MetaDataSignatureFile>
+  <TestResourceId>43f636f0-c9ca-4650-a19e-527a3123c88a</TestResourceId>
+  <RepositoryType>TestRepository</RepositoryType>
+  <SignatureCodonId>HP.ST.WebServiceWsdl</SignatureCodonId>
+  <SignatureAddinVersion>14.1.2301.0</SignatureAddinVersion>
+  <Properties>
+    <Item>
+      <Key>
+        <string>RepositoryPath</string>
+      </Key>
+      <Value>
+        <string>c:\tmp\MemberSearchAPI\EmbeddedResources</string>
+      </Value>
+    </Item>
+    <Item>
+      <Key>
+        <string>ResourceOrigin</string>
+      </Key>
+      <Value>
+        <string>c:\tmp\MemberSearchAPI\EmbeddedResources\MemberAcco</string>
+      </Value>
+    </Item>
+    <Item>
+      <Key>
+        <string>PrototypeDbVersion</string>
+      </Key>
+      <Value>
+        <string>14.1.2301.0</string>
+      </Value>
+    </Item>
+  </Properties>
+</ResourceManifest>

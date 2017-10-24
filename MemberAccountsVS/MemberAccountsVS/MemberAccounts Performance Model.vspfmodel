@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<performanceModel version="4.0.2114.47514" id="5ed63012-dae6-4466-9c01-f30584bdc006" name="MemberAccounts Performance Model" description="Performance Model for MemberAccounts" virtualServiceId="02c08066-0e3b-4510-bbd6-338db5944234" isPerformanceBoostingActive="true" activeBoosterId="Cpu" isServiceBoostingActive="true" xmlns="http://hp.com/SOAQ/ServiceVirtualization/2010/">
+  <throughputMetric isActive="false" limit="0" />
+  <tpsMetric isActive="false" limit="0" />
+  <operation operationId="xmlns(ns0=http://hp.com/SOAQ/ServiceSimulation/2010/demo/01)operation(ns0:memberSearch/ns0:IMemberAccounts_memberSearch_InputMessage/)" isOperationBoostingActive="true">
+    <throughputMetric isActive="false" limit="10000" />
+    <tpsMetric isActive="false" limit="1000" />
+    <PeriodicMessageSchedulingSpecification isActive="false" bss="SequentialSingleThreaded" frequency="60000">
+      <relativeMessageSchedulingStartSpecification startDelay="0" />
+    </PeriodicMessageSchedulingSpecification>
+    <responseTimeMetric baseResponseTime="208.8" hitRateThreshold="1" maximumResponseTime="208.8" multiResponseIntervalTime="0" maximumHitRate="1" tolerance="0.2" totalDatapointsCount="5">
+      <datapointsCluster meanHitRate="1" meanResponseTime="221" hitRateDiameter="0" responseTimeDiameter="0" datapointsCount="1" />
+      <datapointsCluster meanHitRate="1" meanResponseTime="212" hitRateDiameter="0" responseTimeDiameter="0" datapointsCount="1" />
+      <datapointsCluster meanHitRate="1" meanResponseTime="204" hitRateDiameter="0" responseTimeDiameter="0" datapointsCount="2" />
+      <datapointsCluster meanHitRate="1" meanResponseTime="203" hitRateDiameter="0" responseTimeDiameter="0" datapointsCount="1" />
+    </responseTimeMetric>
+  </operation>
+  <operation operationId="xmlns(ns0=http://hp.com/SOAQ/ServiceSimulation/2010/demo/01)operation(ns0:getMemberPlan/ns0:IMemberAccounts_getMemberPlan_InputMessage/)" isOperationBoostingActive="true">
+    <throughputMetric isActive="false" limit="10000" />
+    <tpsMetric isActive="false" limit="1000" />
+    <PeriodicMessageSchedulingSpecification isActive="false" bss="SequentialSingleThreaded" frequency="60000">
+      <relativeMessageSchedulingStartSpecification startDelay="0" />
+    </PeriodicMessageSchedulingSpecification>
+    <responseTimeMetric baseResponseTime="196.33333333333334" hitRateThreshold="1" maximumResponseTime="196.33333333333334" multiResponseIntervalTime="0" maximumHitRate="1" tolerance="0.2" totalDatapointsCount="3">
+      <datapointsCluster meanHitRate="1" meanResponseTime="219" hitRateDiameter="0" responseTimeDiameter="0" datapointsCount="1" />
+      <datapointsCluster meanHitRate="1" meanResponseTime="185" hitRateDiameter="0" responseTimeDiameter="0" datapointsCount="2" />
+    </responseTimeMetric>
+  </operation>
+  <operation operationId="xmlns(ns0=http://hp.com/SOAQ/ServiceSimulation/2010/demo/01)operation(ns0:getMemberDetail/ns0:IMemberAccounts_getMemberDetail_InputMessage/)" isOperationBoostingActive="true">
+    <throughputMetric isActive="false" limit="10000" />
+    <tpsMetric isActive="false" limit="1000" />
+    <PeriodicMessageSchedulingSpecification isActive="false" bss="SequentialSingleThreaded" frequency="60000">
+      <relativeMessageSchedulingStartSpecification startDelay="0" />
+    </PeriodicMessageSchedulingSpecification>
+    <responseTimeMetric baseResponseTime="313.66666666666669" hitRateThreshold="1" maximumResponseTime="313.66666666666669" multiResponseIntervalTime="0" maximumHitRate="1" tolerance="0.2" totalDatapointsCount="3">
+      <datapointsCluster meanHitRate="1" meanResponseTime="331" hitRateDiameter="0" responseTimeDiameter="0" datapointsCount="1" />
+      <datapointsCluster meanHitRate="1" meanResponseTime="308" hitRateDiameter="0" responseTimeDiameter="0" datapointsCount="1" />
+      <datapointsCluster meanHitRate="1" meanResponseTime="302" hitRateDiameter="0" responseTimeDiameter="0" datapointsCount="1" />
+    </responseTimeMetric>
+  </operation>
+  <boosterValues boosterId="Cpu">
+    <sliderValue value="0" />
+  </boosterValues>
+  <boosterValues boosterId="Network">
+    <sliderValue value="0" />
+  </boosterValues>
+  <boosterValues boosterId="Cluster">
+    <sliderValue value="0" />
+  </boosterValues>
+  <boosterValues boosterId="Expert">
+    <sliderValue value="0" />
+    <sliderValue value="0" />
+    <sliderValue value="0" />
+    <sliderValue value="0" />
+  </boosterValues>
+</performanceModel>

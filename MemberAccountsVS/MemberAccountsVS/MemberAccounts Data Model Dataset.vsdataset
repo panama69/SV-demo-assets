@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ds version="4.0.2114.47514" id="59ff9647-7583-4a35-b718-7acac8332bf8" vsId="02c08066-0e3b-4510-bbd6-338db5944234" dmId="6fda1c9c-c826-4a56-9411-944d08addb71" sorId="57519cf4-c199-4c17-bbff-b3140beb173f" hc="-736472914" xmlns="http://hp.com/SOAQ/ServiceVirtualization/2010/">
+  <sc id="0bb7d7a7-7528-4ac1-ac92-b9245207c75d" ts="2017-10-23T22:33:11.8761109Z" ri="1" rc="1">
+    <ntId p="4:1">{http://hp.com/SOAQ/ServiceSimulation/2010/demo/01}IMemberAccounts_getMemberDetail_OutputMessage</ntId>
+    <ntId p="11:1">{http://hp.com/SOAQ/ServiceSimulation/2010/demo/01}IMemberAccounts_getMemberDetail_InputMessage</ntId>
+    <ec p="14:1" />
+    <s p="22:1">0</s>
+    <s p="23:1">0</s>
+    <s p="26:1">sim_default_city</s>
+    <s p="27:1">sim_default_country</s>
+    <s p="28:1">1970-01-01T00:00:00</s>
+    <s p="29:1">sim_default_line1</s>
+    <s p="30:1">sim_default_line2</s>
+    <s p="31:1">1970-01-01T00:00:00</s>
+    <s p="32:1">sim_default_state</s>
+    <s p="33:1">sim_default_zip</s>
+    <s p="34:1">1970-01-01T00:00:00</s>
+    <s p="35:1">MALE</s>
+    <s p="37:1">sim_default_socialSecurityNumber</s>
+    <s p="38:1">sim_default_firstName</s>
+    <s p="39:1">sim_default_lastName</s>
+    <s p="40:1">sim_default_middleName</s>
+    <s p="41:1">sim_default_prefix</s>
+    <s p="42:1">sim_default_suffix</s>
+    <s p="43:1">sim_default_extension</s>
+    <s p="44:1">sim_default_phoneNumber</s>
+    <s p="45:1">DAY</s>
+  </sc>
+  <sc id="c0c1b2a6-34ff-4a1c-8f1e-59c3c36e12bf" ts="2017-10-23T22:33:11.8760771Z" ri="1" rc="1">
+    <ntId p="4:1">default-fault</ntId>
+    <s p="7:1">sim_default_faultcode</s>
+    <s p="9:1">sim_default_faultactor</s>
+    <ntId p="11:1">{http://hp.com/SOAQ/ServiceSimulation/2010/demo/01}IMemberAccounts_getMemberDetail_InputMessage</ntId>
+    <ec p="14:1" />
+    <s p="15:1">sim_default_lang</s>
+    <s p="16:1">sim_default_value</s>
+    <s p="19:2"></s>
+  </sc>
+</ds>

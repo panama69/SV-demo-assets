@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ds version="4.0.2114.47514" id="cff78b0a-d31d-4fbc-af5e-bc42eb95c3e3" vsId="02c08066-0e3b-4510-bbd6-338db5944234" dmId="6fda1c9c-c826-4a56-9411-944d08addb71" sorId="fb8d5833-f4c8-4788-a3ce-fbce5e684e69" hc="2014809547" xmlns="http://hp.com/SOAQ/ServiceVirtualization/2010/">
+  <sc id="192f618c-5f83-4467-973d-194799c19948" ts="2017-10-23T22:33:58.668Z" ri="1" rc="1">
+    <ntId p="4:1">{http://hp.com/SOAQ/ServiceSimulation/2010/demo/01}IMemberAccounts_getMemberDetail_OutputMessage</ntId>
+    <ntId p="11:1">{http://hp.com/SOAQ/ServiceSimulation/2010/demo/01}IMemberAccounts_getMemberDetail_InputMessage</ntId>
+    <ec p="14:1" />
+    <s p="22:1">0</s>
+    <s p="23:1">1</s>
+    <nil p="25:1" />
+    <s p="26:1">Smithfield London W1</s>
+    <s p="27:1">Great Britain</s>
+    <s p="28:1">0001-01-01T00:00:00</s>
+    <s p="29:1">56B Whitehaven Mansions</s>
+    <s p="30:1">Charterhouse Square</s>
+    <s p="31:1">0001-01-01T00:00:00</s>
+    <s p="32:1">England</s>
+    <nil p="33:1" />
+    <s p="34:1">1876-04-01T00:00:00</s>
+    <s p="35:1">MALE</s>
+    <s p="37:1">554-98-0001</s>
+    <s p="38:1">Hercule</s>
+    <s p="39:1">Poirot</s>
+    <nil p="40:1" />
+    <nil p="41:1" />
+    <nil p="42:1" />
+    <s p="46:1">fe80::d0d0:e6c0:99d0:87a4%12</s>
+    <ec p="49:1" />
+    <s p="50:1">HTTP</s>
+    <s p="51:1">1</s>
+  </sc>
+  <sc id="d806c32a-f203-411c-b1d4-88fa77369280" ts="2017-10-23T22:34:12.843Z" ri="1" rc="1">
+    <ntId p="4:1">{http://hp.com/SOAQ/ServiceSimulation/2010/demo/01}IMemberAccounts_getMemberDetail_OutputMessage</ntId>
+    <ntId p="11:1">{http://hp.com/SOAQ/ServiceSimulation/2010/demo/01}IMemberAccounts_getMemberDetail_InputMessage</ntId>
+    <ec p="14:1" />
+    <s p="22:1">0</s>
+    <s p="23:1">2</s>
+    <nil p="25:1" />
+    <s p="26:1">London NW1 6XE</s>
+    <s p="27:1">Great Britain</s>
+    <s p="28:1">0001-01-01T00:00:00</s>
+    <s p="29:1">221b Baker Street</s>
+    <nil p="30:1" />
+    <s p="31:1">0001-01-01T00:00:00</s>
+    <s p="32:1">England</s>
+    <nil p="33:1" />
+    <s p="34:1">1854-01-06T00:00:00</s>
+    <s p="35:1">MALE</s>
+    <s p="37:1">332-10-0002</s>
+    <s p="38:1">Sherlock</s>
+    <s p="39:1">Holmes</s>
+    <nil p="40:1" />
+    <nil p="41:1" />
+    <nil p="42:1" />
+    <s p="46:1">fe80::d0d0:e6c0:99d0:87a4%12</s>
+    <ec p="49:1" />
+    <s p="50:1">HTTP</s>
+    <s p="51:1">2</s>
+  </sc>
+</ds>

@@ -1,0 +1,17 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+# SharpDevelop 3.0.0.3800
+Project("FAE04EC0-301F-11D3-BF4B-00C04F79EFBC") = "ClaimProcessingAPI", "ClaimProcessingAPI.csproj", "{6A86329A-46CB-4146-8CB9-FECADD18BAB6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6A86329A-46CB-4146-8CB9-FECADD18BAB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A86329A-46CB-4146-8CB9-FECADD18BAB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A86329A-46CB-4146-8CB9-FECADD18BAB6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A86329A-46CB-4146-8CB9-FECADD18BAB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ResourceManifest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>e4779dc7-2970-4973-b21d-f7ee1edf0271</ID>
+  <Name>ClaimProce</Name>
+  <Type>WSDL</Type>
+  <Version>1</Version>
+  <CreationDate>2017-10-23T15:30:30.1046762-05:00</CreationDate>
+  <UpdateDate>2017-10-23T15:30:30.1046762-05:00</UpdateDate>
+  <LoaderID>SignatureResourceHandler</LoaderID>
+  <MetaDataSignatureFile>0fa1c60e-572e-42e6-918a-4f9146b13633.xml</MetaDataSignatureFile>
+  <TestResourceId>0fa1c60e-572e-42e6-918a-4f9146b13633</TestResourceId>
+  <RepositoryType>TestRepository</RepositoryType>
+  <SignatureCodonId>HP.ST.WebServiceWsdl</SignatureCodonId>
+  <SignatureAddinVersion>14.1.2301.0</SignatureAddinVersion>
+  <Properties>
+    <Item>
+      <Key>
+        <string>RepositoryPath</string>
+      </Key>
+      <Value>
+        <string>C:\tmp\SV-demo-assets\scripts\ClaimProcessingAPI\EmbeddedResources</string>
+      </Value>
+    </Item>
+    <Item>
+      <Key>
+        <string>ResourceOrigin</string>
+      </Key>
+      <Value>
+        <string>C:\tmp\SV-demo-assets\scripts\ClaimProcessingAPI\EmbeddedResources\ClaimProce</string>
+      </Value>
+    </Item>
+    <Item>
+      <Key>
+        <string>PrototypeDbVersion</string>
+      </Key>
+      <Value>
+        <string>14.1.2301.0</string>
+      </Value>
+    </Item>
+  </Properties>
+</ResourceManifest>

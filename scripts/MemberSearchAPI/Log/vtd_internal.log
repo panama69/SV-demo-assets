@@ -1,0 +1,928 @@
+2017-10-23 14:58:12,919 [1] DEBUG HP.ST.Fwk.ReporterFWK.Reporter [(null)] - Instantiating a report channel. Database: C:\Users\HPE\AppData\Local\Temp\TempResults\Report\VTDReport.mdb
+2017-10-23 14:58:12,922 [1] INFO  HP.ST.Ext.WebServicesActivities.StServiceCallActivity [(null)] - 'StServiceCallActivity7' web service call activity created
+2017-10-23 14:58:12,923 [1] INFO  HP.ST.Ext.WebServicesActivities.StServiceCallActivity [(null)] - 'StServiceCallActivity6' web service call activity created
+2017-10-23 14:58:12,923 [1] INFO  HP.ST.Ext.WebServicesActivities.StServiceCallActivity [(null)] - 'StServiceCallActivity5' web service call activity created
+2017-10-23 14:58:12,924 [1] INFO  HP.ST.Ext.BindingImpl.Setters.StringFormaterDecorator [(null)] - Adding string formater decorator
+2017-10-23 14:58:12,924 [1] INFO  HP.ST.Ext.BindingImpl.Setters.StringFormaterDecorator [(null)] - Adding string formater decorator
+2017-10-23 14:58:12,924 [1] INFO  HP.ST.Ext.BindingImpl.Setters.StringFormaterDecorator [(null)] - Adding string formater decorator
+2017-10-23 14:58:12,925 [1] INFO  HP.ST.Ext.BindingImpl.Setters.StringFormaterDecorator [(null)] - Adding string formater decorator
+2017-10-23 14:58:12,925 [1] INFO  HP.ST.Ext.BindingImpl.Setters.StringFormaterDecorator [(null)] - Adding string formater decorator
+2017-10-23 14:58:12,925 [1] INFO  HP.ST.Ext.BindingImpl.Setters.StringFormaterDecorator [(null)] - Adding string formater decorator
+2017-10-23 14:58:12,928 [1] DEBUG HP.ST.Fwk.RunTimeFWK.CheckpointFWK.CpValObj [(null)] - CpValObj constructor with hard coded value, value from UI=<?xml version="1.0" encoding="utf-16"?><xs:schema xmlns="http://schemas.xmlsoap.org/soap/envelope/" xmlns:vtd="hp.visual_test_designer" elementFormDefault="qualified" targetNamespace="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xs="http://www.w3.org/2001/XMLSchema"><xs:import schemaLocation="EmbeddedResources/MemberAcco\webServices\MemberAcco\_4.xsd" namespace="http://hp.com/SOAQ/ServiceSimulation/2010/demo/01/Imports" /><xs:attribute name="fullName" type="xs:string" /><xs:attribute name="group" type="xs:string" /><xs:attribute name="serialize" type="xs:string" /><xs:attribute name="argType" type="xs:string" /><xs:element name="Envelope" type="Envelope" /><xs:complexType name="Envelope"><xs:sequence><xs:element minOccurs="0" ref="Header" /><xs:element minOccurs="1" ref="Body" /></xs:sequence><xs:anyAttribute processContents="lax" /></xs:complexType><xs:element name="Header" type="Header" /><xs:complexType name="Header"><xs:sequence xmlns=""><xs:any minOccurs="0" maxOccurs="unbounded" processContents="lax" /></xs:sequence><xs:anyAttribute processContents="lax" /></xs:complexType><xs:element name="Body" type="Body" /><xs:complexType name="Body"><xs:sequence xmlns=""><xs:element xmlns:q1="http://hp.com/SOAQ/ServiceSimulation/2010/demo/01" ref="q1:memberSearchResponse" /></xs:sequence><xs:anyAttribute namespace="##any" processContents="lax"><xs:annotation><xs:documentation>Prose in the spec does not specify that attributes are allowed on the Body element</xs:documentation></xs:annotation></xs:anyAttribute></xs:complexType><xs:attribute name="mustUnderstand"><xs:simpleType><xs:restriction base="xs:boolean"><xs:pattern value="0|1" /></xs:restriction></xs:simpleType></xs:attribute><xs:attribute name="actor" type="xs:anyURI" /><xs:simpleType name="encodingStyle"><xs:annotation><xs:documentation>'encodingStyle' indicates any canonicalization conventions followed in the contents of the containing element.  For example, the value 'http://schemas.xmlsoap.org/soap/encoding/' indicates the pattern described in SOAP specification</xs:documentation></xs:annotation><xs:list itemType="xs:anyURI" /></xs:simpleType><xs:attribute name="encodingStyle" type="encodingStyle" /><xs:attributeGroup name="encodingStyle"><xs:attribute ref="encodingStyle" /></xs:attributeGroup><xs:element name="Fault" type="Fault" /><xs:complexType name="Fault" final="extension"><xs:annotation><xs:documentation>Fault reporting structure</xs:documentation></xs:annotation><xs:sequence><xs:element name="faultcode" type="xs:QName" /><xs:element name="faultstring" type="xs:string" /><xs:element minOccurs="0" name="faultactor" type="xs:anyURI" /><xs:element minOccurs="0" name="detail" type="detail" /></xs:sequence></xs:complexType><xs:complexType name="detail"><xs:sequence><xs:any minOccurs="0" maxOccurs="unbounded" namespace="##any" processContents="lax" /></xs:sequence><xs:anyAttribute namespace="##any" processContents="lax" /></xs:complexType></xs:schema>
+2017-10-23 14:58:12,929 [1] DEBUG HP.ST.Fwk.RunTimeFWK.CheckpointFWK.CpValObj [(null)] - CpValObj constructor with one binding, no value
+2017-10-23 14:58:12,929 [1] DEBUG HP.ST.Fwk.RunTimeFWK.CheckpointFWK.CpValObj [(null)] - CpValObj constructor with hard coded value, value from UI=<?xml version="1.0" encoding="utf-16"?><xs:schema xmlns="http://schemas.xmlsoap.org/soap/envelope/" xmlns:vtd="hp.visual_test_designer" elementFormDefault="qualified" targetNamespace="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xs="http://www.w3.org/2001/XMLSchema"><xs:import schemaLocation="EmbeddedResources/MemberAcco\webServices\MemberAcco\_4.xsd" namespace="http://hp.com/SOAQ/ServiceSimulation/2010/demo/01/Imports" /><xs:attribute name="fullName" type="xs:string" /><xs:attribute name="group" type="xs:string" /><xs:attribute name="serialize" type="xs:string" /><xs:attribute name="argType" type="xs:string" /><xs:element name="Envelope" type="Envelope" /><xs:complexType name="Envelope"><xs:sequence><xs:element minOccurs="0" ref="Header" /><xs:element minOccurs="1" ref="Body" /></xs:sequence><xs:anyAttribute processContents="lax" /></xs:complexType><xs:element name="Header" type="Header" /><xs:complexType name="Header"><xs:sequence xmlns=""><xs:any minOccurs="0" maxOccurs="unbounded" processContents="lax" /></xs:sequence><xs:anyAttribute processContents="lax" /></xs:complexType><xs:element name="Body" type="Body" /><xs:complexType name="Body"><xs:sequence xmlns=""><xs:element xmlns:q1="http://hp.com/SOAQ/ServiceSimulation/2010/demo/01" ref="q1:getMemberPlanResponse" /></xs:sequence><xs:anyAttribute namespace="##any" processContents="lax"><xs:annotation><xs:documentation>Prose in the spec does not specify that attributes are allowed on the Body element</xs:documentation></xs:annotation></xs:anyAttribute></xs:complexType><xs:attribute name="mustUnderstand"><xs:simpleType><xs:restriction base="xs:boolean"><xs:pattern value="0|1" /></xs:restriction></xs:simpleType></xs:attribute><xs:attribute name="actor" type="xs:anyURI" /><xs:simpleType name="encodingStyle"><xs:annotation><xs:documentation>'encodingStyle' indicates any canonicalization conventions followed in the contents of the containing element.  For example, the value 'http://schemas.xmlsoap.org/soap/encoding/' indicates the pattern described in SOAP specification</xs:documentation></xs:annotation><xs:list itemType="xs:anyURI" /></xs:simpleType><xs:attribute name="encodingStyle" type="encodingStyle" /><xs:attributeGroup name="encodingStyle"><xs:attribute ref="encodingStyle" /></xs:attributeGroup><xs:element name="Fault" type="Fault" /><xs:complexType name="Fault" final="extension"><xs:annotation><xs:documentation>Fault reporting structure</xs:documentation></xs:annotation><xs:sequence><xs:element name="faultcode" type="xs:QName" /><xs:element name="faultstring" type="xs:string" /><xs:element minOccurs="0" name="faultactor" type="xs:anyURI" /><xs:element minOccurs="0" name="detail" type="detail" /></xs:sequence></xs:complexType><xs:complexType name="detail"><xs:sequence><xs:any minOccurs="0" maxOccurs="unbounded" namespace="##any" processContents="lax" /></xs:sequence><xs:anyAttribute namespace="##any" processContents="lax" /></xs:complexType></xs:schema>
+2017-10-23 14:58:12,929 [1] DEBUG HP.ST.Fwk.RunTimeFWK.CheckpointFWK.CpValObj [(null)] - CpValObj constructor with one binding, no value
+2017-10-23 14:58:12,930 [1] DEBUG HP.ST.Fwk.RunTimeFWK.CheckpointFWK.CpValObj [(null)] - CpValObj constructor with hard coded value, value from UI=<?xml version="1.0" encoding="utf-16"?><xs:schema xmlns="http://schemas.xmlsoap.org/soap/envelope/" xmlns:vtd="hp.visual_test_designer" elementFormDefault="qualified" targetNamespace="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xs="http://www.w3.org/2001/XMLSchema"><xs:import schemaLocation="EmbeddedResources/MemberAcco\webServices\MemberAcco\_4.xsd" namespace="http://hp.com/SOAQ/ServiceSimulation/2010/demo/01/Imports" /><xs:attribute name="fullName" type="xs:string" /><xs:attribute name="group" type="xs:string" /><xs:attribute name="serialize" type="xs:string" /><xs:attribute name="argType" type="xs:string" /><xs:element name="Envelope" type="Envelope" /><xs:complexType name="Envelope"><xs:sequence><xs:element minOccurs="0" ref="Header" /><xs:element minOccurs="1" ref="Body" /></xs:sequence><xs:anyAttribute processContents="lax" /></xs:complexType><xs:element name="Header" type="Header" /><xs:complexType name="Header"><xs:sequence xmlns=""><xs:any minOccurs="0" maxOccurs="unbounded" processContents="lax" /></xs:sequence><xs:anyAttribute processContents="lax" /></xs:complexType><xs:element name="Body" type="Body" /><xs:complexType name="Body"><xs:sequence xmlns=""><xs:element xmlns:q1="http://hp.com/SOAQ/ServiceSimulation/2010/demo/01" ref="q1:getMemberDetailResponse" /></xs:sequence><xs:anyAttribute namespace="##any" processContents="lax"><xs:annotation><xs:documentation>Prose in the spec does not specify that attributes are allowed on the Body element</xs:documentation></xs:annotation></xs:anyAttribute></xs:complexType><xs:attribute name="mustUnderstand"><xs:simpleType><xs:restriction base="xs:boolean"><xs:pattern value="0|1" /></xs:restriction></xs:simpleType></xs:attribute><xs:attribute name="actor" type="xs:anyURI" /><xs:simpleType name="encodingStyle"><xs:annotation><xs:documentation>'encodingStyle' indicates any canonicalization conventions followed in the contents of the containing element.  For example, the value 'http://schemas.xmlsoap.org/soap/encoding/' indicates the pattern described in SOAP specification</xs:documentation></xs:annotation><xs:list itemType="xs:anyURI" /></xs:simpleType><xs:attribute name="encodingStyle" type="encodingStyle" /><xs:attributeGroup name="encodingStyle"><xs:attribute ref="encodingStyle" /></xs:attributeGroup><xs:element name="Fault" type="Fault" /><xs:complexType name="Fault" final="extension"><xs:annotation><xs:documentation>Fault reporting structure</xs:documentation></xs:annotation><xs:sequence><xs:element name="faultcode" type="xs:QName" /><xs:element name="faultstring" type="xs:string" /><xs:element minOccurs="0" name="faultactor" type="xs:anyURI" /><xs:element minOccurs="0" name="detail" type="detail" /></xs:sequence></xs:complexType><xs:complexType name="detail"><xs:sequence><xs:any minOccurs="0" maxOccurs="unbounded" namespace="##any" processContents="lax" /></xs:sequence><xs:anyAttribute namespace="##any" processContents="lax" /></xs:complexType></xs:schema>
+2017-10-23 14:58:12,930 [1] DEBUG HP.ST.Fwk.RunTimeFWK.CheckpointFWK.CpValObj [(null)] - CpValObj constructor with one binding, no value
+2017-10-23 14:58:13,017 [14] INFO  HP.ST.Fwk.RunTimeFWK.STActivityBase [(null)] - DataFetchActivity13 is entering Execute() method
+2017-10-23 14:58:13,020 [14] DEBUG HP.ST.Fwk.RunTimeFWK.STActivityBase [(null)] - DataFetchActivity13, GetDataFromInDirections() succeed
+2017-10-23 14:58:13,020 [14] DEBUG HP.ST.Fwk.RunTimeFWK.STActivityBase [(null)] - DataFetchActivity13, GetDataFromInDirections() succeed
+2017-10-23 14:58:13,022 [14] INFO  HP.ST.Fwk.RunTimeFWK.STActivityBase [(null)] - DataFetchActivity13 is leaving Execute() method
+2017-10-23 14:58:13,022 [14] INFO  HP.ST.Fwk.RunTimeFWK.STActivityBase [(null)] - StartActivity1 is entering Execute() method
+2017-10-23 14:58:13,029 [14] DEBUG HP.ST.Fwk.ReporterFWK.Reporter [(null)] - Adding a new node to the report tree
+2017-10-23 14:58:13,029 [14] DEBUG HP.ST.Fwk.ReporterFWK.Reporter [(null)] - StepID=-531152611, ParentID=31450711, Time=10/23/2017 14:58:13
+2017-10-23 14:58:13,029 [14] DEBUG HP.ST.Fwk.RunTimeFWK.STActivityBase [(null)] - StartActivity1, GetDataFromInDirections() succeed
+2017-10-23 14:58:13,049 [14] DEBUG HP.ST.Fwk.RunTimeFWK.STActivityBase [(null)] - StartActivity1, GetDataFromInDirections() succeed
+2017-10-23 14:58:13,053 [14] INFO  HP.ST.Fwk.RunTimeFWK.STActivityBase [(null)] - StartActivity1 is leaving Execute() method
+2017-10-23 14:58:13,054 [14] INFO  HP.ST.Fwk.RunTimeFWK.STActivityBase [(null)] - Loop2 is entering Execute() method
+2017-10-23 14:58:13,056 [14] DEBUG HP.ST.Fwk.ReporterFWK.Reporter [(null)] - Adding a new node to the report tree
+2017-10-23 14:58:13,056 [14] DEBUG HP.ST.Fwk.ReporterFWK.Reporter [(null)] - StepID=-1084243033, ParentID=31450711, Time=10/23/2017 14:58:13
+2017-10-23 14:58:13,056 [8] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: -531152611. Create element for key: VTD_Type. Value: HP.ST.Ext.BasicActivities.StartActivity. Target element name: VTD_Type. Display Name: Type
+2017-10-23 14:58:13,056 [8] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: -531152611. Create element for key: VTD_Name. Value: StartActivity1. Target element name: VTD_Name. Display Name: Step ID
+2017-10-23 14:58:13,056 [8] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: -531152611. Create element for key: IconPath. Value: AddIns\ServiceTest\BasicActivities\toolbox_code_activity.png. Target element name: IconPath. Display Name: 
+2017-10-23 14:58:13,056 [8] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: -531152611. Create element for key: StartTime. Value: 10/23/2017 2:58:13 PM. Target element name: StartTime. Display Name: 
+2017-10-23 14:58:13,056 [8] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: -531152611. Create element for key: InputXml. Value: <Arguments />. Target element name: InputXml. Display Name: 
+2017-10-23 14:58:13,056 [14] DEBUG HP.ST.Fwk.RunTimeFWK.STActivityBase [(null)] - Loop2, GetDataFromInDirections() succeed
+2017-10-23 14:58:13,056 [8] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: -531152611. Create element for key: VTD_Message. Value: Test started. Target element name: VTD_Message. Display Name: Message
+2017-10-23 14:58:13,056 [8] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: -531152611. Create element for key: Name. Value: 'Start'. Target element name: Name. Display Name: Name
+2017-10-23 14:58:13,056 [8] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: -531152611. Create element for key: Comment. Value: ''. Target element name: Comment. Display Name: Comment
+2017-10-23 14:58:13,056 [8] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: -531152611. Create element for key: VTD_Status. Value: Done. Target element name: VTD_Status. Display Name: Status
+2017-10-23 14:58:13,056 [8] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: -531152611. Create element for key: fileName. Value: Step0.xml. Target element name: fileName. Display Name: 
+2017-10-23 14:58:13,056 [14] INFO  HP.ST.Fwk.RunTimeFWK.STActivityBase [(null)] - DataCursorActivity17 is entering Execute() method
+2017-10-23 14:58:13,058 [14] WARN  HP.ST.Fwk.RunTimeFWK.STActivityBase [(null)] - SetInitalValues failed, Param name: InTable  could not be found
+2017-10-23 14:58:13,058 [14] INFO  HP.ST.Fwk.RunTimeFWK.STActivityBase [(null)] - DataCursorActivity17 is trying to get the value of property OutTable from DataFetchActivity13
+2017-10-23 14:58:13,058 [14] INFO  HP.ST.Fwk.RunTimeFWK.STActivityBase [(null)] - Value HP.ST.Ext.BasicActivities.DataFetchActivity received for property OutTable.
+2017-10-23 14:58:13,058 [14] INFO  HP.ST.Fwk.RunTimeFWK.STActivityBase [(null)] - DataCursorActivity17 is trying to set the value: HP.ST.Ext.BasicActivities.DataFetchActivity to property InTable
+2017-10-23 14:58:13,058 [14] INFO  HP.ST.Fwk.RunTimeFWK.DataHandling.QueryFetcher [(null)] - 	Fetching Data for new table
+2017-10-23 14:58:13,075 [14] INFO  HP.ST.Fwk.RunTimeFWK.DataHandling.QueryFetcher [(null)] - Query fetched
+2017-10-23 14:58:13,075 [14] INFO  HP.ST.Ext.BasicActivities.QueryCursor [(null)] - Ctor
+2017-10-23 14:58:13,075 [14] DEBUG HP.ST.Fwk.RunTimeFWK.STActivityBase [(null)] - DataCursorActivity17, GetDataFromInDirections() succeed
+2017-10-23 14:58:13,076 [14] INFO  HP.ST.Ext.BasicActivities.DataCursorActivity [(null)] - Moving cursor for '0050e89f-6653-4cec-ab78-e64a5b6f1e81'
+2017-10-23 14:58:13,077 [14] INFO  HP.ST.Ext.BasicActivities.QueryCursor [(null)] - Current index moved to 0
+2017-10-23 14:58:13,077 [14] DEBUG HP.ST.Fwk.RunTimeFWK.STActivityBase [(null)] - DataCursorActivity17, GetDataFromInDirections() succeed
+2017-10-23 14:58:13,081 [14] INFO  HP.ST.Fwk.RunTimeFWK.STActivityBase [(null)] - DataCursorActivity17 is leaving Execute() method
+2017-10-23 14:58:13,081 [14] INFO  HP.ST.Fwk.RunTimeFWK.STActivityBase [(null)] - Sequence12 is entering Execute() method
+2017-10-23 14:58:13,084 [14] DEBUG HP.ST.Fwk.ReporterFWK.Reporter [(null)] - Adding a new node to the report tree
+2017-10-23 14:58:13,084 [14] DEBUG HP.ST.Fwk.ReporterFWK.Reporter [(null)] - StepID=-293888023, ParentID=-1084243033, Time=10/23/2017 14:58:13
+2017-10-23 14:58:13,085 [14] DEBUG HP.ST.Fwk.RunTimeFWK.STActivityBase [(null)] - Sequence12, GetDataFromInDirections() succeed
+2017-10-23 14:58:13,085 [14] INFO  HP.ST.Fwk.RunTimeFWK.STActivityBase [(null)] - StServiceCallActivity7 is entering Execute() method
+2017-10-23 14:58:13,086 [14] DEBUG HP.ST.Fwk.ReporterFWK.Reporter [(null)] - Adding a new node to the report tree
+2017-10-23 14:58:13,086 [14] DEBUG HP.ST.Fwk.ReporterFWK.Reporter [(null)] - StepID=-971409659, ParentID=-293888023, Time=10/23/2017 14:58:13
+2017-10-23 14:58:13,089 [14] INFO  HP.ST.Fwk.RunTimeFWK.STActivityBase [(null)] - StServiceCallActivity7 is trying to get the value of property SSN from DataCursorActivity17
+2017-10-23 14:58:13,089 [14] INFO  HP.ST.Fwk.RunTimeFWK.STActivityBase [(null)] - Value 554-98-0001 received for property SSN.
+2017-10-23 14:58:13,089 [14] INFO  HP.ST.Fwk.RunTimeFWK.STActivityBase [(null)] - StServiceCallActivity7 is trying to set the value: 554-98-0001 to property InputEnvelope
+2017-10-23 14:58:13,089 [14] INFO  HP.ST.Ext.BindingImpl.Setters.StringFormaterDecorator [(null)] - Value before formating="{DataSource.Members.SSN}", token="{DataSource.Members.SSN}", token value="554-98-0001"
+2017-10-23 14:58:13,089 [14] INFO  HP.ST.Ext.BindingImpl.Setters.StringFormaterDecorator [(null)] - Value after formating="554-98-0001"
+2017-10-23 14:58:13,089 [14] INFO  HP.ST.Fwk.RunTimeFWK.STActivityBase [(null)] - StServiceCallActivity7 is trying to get the value of property LastName from DataCursorActivity17
+2017-10-23 14:58:13,090 [14] INFO  HP.ST.Fwk.RunTimeFWK.STActivityBase [(null)] - Value Poirot received for property LastName.
+2017-10-23 14:58:13,090 [14] INFO  HP.ST.Fwk.RunTimeFWK.STActivityBase [(null)] - StServiceCallActivity7 is trying to set the value: Poirot to property InputEnvelope
+2017-10-23 14:58:13,090 [14] INFO  HP.ST.Ext.BindingImpl.Setters.StringFormaterDecorator [(null)] - Value before formating="{DataSource.Members.LastName}", token="{DataSource.Members.LastName}", token value="Poirot"
+2017-10-23 14:58:13,090 [14] INFO  HP.ST.Ext.BindingImpl.Setters.StringFormaterDecorator [(null)] - Value after formating="Poirot"
+2017-10-23 14:58:13,090 [14] INFO  HP.ST.Fwk.RunTimeFWK.STActivityBase [(null)] - StServiceCallActivity7 is trying to get the value of property FirstName from DataCursorActivity17
+2017-10-23 14:58:13,090 [14] INFO  HP.ST.Fwk.RunTimeFWK.STActivityBase [(null)] - Value Hercule received for property FirstName.
+2017-10-23 14:58:13,090 [14] INFO  HP.ST.Fwk.RunTimeFWK.STActivityBase [(null)] - StServiceCallActivity7 is trying to set the value: Hercule to property InputEnvelope
+2017-10-23 14:58:13,090 [14] INFO  HP.ST.Ext.BindingImpl.Setters.StringFormaterDecorator [(null)] - Value before formating="{DataSource.Members.FirstName}", token="{DataSource.Members.FirstName}", token value="Hercule"
+2017-10-23 14:58:13,090 [14] INFO  HP.ST.Ext.BindingImpl.Setters.StringFormaterDecorator [(null)] - Value after formating="Hercule"
+2017-10-23 14:58:13,090 [14] DEBUG HP.ST.Fwk.RunTimeFWK.STActivityBase [(null)] - StServiceCallActivity7, GetDataFromInDirections() succeed
+2017-10-23 14:58:13,098 [14] INFO  HP.ST.Ext.WebServicesActivities.StServiceCallActivity [(null)] - Operation input:
+<Envelope xmlns="http://schemas.xmlsoap.org/soap/envelope/" xmlns:p1="http://www.w3.org/2001/XMLSchema-instance">
+  <Body>
+    <memberSearch xmlns="http://hp.com/SOAQ/ServiceSimulation/2010/demo/01">
+      <name>
+        <firstName xmlns="http://schemas.datacontract.org/2004/07/HP.SOAQ.ServiceSimulation.Demo">Hercule</firstName>
+        <lastName xmlns="http://schemas.datacontract.org/2004/07/HP.SOAQ.ServiceSimulation.Demo">Poirot</lastName>
+      </name>
+      <socialSecurityNumber>554-98-0001</socialSecurityNumber>
+    </memberSearch>
+  </Body>
+</Envelope>
+2017-10-23 14:58:13,101 [14] INFO  HP.ST.Ext.WebServicesActivities.StServiceCallActivity [(null)] - Endpoint URL: http://dockerclient:7200/MemberAccounts
+2017-10-23 14:58:13,101 [14] INFO  HP.ST.Ext.WebServicesActivities.StServiceCallActivity [(null)] - Setting request HTTP headers
+2017-10-23 14:58:13,101 [14] INFO  HP.ST.Ext.WebServicesActivities.StServiceCallActivity [(null)] - 'SOAPAction' HTTP Header: http://hp.com/SOAQ/ServiceSimulation/2010/demo/01/IMemberAccounts/memberSearch
+2017-10-23 14:58:13,101 [14] INFO  HP.ST.Ext.WebServicesActivities.StServiceCallActivity [(null)] - 'Content-Type' HTTP Header: text/xml; charset=utf-8
+2017-10-23 14:58:13,101 [14] INFO  HP.ST.Ext.WebServicesActivities.StServiceCallActivity [(null)] - HTTP method: POST
+2017-10-23 14:58:13,104 [14] INFO  HP.ST.Ext.CommunicationChannels.Channels.ChannelPipelineFactory [(null)] - Creating channel pipeline...
+2017-10-23 14:58:13,104 [14] INFO  HP.ST.Ext.CommunicationChannels.Models.HttpChannelBinding [(null)] - Creating HTTP Channel
+2017-10-23 14:58:13,105 [14] INFO  HP.ST.Ext.CommunicationChannels.ConcreteChannels.HttpChannel [(null)] - Creating HTTP Channel
+2017-10-23 14:58:13,105 [14] INFO  HP.ST.Ext.CommunicationChannels.Channels.ChannelPipelineFactory [(null)] - 'HP.ST.Ext.CommunicationChannels.ConcreteChannels.HttpChannel' channel created
+2017-10-23 14:58:13,105 [14] INFO  HP.ST.Ext.CommunicationChannels.Channels.ChannelPipelineFactory [(null)] - 'HP.ST.Ext.CommunicationChannels.ConcreteChannels.EncodingChannel' channel created
+2017-10-23 14:58:13,107 [14] INFO  HP.ST.Ext.WebServicesActivities.StServiceCallActivity [(null)] - Sending the message through the 'HP.ST.Ext.CommunicationChannels.ConcreteChannels.EncodingChannel' channel
+2017-10-23 14:58:13,113 [14] INFO  HP.ST.Ext.CommunicationChannels.ConcreteChannels.HttpChannel [(null)] - HTTP Channel is processing the message
+2017-10-23 14:58:13,116 [14] INFO  HP.ST.Ext.CommunicationChannels.ConcreteChannels.HttpChannel [(null)] - URL: http://dockerclient:7200/MemberAccounts
+2017-10-23 14:58:13,356 [14] INFO  HP.ST.Ext.WebServicesActivities.StServiceCallActivity [(null)] - Operation raw output: <?xml version="1.0" encoding="utf-8"?><s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"><s:Body><memberSearchResponse xmlns:s="http://schemas.xmlsoap.org/soap/envelope/" xmlns="http://hp.com/SOAQ/ServiceSimulation/2010/demo/01"><memberSearchResult xmlns:a="http://schemas.datacontract.org/2004/07/HP.SOAQ.ServiceSimulation.Demo" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><a:Member><a:householdId>0</a:householdId><a:memberId>1</a:memberId><a:socialSecurityNumber>554-98-0001</a:socialSecurityNumber></a:Member></memberSearchResult></memberSearchResponse></s:Body></s:Envelope>
+2017-10-23 14:58:13,358 [14] INFO  HP.ST.Ext.WebServicesActivities.StServiceCallActivity [(null)] - Operation output:
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Body>
+    <memberSearchResponse xmlns:s="http://schemas.xmlsoap.org/soap/envelope/" xmlns="http://hp.com/SOAQ/ServiceSimulation/2010/demo/01">
+      <memberSearchResult xmlns:a="http://schemas.datacontract.org/2004/07/HP.SOAQ.ServiceSimulation.Demo" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+        <a:Member>
+          <a:householdId>0</a:householdId>
+          <a:memberId>1</a:memberId>
+          <a:socialSecurityNumber>554-98-0001</a:socialSecurityNumber>
+        </a:Member>
+      </memberSearchResult>
+    </memberSearchResponse>
+  </s:Body>
+</s:Envelope>
+2017-10-23 14:58:13,362 [14] DEBUG HP.ST.Fwk.RunTimeFWK.STActivityBase [(null)] - StServiceCallActivity7, GetDataFromInDirections() succeed
+2017-10-23 14:58:13,367 [14] INFO  HP.ST.Fwk.RunTimeFWK.CheckpointFWK.BaseCPRule [(null)] - value from getter= System.Xml.XmlElement
+2017-10-23 14:58:13,368 [14] DEBUG HP.ST.Fwk.RunTimeFWK.CheckpointFWK.BaseCPRule [(null)] - Cant get directory path
+2017-10-23 14:58:13,371 [14] DEBUG HP.ST.Shared.XmlGridModel.ValidationUtils [(null)] - Validating XML: 
+ <?xml version="1.0" encoding="utf-8"?><s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"><s:Body><memberSearchResponse xmlns:s="http://schemas.xmlsoap.org/soap/envelope/" xmlns="http://hp.com/SOAQ/ServiceSimulation/2010/demo/01"><memberSearchResult xmlns:a="http://schemas.datacontract.org/2004/07/HP.SOAQ.ServiceSimulation.Demo" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><a:Member><a:householdId>0</a:householdId><a:memberId>1</a:memberId><a:socialSecurityNumber>554-98-0001</a:socialSecurityNumber></a:Member></memberSearchResult></memberSearchResponse></s:Body></s:Envelope>
+2017-10-23 14:58:13,375 [14] DEBUG HP.ST.Fwk.ReporterFWK.Reporter [(null)] - Adding a new node to the report tree
+2017-10-23 14:58:13,375 [14] DEBUG HP.ST.Fwk.ReporterFWK.Reporter [(null)] - StepID=-971409659,CPManager, ParentID=-971409659, Time=10/23/2017 14:58:13
+2017-10-23 14:58:13,375 [14] DEBUG HP.ST.Fwk.ReporterFWK.Reporter [(null)] - Adding a new node to the report tree
+2017-10-23 14:58:13,375 [14] DEBUG HP.ST.Fwk.ReporterFWK.Reporter [(null)] - StepID=Checkpoint 0-0-1, ParentID=-971409659,CPManager, Time=10/23/2017 14:58:13
+2017-10-23 14:58:13,375 [14] DEBUG HP.ST.Fwk.ReporterFWK.Reporter [(null)] - Adding a new node to the report tree
+2017-10-23 14:58:13,375 [14] DEBUG HP.ST.Fwk.ReporterFWK.Reporter [(null)] - StepID=Checkpoint 0-0-1,DataWraper, ParentID=Checkpoint 0-0-1, Time=10/23/2017 14:58:13
+2017-10-23 14:58:13,375 [14] ERROR HP.ST.Fwk.RunTimeFWK.CheckpointFWK.ReportImpl [(null)] - Failed to log checkpoint status:
+2017-10-23 14:58:13,375 [14] ERROR HP.ST.Fwk.RunTimeFWK.CheckpointFWK.ReportImpl [(null)] - System.Collections.Generic.KeyNotFoundException: The given key was not present in the dictionary.
+   at System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   at HP.ST.Fwk.RunTimeFWK.CheckpointFWK.ReportImpl.WriteCPToLog(Dictionary`2 reportData, ILog log)
+   at HP.ST.Fwk.RunTimeFWK.CheckpointFWK.ReportImpl.ReportToInternalLog(ISTRunTimeContext context, Dictionary`2 reportData)
+2017-10-23 14:58:13,376 [4] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: -971409659,CPManager. Create element for key: VTD_Name. Value: Checkpoints. Target element name: VTD_Name. Display Name: 
+2017-10-23 14:58:13,376 [4] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: -971409659,CPManager. Create element for key: Name. Value: Checkpoints. Target element name: Name. Display Name: 
+2017-10-23 14:58:13,376 [4] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: -971409659,CPManager. Create element for key: VTD_Type. Value: HP.ST.Fwk.RunTimeFWK.CPManager. Target element name: VTD_Type. Display Name: 
+2017-10-23 14:58:13,376 [4] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: -971409659,CPManager. Create element for key: VTD_Status. Value: Success. Target element name: VTD_Status. Display Name: 
+2017-10-23 14:58:13,376 [4] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: -971409659,CPManager. Create element for key: fileName. Value: Step1.xml. Target element name: fileName. Display Name: 
+2017-10-23 14:58:13,376 [4] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: Checkpoint 0-0-1. Create element for key: VTD_Type. Value: VTD_byRef. Target element name: VTD_Type. Display Name: 
+2017-10-23 14:58:13,376 [4] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: Checkpoint 0-0-1. Create element for key: VTD_Name. Value: Checkpoint. Target element name: VTD_Name. Display Name: 
+2017-10-23 14:58:13,376 [4] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: Checkpoint 0-0-1. Create element for key: Name. Value: Checkpoint. Target element name: Name. Display Name: 
+2017-10-23 14:58:13,376 [4] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: Checkpoint 0-0-1,DataWraper. Create element for key: VTD_Type. Value: HP.ST.Ext.CheckpointRules.StracturalRule. Target element name: VTD_Type. Display Name: 
+2017-10-23 14:58:13,376 [4] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: Checkpoint 0-0-1,DataWraper. Create element for key: VTD_Name. Value: Checkpoint 0. Target element name: VTD_Name. Display Name: 
+2017-10-23 14:58:13,376 [4] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: Checkpoint 0-0-1,DataWraper. Create element for key: VTD_Operation. Value: Structural Validation. Target element name: VTD_Operation. Display Name: 
+2017-10-23 14:58:13,376 [4] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: Checkpoint 0-0-1,DataWraper. Create element for key: VTD_Status. Value: Success. Target element name: VTD_Status. Display Name: 
+2017-10-23 14:58:13,380 [14] INFO  HP.ST.Fwk.RunTimeFWK.STActivityBase [(null)] - StServiceCallActivity7 is leaving Execute() method
+2017-10-23 14:58:13,381 [14] INFO  HP.ST.Fwk.RunTimeFWK.STActivityBase [(null)] - StServiceCallActivity6 is entering Execute() method
+2017-10-23 14:58:13,381 [8] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: -971409659. Create element for key: VTD_Type. Value: HP.ST.Ext.WebServicesActivities.StServiceCallActivity. Target element name: VTD_Type. Display Name: Type
+2017-10-23 14:58:13,381 [8] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: -971409659. Create element for key: VTD_Name. Value: StServiceCallActivity7. Target element name: VTD_Name. Display Name: Step ID
+2017-10-23 14:58:13,381 [8] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: -971409659. Create element for key: IconPath. Value: AddIns\ServiceTest\WSImportTechnology\ictb_service_operations_16.png. Target element name: IconPath. Display Name: 
+2017-10-23 14:58:13,381 [8] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: -971409659. Create element for key: DataMapping. Value: Members/1. Target element name: DataMapping. Display Name: 
+2017-10-23 14:58:13,381 [8] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: -971409659. Create element for key: StartTime. Value: 10/23/2017 2:58:13 PM. Target element name: StartTime. Display Name: 
+2017-10-23 14:58:13,381 [8] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: -971409659. Create element for key: InputXml. Value: <Envelope xmlns="http://schemas.xmlsoap.org/soap/envelope/" xmlns:p1="http://www.w3.org/2001/XMLSchema-instance"><Body><memberSearch xmlns="http://hp.com/SOAQ/ServiceSimulation/2010/demo/01"><name><firstName xmlns="http://schemas.datacontract.org/2004/07/HP.SOAQ.ServiceSimulation.Demo">Hercule</firstName><lastName xmlns="http://schemas.datacontract.org/2004/07/HP.SOAQ.ServiceSimulation.Demo">Poirot</lastName></name><socialSecurityNumber>554-98-0001</socialSecurityNumber></memberSearch></Body></Envelope>. Target element name: InputXml. Display Name: 
+2017-10-23 14:58:13,381 [8] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: -971409659. Create element for key: Service. Value: MemberAccounts. Target element name: Service. Display Name: Service
+2017-10-23 14:58:13,381 [8] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: -971409659. Create element for key: Port. Value: BasicHttpBinding_IMemberAccounts. Target element name: Port. Display Name: Port
+2017-10-23 14:58:13,381 [8] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: -971409659. Create element for key: Operation. Value: memberSearch. Target element name: Operation. Display Name: Operation
+2017-10-23 14:58:13,381 [8] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: -971409659. Create element for key: Address. Value: http://dockerclient:7200/MemberAccounts. Target element name: Address. Display Name: Address
+2017-10-23 14:58:13,381 [8] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: -971409659. Create element for key: SOAPAction. Value: http://hp.com/SOAQ/ServiceSimulation/2010/demo/01/IMemberAccounts/memberSearch. Target element name: SOAPAction. Display Name: SOAPAction
+2017-10-23 14:58:13,381 [8] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: -971409659. Create element for key: ContentType. Value: text/xml; charset=utf-8. Target element name: ContentType. Display Name: ContentType
+2017-10-23 14:58:13,381 [8] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: -971409659. Create element for key: MessageExchangePattern. Value: Request Response. Target element name: MessageExchangePattern. Display Name: MessageExchangePattern
+2017-10-23 14:58:13,381 [8] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: -971409659. Create element for key: Full request. Value: <Envelope xmlns="http://schemas.xmlsoap.org/soap/envelope/" xmlns:p1="http://www.w3.org/2001/XMLSchema-instance">
+  <Body>
+    <memberSearch xmlns="http://hp.com/SOAQ/ServiceSimulation/2010/demo/01">
+      <name>
+        <firstName xmlns="http://schemas.datacontract.org/2004/07/HP.SOAQ.ServiceSimulation.Demo">Hercule</firstName>
+        <lastName xmlns="http://schemas.datacontract.org/2004/07/HP.SOAQ.ServiceSimulation.Demo">Poirot</lastName>
+      </name>
+      <socialSecurityNumber>554-98-0001</socialSecurityNumber>
+    </memberSearch>
+  </Body>
+</Envelope>. Target element name: Full_request. Display Name: Full request
+2017-10-23 14:58:13,381 [8] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: -971409659. Create element for key: InputHeader. Value: SOAPAction:	http://hp.com/SOAQ/ServiceSimulation/2010/demo/01/IMemberAccounts/memberSearch
+Content-Type:	text/xml; charset=utf-8
+Host:	dockerclient:7200
+Content-Length:	508
+Expect:	100-continue
+Connection:	Close
+. Target element name: InputHeader. Display Name: InputHeader
+2017-10-23 14:58:13,381 [8] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: -971409659. Create element for key: OutputHeader. Value: Connection:	close
+Content-Length:	600
+Content-Type:	text/xml; charset=utf-8
+Date:	Mon, 23 Oct 2017 19:58:13 GMT
+Server:	Microsoft-HTTPAPI/2.0
+. Target element name: OutputHeader. Display Name: OutputHeader
+2017-10-23 14:58:13,381 [8] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: -971409659. Create element for key: OutputText. Value: <?xml version="1.0" encoding="utf-8"?><s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"><s:Body><memberSearchResponse xmlns:s="http://schemas.xmlsoap.org/soap/envelope/" xmlns="http://hp.com/SOAQ/ServiceSimulation/2010/demo/01"><memberSearchResult xmlns:a="http://schemas.datacontract.org/2004/07/HP.SOAQ.ServiceSimulation.Demo" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><a:Member><a:householdId>0</a:householdId><a:memberId>1</a:memberId><a:socialSecurityNumber>554-98-0001</a:socialSecurityNumber></a:Member></memberSearchResult></memberSearchResponse></s:Body></s:Envelope>. Target element name: OutputText. Display Name: OutputText
+2017-10-23 14:58:13,381 [8] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: -971409659. Create element for key: HttpStatusCode. Value: 200 : OK. Target element name: HttpStatusCode. Display Name: HttpStatusCode
+2017-10-23 14:58:13,381 [8] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: -971409659. Create element for key: OutputXml. Value: <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"><s:Body><memberSearchResponse xmlns:s="http://schemas.xmlsoap.org/soap/envelope/" xmlns="http://hp.com/SOAQ/ServiceSimulation/2010/demo/01"><memberSearchResult xmlns:a="http://schemas.datacontract.org/2004/07/HP.SOAQ.ServiceSimulation.Demo" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><a:Member><a:householdId>0</a:householdId><a:memberId>1</a:memberId><a:socialSecurityNumber>554-98-0001</a:socialSecurityNumber></a:Member></memberSearchResult></memberSearchResponse></s:Body></s:Envelope>. Target element name: OutputXml. Display Name: OutputXml
+2017-10-23 14:58:13,381 [8] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: -971409659. Create element for key: VTD_Message. Value: Web service call performed successfully. Target element name: VTD_Message. Display Name: Message
+2017-10-23 14:58:13,381 [8] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: -971409659. Create element for key: Name. Value: 'memberSearch'. Target element name: Name. Display Name: Name
+2017-10-23 14:58:13,382 [8] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: -971409659. Create element for key: Comment. Value: ''. Target element name: Comment. Display Name: Comment
+2017-10-23 14:58:13,382 [8] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: -971409659. Create element for key: VTD_Status. Value: Done. Target element name: VTD_Status. Display Name: Status
+2017-10-23 14:58:13,382 [8] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: -971409659. Create element for key: fileName. Value: Step2.xml. Target element name: fileName. Display Name: 
+2017-10-23 14:58:13,382 [14] DEBUG HP.ST.Fwk.ReporterFWK.Reporter [(null)] - Adding a new node to the report tree
+2017-10-23 14:58:13,382 [14] DEBUG HP.ST.Fwk.ReporterFWK.Reporter [(null)] - StepID=699436229, ParentID=-293888023, Time=10/23/2017 14:58:13
+2017-10-23 14:58:13,383 [14] INFO  HP.ST.Fwk.RunTimeFWK.STActivityBase [(null)] - StServiceCallActivity6 is trying to get the value of property OutputEnvelope from StServiceCallActivity7
+2017-10-23 14:58:13,383 [14] INFO  HP.ST.Fwk.RunTimeFWK.STActivityBase [(null)] - Value 1 received for property OutputEnvelope.
+2017-10-23 14:58:13,383 [14] INFO  HP.ST.Fwk.RunTimeFWK.STActivityBase [(null)] - StServiceCallActivity6 is trying to set the value: 1 to property InputEnvelope
+2017-10-23 14:58:13,383 [14] DEBUG HP.ST.Fwk.RunTimeFWK.STActivityBase [(null)] - StServiceCallActivity6, GetDataFromInDirections() succeed
+2017-10-23 14:58:13,383 [14] INFO  HP.ST.Ext.WebServicesActivities.StServiceCallActivity [(null)] - Operation input:
+<Envelope xmlns="http://schemas.xmlsoap.org/soap/envelope/">
+  <Body>
+    <getMemberPlan xmlns="http://hp.com/SOAQ/ServiceSimulation/2010/demo/01">
+      <memberId>1</memberId>
+    </getMemberPlan>
+  </Body>
+</Envelope>
+2017-10-23 14:58:13,384 [14] INFO  HP.ST.Ext.WebServicesActivities.StServiceCallActivity [(null)] - Endpoint URL: http://dockerclient:7200/MemberAccounts
+2017-10-23 14:58:13,384 [14] INFO  HP.ST.Ext.WebServicesActivities.StServiceCallActivity [(null)] - Setting request HTTP headers
+2017-10-23 14:58:13,384 [14] INFO  HP.ST.Ext.WebServicesActivities.StServiceCallActivity [(null)] - 'SOAPAction' HTTP Header: http://hp.com/SOAQ/ServiceSimulation/2010/demo/01/IMemberAccounts/getMemberPlan
+2017-10-23 14:58:13,384 [14] INFO  HP.ST.Ext.WebServicesActivities.StServiceCallActivity [(null)] - 'Content-Type' HTTP Header: text/xml; charset=utf-8
+2017-10-23 14:58:13,384 [14] INFO  HP.ST.Ext.WebServicesActivities.StServiceCallActivity [(null)] - HTTP method: POST
+2017-10-23 14:58:13,384 [14] INFO  HP.ST.Ext.CommunicationChannels.Channels.ChannelPipelineFactory [(null)] - Creating channel pipeline...
+2017-10-23 14:58:13,384 [14] INFO  HP.ST.Ext.CommunicationChannels.Models.HttpChannelBinding [(null)] - Creating HTTP Channel
+2017-10-23 14:58:13,384 [14] INFO  HP.ST.Ext.CommunicationChannels.ConcreteChannels.HttpChannel [(null)] - Creating HTTP Channel
+2017-10-23 14:58:13,384 [14] INFO  HP.ST.Ext.CommunicationChannels.Channels.ChannelPipelineFactory [(null)] - 'HP.ST.Ext.CommunicationChannels.ConcreteChannels.HttpChannel' channel created
+2017-10-23 14:58:13,384 [14] INFO  HP.ST.Ext.CommunicationChannels.Channels.ChannelPipelineFactory [(null)] - 'HP.ST.Ext.CommunicationChannels.ConcreteChannels.EncodingChannel' channel created
+2017-10-23 14:58:13,384 [14] INFO  HP.ST.Ext.WebServicesActivities.StServiceCallActivity [(null)] - Sending the message through the 'HP.ST.Ext.CommunicationChannels.ConcreteChannels.EncodingChannel' channel
+2017-10-23 14:58:13,387 [14] INFO  HP.ST.Ext.CommunicationChannels.ConcreteChannels.HttpChannel [(null)] - HTTP Channel is processing the message
+2017-10-23 14:58:13,387 [14] INFO  HP.ST.Ext.CommunicationChannels.ConcreteChannels.HttpChannel [(null)] - URL: http://dockerclient:7200/MemberAccounts
+2017-10-23 14:58:13,582 [14] INFO  HP.ST.Ext.WebServicesActivities.StServiceCallActivity [(null)] - Operation raw output: <?xml version="1.0" encoding="utf-8"?><s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"><s:Body><getMemberPlanResponse xmlns:s="http://schemas.xmlsoap.org/soap/envelope/" xmlns="http://hp.com/SOAQ/ServiceSimulation/2010/demo/01"><getMemberPlanResult xmlns:a="http://schemas.datacontract.org/2004/07/HP.SOAQ.ServiceSimulation.Demo" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><a:approvalLimit>1000</a:approvalLimit><a:id>1</a:id><a:name>Allpay Total 1000</a:name></getMemberPlanResult></getMemberPlanResponse></s:Body></s:Envelope>
+2017-10-23 14:58:13,582 [14] INFO  HP.ST.Ext.WebServicesActivities.StServiceCallActivity [(null)] - Operation output:
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Body>
+    <getMemberPlanResponse xmlns:s="http://schemas.xmlsoap.org/soap/envelope/" xmlns="http://hp.com/SOAQ/ServiceSimulation/2010/demo/01">
+      <getMemberPlanResult xmlns:a="http://schemas.datacontract.org/2004/07/HP.SOAQ.ServiceSimulation.Demo" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+        <a:approvalLimit>1000</a:approvalLimit>
+        <a:id>1</a:id>
+        <a:name>Allpay Total 1000</a:name>
+      </getMemberPlanResult>
+    </getMemberPlanResponse>
+  </s:Body>
+</s:Envelope>
+2017-10-23 14:58:13,583 [14] DEBUG HP.ST.Fwk.RunTimeFWK.STActivityBase [(null)] - StServiceCallActivity6, GetDataFromInDirections() succeed
+2017-10-23 14:58:13,583 [14] INFO  HP.ST.Fwk.RunTimeFWK.CheckpointFWK.BaseCPRule [(null)] - value from getter= System.Xml.XmlElement
+2017-10-23 14:58:13,584 [14] DEBUG HP.ST.Fwk.RunTimeFWK.CheckpointFWK.BaseCPRule [(null)] - Cant get directory path
+2017-10-23 14:58:13,585 [14] DEBUG HP.ST.Shared.XmlGridModel.ValidationUtils [(null)] - Validating XML: 
+ <?xml version="1.0" encoding="utf-8"?><s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"><s:Body><getMemberPlanResponse xmlns:s="http://schemas.xmlsoap.org/soap/envelope/" xmlns="http://hp.com/SOAQ/ServiceSimulation/2010/demo/01"><getMemberPlanResult xmlns:a="http://schemas.datacontract.org/2004/07/HP.SOAQ.ServiceSimulation.Demo" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><a:approvalLimit>1000</a:approvalLimit><a:id>1</a:id><a:name>Allpay Total 1000</a:name></getMemberPlanResult></getMemberPlanResponse></s:Body></s:Envelope>
+2017-10-23 14:58:13,587 [14] DEBUG HP.ST.Fwk.ReporterFWK.Reporter [(null)] - Adding a new node to the report tree
+2017-10-23 14:58:13,587 [14] DEBUG HP.ST.Fwk.ReporterFWK.Reporter [(null)] - StepID=699436229,CPManager, ParentID=699436229, Time=10/23/2017 14:58:13
+2017-10-23 14:58:13,588 [14] DEBUG HP.ST.Fwk.ReporterFWK.Reporter [(null)] - Adding a new node to the report tree
+2017-10-23 14:58:13,588 [14] DEBUG HP.ST.Fwk.ReporterFWK.Reporter [(null)] - StepID=Checkpoint 1-1-1, ParentID=699436229,CPManager, Time=10/23/2017 14:58:13
+2017-10-23 14:58:13,588 [14] DEBUG HP.ST.Fwk.ReporterFWK.Reporter [(null)] - Adding a new node to the report tree
+2017-10-23 14:58:13,588 [14] DEBUG HP.ST.Fwk.ReporterFWK.Reporter [(null)] - StepID=Checkpoint 1-1-1,DataWraper, ParentID=Checkpoint 1-1-1, Time=10/23/2017 14:58:13
+2017-10-23 14:58:13,588 [14] ERROR HP.ST.Fwk.RunTimeFWK.CheckpointFWK.ReportImpl [(null)] - Failed to log checkpoint status:
+2017-10-23 14:58:13,588 [14] ERROR HP.ST.Fwk.RunTimeFWK.CheckpointFWK.ReportImpl [(null)] - System.Collections.Generic.KeyNotFoundException: The given key was not present in the dictionary.
+   at System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   at HP.ST.Fwk.RunTimeFWK.CheckpointFWK.ReportImpl.WriteCPToLog(Dictionary`2 reportData, ILog log)
+   at HP.ST.Fwk.RunTimeFWK.CheckpointFWK.ReportImpl.ReportToInternalLog(ISTRunTimeContext context, Dictionary`2 reportData)
+2017-10-23 14:58:13,588 [3] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: 699436229,CPManager. Create element for key: VTD_Name. Value: Checkpoints. Target element name: VTD_Name. Display Name: 
+2017-10-23 14:58:13,588 [3] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: 699436229,CPManager. Create element for key: Name. Value: Checkpoints. Target element name: Name. Display Name: 
+2017-10-23 14:58:13,588 [3] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: 699436229,CPManager. Create element for key: VTD_Type. Value: HP.ST.Fwk.RunTimeFWK.CPManager. Target element name: VTD_Type. Display Name: 
+2017-10-23 14:58:13,588 [3] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: 699436229,CPManager. Create element for key: VTD_Status. Value: Success. Target element name: VTD_Status. Display Name: 
+2017-10-23 14:58:13,588 [3] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: 699436229,CPManager. Create element for key: fileName. Value: Step3.xml. Target element name: fileName. Display Name: 
+2017-10-23 14:58:13,588 [3] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: Checkpoint 1-1-1. Create element for key: VTD_Type. Value: VTD_byRef. Target element name: VTD_Type. Display Name: 
+2017-10-23 14:58:13,588 [3] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: Checkpoint 1-1-1. Create element for key: VTD_Name. Value: Checkpoint. Target element name: VTD_Name. Display Name: 
+2017-10-23 14:58:13,588 [3] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: Checkpoint 1-1-1. Create element for key: Name. Value: Checkpoint. Target element name: Name. Display Name: 
+2017-10-23 14:58:13,588 [3] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: Checkpoint 1-1-1,DataWraper. Create element for key: VTD_Type. Value: HP.ST.Ext.CheckpointRules.StracturalRule. Target element name: VTD_Type. Display Name: 
+2017-10-23 14:58:13,588 [3] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: Checkpoint 1-1-1,DataWraper. Create element for key: VTD_Name. Value: Checkpoint 1. Target element name: VTD_Name. Display Name: 
+2017-10-23 14:58:13,588 [3] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: Checkpoint 1-1-1,DataWraper. Create element for key: VTD_Operation. Value: Structural Validation. Target element name: VTD_Operation. Display Name: 
+2017-10-23 14:58:13,588 [3] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: Checkpoint 1-1-1,DataWraper. Create element for key: VTD_Status. Value: Success. Target element name: VTD_Status. Display Name: 
+2017-10-23 14:58:13,588 [14] INFO  HP.ST.Fwk.RunTimeFWK.STActivityBase [(null)] - StServiceCallActivity6 is leaving Execute() method
+2017-10-23 14:58:13,589 [14] INFO  HP.ST.Fwk.RunTimeFWK.STActivityBase [(null)] - StServiceCallActivity5 is entering Execute() method
+2017-10-23 14:58:13,589 [8] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: 699436229. Create element for key: VTD_Type. Value: HP.ST.Ext.WebServicesActivities.StServiceCallActivity. Target element name: VTD_Type. Display Name: Type
+2017-10-23 14:58:13,590 [8] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: 699436229. Create element for key: VTD_Name. Value: StServiceCallActivity6. Target element name: VTD_Name. Display Name: Step ID
+2017-10-23 14:58:13,590 [8] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: 699436229. Create element for key: IconPath. Value: AddIns\ServiceTest\WSImportTechnology\ictb_service_operations_16.png. Target element name: IconPath. Display Name: 
+2017-10-23 14:58:13,590 [8] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: 699436229. Create element for key: DataMapping. Value: . Target element name: DataMapping. Display Name: 
+2017-10-23 14:58:13,590 [8] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: 699436229. Create element for key: StartTime. Value: 10/23/2017 2:58:13 PM. Target element name: StartTime. Display Name: 
+2017-10-23 14:58:13,590 [8] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: 699436229. Create element for key: InputXml. Value: <Envelope xmlns="http://schemas.xmlsoap.org/soap/envelope/"><Body><getMemberPlan xmlns="http://hp.com/SOAQ/ServiceSimulation/2010/demo/01"><memberId>1</memberId></getMemberPlan></Body></Envelope>. Target element name: InputXml. Display Name: 
+2017-10-23 14:58:13,590 [8] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: 699436229. Create element for key: Service. Value: MemberAccounts. Target element name: Service. Display Name: Service
+2017-10-23 14:58:13,590 [8] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: 699436229. Create element for key: Port. Value: BasicHttpBinding_IMemberAccounts. Target element name: Port. Display Name: Port
+2017-10-23 14:58:13,590 [8] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: 699436229. Create element for key: Operation. Value: getMemberPlan. Target element name: Operation. Display Name: Operation
+2017-10-23 14:58:13,590 [8] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: 699436229. Create element for key: Address. Value: http://dockerclient:7200/MemberAccounts. Target element name: Address. Display Name: Address
+2017-10-23 14:58:13,590 [8] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: 699436229. Create element for key: SOAPAction. Value: http://hp.com/SOAQ/ServiceSimulation/2010/demo/01/IMemberAccounts/getMemberPlan. Target element name: SOAPAction. Display Name: SOAPAction
+2017-10-23 14:58:13,590 [8] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: 699436229. Create element for key: ContentType. Value: text/xml; charset=utf-8. Target element name: ContentType. Display Name: ContentType
+2017-10-23 14:58:13,590 [8] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: 699436229. Create element for key: MessageExchangePattern. Value: Request Response. Target element name: MessageExchangePattern. Display Name: MessageExchangePattern
+2017-10-23 14:58:13,590 [8] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: 699436229. Create element for key: Full request. Value: <Envelope xmlns="http://schemas.xmlsoap.org/soap/envelope/">
+  <Body>
+    <getMemberPlan xmlns="http://hp.com/SOAQ/ServiceSimulation/2010/demo/01">
+      <memberId>1</memberId>
+    </getMemberPlan>
+  </Body>
+</Envelope>. Target element name: Full_request. Display Name: Full request
+2017-10-23 14:58:13,590 [8] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: 699436229. Create element for key: InputHeader. Value: SOAPAction:	http://hp.com/SOAQ/ServiceSimulation/2010/demo/01/IMemberAccounts/getMemberPlan
+Content-Type:	text/xml; charset=utf-8
+Host:	dockerclient:7200
+Content-Length:	195
+Expect:	100-continue
+Connection:	Close
+. Target element name: InputHeader. Display Name: InputHeader
+2017-10-23 14:58:13,590 [8] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: 699436229. Create element for key: OutputHeader. Value: Connection:	close
+Content-Length:	552
+Content-Type:	text/xml; charset=utf-8
+Date:	Mon, 23 Oct 2017 19:58:13 GMT
+Server:	Microsoft-HTTPAPI/2.0
+. Target element name: OutputHeader. Display Name: OutputHeader
+2017-10-23 14:58:13,590 [8] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: 699436229. Create element for key: OutputText. Value: <?xml version="1.0" encoding="utf-8"?><s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"><s:Body><getMemberPlanResponse xmlns:s="http://schemas.xmlsoap.org/soap/envelope/" xmlns="http://hp.com/SOAQ/ServiceSimulation/2010/demo/01"><getMemberPlanResult xmlns:a="http://schemas.datacontract.org/2004/07/HP.SOAQ.ServiceSimulation.Demo" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><a:approvalLimit>1000</a:approvalLimit><a:id>1</a:id><a:name>Allpay Total 1000</a:name></getMemberPlanResult></getMemberPlanResponse></s:Body></s:Envelope>. Target element name: OutputText. Display Name: OutputText
+2017-10-23 14:58:13,590 [8] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: 699436229. Create element for key: HttpStatusCode. Value: 200 : OK. Target element name: HttpStatusCode. Display Name: HttpStatusCode
+2017-10-23 14:58:13,590 [8] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: 699436229. Create element for key: OutputXml. Value: <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"><s:Body><getMemberPlanResponse xmlns:s="http://schemas.xmlsoap.org/soap/envelope/" xmlns="http://hp.com/SOAQ/ServiceSimulation/2010/demo/01"><getMemberPlanResult xmlns:a="http://schemas.datacontract.org/2004/07/HP.SOAQ.ServiceSimulation.Demo" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><a:approvalLimit>1000</a:approvalLimit><a:id>1</a:id><a:name>Allpay Total 1000</a:name></getMemberPlanResult></getMemberPlanResponse></s:Body></s:Envelope>. Target element name: OutputXml. Display Name: OutputXml
+2017-10-23 14:58:13,590 [8] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: 699436229. Create element for key: VTD_Message. Value: Web service call performed successfully. Target element name: VTD_Message. Display Name: Message
+2017-10-23 14:58:13,590 [8] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: 699436229. Create element for key: Name. Value: 'getMemberPlan'. Target element name: Name. Display Name: Name
+2017-10-23 14:58:13,590 [8] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: 699436229. Create element for key: Comment. Value: ''. Target element name: Comment. Display Name: Comment
+2017-10-23 14:58:13,590 [8] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: 699436229. Create element for key: VTD_Status. Value: Done. Target element name: VTD_Status. Display Name: Status
+2017-10-23 14:58:13,590 [8] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: 699436229. Create element for key: fileName. Value: Step4.xml. Target element name: fileName. Display Name: 
+2017-10-23 14:58:13,591 [14] DEBUG HP.ST.Fwk.ReporterFWK.Reporter [(null)] - Adding a new node to the report tree
+2017-10-23 14:58:13,591 [14] DEBUG HP.ST.Fwk.ReporterFWK.Reporter [(null)] - StepID=-250167849, ParentID=-293888023, Time=10/23/2017 14:58:13
+2017-10-23 14:58:13,591 [14] INFO  HP.ST.Fwk.RunTimeFWK.STActivityBase [(null)] - StServiceCallActivity5 is trying to get the value of property OutputEnvelope from StServiceCallActivity7
+2017-10-23 14:58:13,591 [14] INFO  HP.ST.Fwk.RunTimeFWK.STActivityBase [(null)] - Value 1 received for property OutputEnvelope.
+2017-10-23 14:58:13,591 [14] INFO  HP.ST.Fwk.RunTimeFWK.STActivityBase [(null)] - StServiceCallActivity5 is trying to set the value: 1 to property InputEnvelope
+2017-10-23 14:58:13,592 [14] DEBUG HP.ST.Fwk.RunTimeFWK.STActivityBase [(null)] - StServiceCallActivity5, GetDataFromInDirections() succeed
+2017-10-23 14:58:13,592 [14] INFO  HP.ST.Ext.WebServicesActivities.StServiceCallActivity [(null)] - Operation input:
+<Envelope xmlns="http://schemas.xmlsoap.org/soap/envelope/">
+  <Body>
+    <getMemberDetail xmlns="http://hp.com/SOAQ/ServiceSimulation/2010/demo/01">
+      <memberId>1</memberId>
+    </getMemberDetail>
+  </Body>
+</Envelope>
+2017-10-23 14:58:13,593 [14] INFO  HP.ST.Ext.WebServicesActivities.StServiceCallActivity [(null)] - Endpoint URL: http://dockerclient:7200/MemberAccounts
+2017-10-23 14:58:13,593 [14] INFO  HP.ST.Ext.WebServicesActivities.StServiceCallActivity [(null)] - Setting request HTTP headers
+2017-10-23 14:58:13,593 [14] INFO  HP.ST.Ext.WebServicesActivities.StServiceCallActivity [(null)] - 'SOAPAction' HTTP Header: http://hp.com/SOAQ/ServiceSimulation/2010/demo/01/IMemberAccounts/getMemberDetail
+2017-10-23 14:58:13,593 [14] INFO  HP.ST.Ext.WebServicesActivities.StServiceCallActivity [(null)] - 'Content-Type' HTTP Header: text/xml; charset=utf-8
+2017-10-23 14:58:13,593 [14] INFO  HP.ST.Ext.WebServicesActivities.StServiceCallActivity [(null)] - HTTP method: POST
+2017-10-23 14:58:13,593 [14] INFO  HP.ST.Ext.CommunicationChannels.Channels.ChannelPipelineFactory [(null)] - Creating channel pipeline...
+2017-10-23 14:58:13,593 [14] INFO  HP.ST.Ext.CommunicationChannels.Models.HttpChannelBinding [(null)] - Creating HTTP Channel
+2017-10-23 14:58:13,593 [14] INFO  HP.ST.Ext.CommunicationChannels.ConcreteChannels.HttpChannel [(null)] - Creating HTTP Channel
+2017-10-23 14:58:13,593 [14] INFO  HP.ST.Ext.CommunicationChannels.Channels.ChannelPipelineFactory [(null)] - 'HP.ST.Ext.CommunicationChannels.ConcreteChannels.HttpChannel' channel created
+2017-10-23 14:58:13,593 [14] INFO  HP.ST.Ext.CommunicationChannels.Channels.ChannelPipelineFactory [(null)] - 'HP.ST.Ext.CommunicationChannels.ConcreteChannels.EncodingChannel' channel created
+2017-10-23 14:58:13,593 [14] INFO  HP.ST.Ext.WebServicesActivities.StServiceCallActivity [(null)] - Sending the message through the 'HP.ST.Ext.CommunicationChannels.ConcreteChannels.EncodingChannel' channel
+2017-10-23 14:58:13,595 [14] INFO  HP.ST.Ext.CommunicationChannels.ConcreteChannels.HttpChannel [(null)] - HTTP Channel is processing the message
+2017-10-23 14:58:13,595 [14] INFO  HP.ST.Ext.CommunicationChannels.ConcreteChannels.HttpChannel [(null)] - URL: http://dockerclient:7200/MemberAccounts
+2017-10-23 14:58:13,911 [14] INFO  HP.ST.Ext.WebServicesActivities.StServiceCallActivity [(null)] - Operation raw output: <?xml version="1.0" encoding="utf-8"?><s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"><s:Body><getMemberDetailResponse xmlns:s="http://schemas.xmlsoap.org/soap/envelope/" xmlns="http://hp.com/SOAQ/ServiceSimulation/2010/demo/01"><getMemberDetailResult xmlns:a="http://schemas.datacontract.org/2004/07/HP.SOAQ.ServiceSimulation.Demo" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><a:address><a:city>Smithfield London W1</a:city><a:country>Great Britain</a:country><a:endDate>0001-01-01T00:00:00</a:endDate><a:line1>56B Whitehaven Mansions</a:line1><a:line2>Charterhouse Square</a:line2><a:startDate>0001-01-01T00:00:00</a:startDate><a:state>England</a:state><a:zip i:nil="true" /></a:address><a:householdId>0</a:householdId><a:memberId>1</a:memberId><a:person><a:dateOfBirth>1876-04-01T00:00:00</a:dateOfBirth><a:gender>MALE</a:gender><a:name><a:firstName>Hercule</a:firstName><a:lastName>Poirot</a:lastName><a:middleName i:nil="true" /><a:prefix i:nil="true" /><a:suffix i:nil="true" /></a:name><a:socialSecurityNumber>554-98-0001</a:socialSecurityNumber></a:person><a:phone i:nil="true" /></getMemberDetailResult></getMemberDetailResponse></s:Body></s:Envelope>
+2017-10-23 14:58:13,911 [14] INFO  HP.ST.Ext.WebServicesActivities.StServiceCallActivity [(null)] - Operation output:
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Body>
+    <getMemberDetailResponse xmlns:s="http://schemas.xmlsoap.org/soap/envelope/" xmlns="http://hp.com/SOAQ/ServiceSimulation/2010/demo/01">
+      <getMemberDetailResult xmlns:a="http://schemas.datacontract.org/2004/07/HP.SOAQ.ServiceSimulation.Demo" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+        <a:address>
+          <a:city>Smithfield London W1</a:city>
+          <a:country>Great Britain</a:country>
+          <a:endDate>0001-01-01T00:00:00</a:endDate>
+          <a:line1>56B Whitehaven Mansions</a:line1>
+          <a:line2>Charterhouse Square</a:line2>
+          <a:startDate>0001-01-01T00:00:00</a:startDate>
+          <a:state>England</a:state>
+          <a:zip i:nil="true" />
+        </a:address>
+        <a:householdId>0</a:householdId>
+        <a:memberId>1</a:memberId>
+        <a:person>
+          <a:dateOfBirth>1876-04-01T00:00:00</a:dateOfBirth>
+          <a:gender>MALE</a:gender>
+          <a:name>
+            <a:firstName>Hercule</a:firstName>
+            <a:lastName>Poirot</a:lastName>
+            <a:middleName i:nil="true" />
+            <a:prefix i:nil="true" />
+            <a:suffix i:nil="true" />
+          </a:name>
+          <a:socialSecurityNumber>554-98-0001</a:socialSecurityNumber>
+        </a:person>
+        <a:phone i:nil="true" />
+      </getMemberDetailResult>
+    </getMemberDetailResponse>
+  </s:Body>
+</s:Envelope>
+2017-10-23 14:58:13,912 [14] DEBUG HP.ST.Fwk.RunTimeFWK.STActivityBase [(null)] - StServiceCallActivity5, GetDataFromInDirections() succeed
+2017-10-23 14:58:13,912 [14] INFO  HP.ST.Fwk.RunTimeFWK.CheckpointFWK.BaseCPRule [(null)] - value from getter= System.Xml.XmlElement
+2017-10-23 14:58:13,912 [14] DEBUG HP.ST.Fwk.RunTimeFWK.CheckpointFWK.BaseCPRule [(null)] - Cant get directory path
+2017-10-23 14:58:13,914 [14] DEBUG HP.ST.Shared.XmlGridModel.ValidationUtils [(null)] - Validating XML: 
+ <?xml version="1.0" encoding="utf-8"?><s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"><s:Body><getMemberDetailResponse xmlns:s="http://schemas.xmlsoap.org/soap/envelope/" xmlns="http://hp.com/SOAQ/ServiceSimulation/2010/demo/01"><getMemberDetailResult xmlns:a="http://schemas.datacontract.org/2004/07/HP.SOAQ.ServiceSimulation.Demo" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><a:address><a:city>Smithfield London W1</a:city><a:country>Great Britain</a:country><a:endDate>0001-01-01T00:00:00</a:endDate><a:line1>56B Whitehaven Mansions</a:line1><a:line2>Charterhouse Square</a:line2><a:startDate>0001-01-01T00:00:00</a:startDate><a:state>England</a:state><a:zip i:nil="true" /></a:address><a:householdId>0</a:householdId><a:memberId>1</a:memberId><a:person><a:dateOfBirth>1876-04-01T00:00:00</a:dateOfBirth><a:gender>MALE</a:gender><a:name><a:firstName>Hercule</a:firstName><a:lastName>Poirot</a:lastName><a:middleName i:nil="true" /><a:prefix i:nil="true" /><a:suffix i:nil="true" /></a:name><a:socialSecurityNumber>554-98-0001</a:socialSecurityNumber></a:person><a:phone i:nil="true" /></getMemberDetailResult></getMemberDetailResponse></s:Body></s:Envelope>
+2017-10-23 14:58:13,915 [14] DEBUG HP.ST.Fwk.ReporterFWK.Reporter [(null)] - Adding a new node to the report tree
+2017-10-23 14:58:13,915 [14] DEBUG HP.ST.Fwk.ReporterFWK.Reporter [(null)] - StepID=-250167849,CPManager, ParentID=-250167849, Time=10/23/2017 14:58:13
+2017-10-23 14:58:13,915 [14] DEBUG HP.ST.Fwk.ReporterFWK.Reporter [(null)] - Adding a new node to the report tree
+2017-10-23 14:58:13,915 [14] DEBUG HP.ST.Fwk.ReporterFWK.Reporter [(null)] - StepID=Checkpoint 2-2-1, ParentID=-250167849,CPManager, Time=10/23/2017 14:58:13
+2017-10-23 14:58:13,915 [14] DEBUG HP.ST.Fwk.ReporterFWK.Reporter [(null)] - Adding a new node to the report tree
+2017-10-23 14:58:13,915 [14] DEBUG HP.ST.Fwk.ReporterFWK.Reporter [(null)] - StepID=Checkpoint 2-2-1,DataWraper, ParentID=Checkpoint 2-2-1, Time=10/23/2017 14:58:13
+2017-10-23 14:58:13,915 [14] ERROR HP.ST.Fwk.RunTimeFWK.CheckpointFWK.ReportImpl [(null)] - Failed to log checkpoint status:
+2017-10-23 14:58:13,915 [14] ERROR HP.ST.Fwk.RunTimeFWK.CheckpointFWK.ReportImpl [(null)] - System.Collections.Generic.KeyNotFoundException: The given key was not present in the dictionary.
+   at System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   at HP.ST.Fwk.RunTimeFWK.CheckpointFWK.ReportImpl.WriteCPToLog(Dictionary`2 reportData, ILog log)
+   at HP.ST.Fwk.RunTimeFWK.CheckpointFWK.ReportImpl.ReportToInternalLog(ISTRunTimeContext context, Dictionary`2 reportData)
+2017-10-23 14:58:13,915 [8] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: -250167849,CPManager. Create element for key: VTD_Name. Value: Checkpoints. Target element name: VTD_Name. Display Name: 
+2017-10-23 14:58:13,915 [8] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: -250167849,CPManager. Create element for key: Name. Value: Checkpoints. Target element name: Name. Display Name: 
+2017-10-23 14:58:13,915 [8] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: -250167849,CPManager. Create element for key: VTD_Type. Value: HP.ST.Fwk.RunTimeFWK.CPManager. Target element name: VTD_Type. Display Name: 
+2017-10-23 14:58:13,915 [8] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: -250167849,CPManager. Create element for key: VTD_Status. Value: Success. Target element name: VTD_Status. Display Name: 
+2017-10-23 14:58:13,915 [8] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: -250167849,CPManager. Create element for key: fileName. Value: Step5.xml. Target element name: fileName. Display Name: 
+2017-10-23 14:58:13,915 [8] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: Checkpoint 2-2-1. Create element for key: VTD_Type. Value: VTD_byRef. Target element name: VTD_Type. Display Name: 
+2017-10-23 14:58:13,915 [8] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: Checkpoint 2-2-1. Create element for key: VTD_Name. Value: Checkpoint. Target element name: VTD_Name. Display Name: 
+2017-10-23 14:58:13,915 [8] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: Checkpoint 2-2-1. Create element for key: Name. Value: Checkpoint. Target element name: Name. Display Name: 
+2017-10-23 14:58:13,915 [8] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: Checkpoint 2-2-1,DataWraper. Create element for key: VTD_Type. Value: HP.ST.Ext.CheckpointRules.StracturalRule. Target element name: VTD_Type. Display Name: 
+2017-10-23 14:58:13,915 [8] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: Checkpoint 2-2-1,DataWraper. Create element for key: VTD_Name. Value: Checkpoint 2. Target element name: VTD_Name. Display Name: 
+2017-10-23 14:58:13,915 [8] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: Checkpoint 2-2-1,DataWraper. Create element for key: VTD_Operation. Value: Structural Validation. Target element name: VTD_Operation. Display Name: 
+2017-10-23 14:58:13,915 [8] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: Checkpoint 2-2-1,DataWraper. Create element for key: VTD_Status. Value: Success. Target element name: VTD_Status. Display Name: 
+2017-10-23 14:58:13,915 [14] INFO  HP.ST.Fwk.RunTimeFWK.STActivityBase [(null)] - StServiceCallActivity5 is leaving Execute() method
+2017-10-23 14:58:13,917 [14] DEBUG HP.ST.Fwk.RunTimeFWK.STActivityBase [(null)] - Sequence12, GetDataFromInDirections() succeed
+2017-10-23 14:58:13,917 [3] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: -250167849. Create element for key: VTD_Type. Value: HP.ST.Ext.WebServicesActivities.StServiceCallActivity. Target element name: VTD_Type. Display Name: Type
+2017-10-23 14:58:13,917 [3] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: -250167849. Create element for key: VTD_Name. Value: StServiceCallActivity5. Target element name: VTD_Name. Display Name: Step ID
+2017-10-23 14:58:13,917 [3] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: -250167849. Create element for key: IconPath. Value: AddIns\ServiceTest\WSImportTechnology\ictb_service_operations_16.png. Target element name: IconPath. Display Name: 
+2017-10-23 14:58:13,918 [3] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: -250167849. Create element for key: DataMapping. Value: . Target element name: DataMapping. Display Name: 
+2017-10-23 14:58:13,918 [3] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: -250167849. Create element for key: StartTime. Value: 10/23/2017 2:58:13 PM. Target element name: StartTime. Display Name: 
+2017-10-23 14:58:13,918 [3] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: -250167849. Create element for key: InputXml. Value: <Envelope xmlns="http://schemas.xmlsoap.org/soap/envelope/"><Body><getMemberDetail xmlns="http://hp.com/SOAQ/ServiceSimulation/2010/demo/01"><memberId>1</memberId></getMemberDetail></Body></Envelope>. Target element name: InputXml. Display Name: 
+2017-10-23 14:58:13,918 [3] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: -250167849. Create element for key: Service. Value: MemberAccounts. Target element name: Service. Display Name: Service
+2017-10-23 14:58:13,918 [3] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: -250167849. Create element for key: Port. Value: BasicHttpBinding_IMemberAccounts. Target element name: Port. Display Name: Port
+2017-10-23 14:58:13,918 [3] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: -250167849. Create element for key: Operation. Value: getMemberDetail. Target element name: Operation. Display Name: Operation
+2017-10-23 14:58:13,918 [3] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: -250167849. Create element for key: Address. Value: http://dockerclient:7200/MemberAccounts. Target element name: Address. Display Name: Address
+2017-10-23 14:58:13,918 [3] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: -250167849. Create element for key: SOAPAction. Value: http://hp.com/SOAQ/ServiceSimulation/2010/demo/01/IMemberAccounts/getMemberDetail. Target element name: SOAPAction. Display Name: SOAPAction
+2017-10-23 14:58:13,918 [3] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: -250167849. Create element for key: ContentType. Value: text/xml; charset=utf-8. Target element name: ContentType. Display Name: ContentType
+2017-10-23 14:58:13,918 [3] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: -250167849. Create element for key: MessageExchangePattern. Value: Request Response. Target element name: MessageExchangePattern. Display Name: MessageExchangePattern
+2017-10-23 14:58:13,918 [3] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: -250167849. Create element for key: Full request. Value: <Envelope xmlns="http://schemas.xmlsoap.org/soap/envelope/">
+  <Body>
+    <getMemberDetail xmlns="http://hp.com/SOAQ/ServiceSimulation/2010/demo/01">
+      <memberId>1</memberId>
+    </getMemberDetail>
+  </Body>
+</Envelope>. Target element name: Full_request. Display Name: Full request
+2017-10-23 14:58:13,918 [3] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: -250167849. Create element for key: InputHeader. Value: SOAPAction:	http://hp.com/SOAQ/ServiceSimulation/2010/demo/01/IMemberAccounts/getMemberDetail
+Content-Type:	text/xml; charset=utf-8
+Host:	dockerclient:7200
+Content-Length:	199
+Expect:	100-continue
+Connection:	Close
+. Target element name: InputHeader. Display Name: InputHeader
+2017-10-23 14:58:13,918 [3] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: -250167849. Create element for key: OutputHeader. Value: Connection:	close
+Content-Length:	1184
+Content-Type:	text/xml; charset=utf-8
+Date:	Mon, 23 Oct 2017 19:58:13 GMT
+Server:	Microsoft-HTTPAPI/2.0
+. Target element name: OutputHeader. Display Name: OutputHeader
+2017-10-23 14:58:13,918 [3] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: -250167849. Create element for key: OutputText. Value: <?xml version="1.0" encoding="utf-8"?><s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"><s:Body><getMemberDetailResponse xmlns:s="http://schemas.xmlsoap.org/soap/envelope/" xmlns="http://hp.com/SOAQ/ServiceSimulation/2010/demo/01"><getMemberDetailResult xmlns:a="http://schemas.datacontract.org/2004/07/HP.SOAQ.ServiceSimulation.Demo" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><a:address><a:city>Smithfield London W1</a:city><a:country>Great Britain</a:country><a:endDate>0001-01-01T00:00:00</a:endDate><a:line1>56B Whitehaven Mansions</a:line1><a:line2>Charterhouse Square</a:line2><a:startDate>0001-01-01T00:00:00</a:startDate><a:state>England</a:state><a:zip i:nil="true" /></a:address><a:householdId>0</a:householdId><a:memberId>1</a:memberId><a:person><a:dateOfBirth>1876-04-01T00:00:00</a:dateOfBirth><a:gender>MALE</a:gender><a:name><a:firstName>Hercule</a:firstName><a:lastName>Poirot</a:lastName><a:middleName i:nil="true" /><a:prefix i:nil="true" /><a:suffix i:nil="true" /></a:name><a:socialSecurityNumber>554-98-0001</a:socialSecurityNumber></a:person><a:phone i:nil="true" /></getMemberDetailResult></getMemberDetailResponse></s:Body></s:Envelope>. Target element name: OutputText. Display Name: OutputText
+2017-10-23 14:58:13,918 [3] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: -250167849. Create element for key: HttpStatusCode. Value: 200 : OK. Target element name: HttpStatusCode. Display Name: HttpStatusCode
+2017-10-23 14:58:13,918 [3] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: -250167849. Create element for key: OutputXml. Value: <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"><s:Body><getMemberDetailResponse xmlns:s="http://schemas.xmlsoap.org/soap/envelope/" xmlns="http://hp.com/SOAQ/ServiceSimulation/2010/demo/01"><getMemberDetailResult xmlns:a="http://schemas.datacontract.org/2004/07/HP.SOAQ.ServiceSimulation.Demo" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><a:address><a:city>Smithfield London W1</a:city><a:country>Great Britain</a:country><a:endDate>0001-01-01T00:00:00</a:endDate><a:line1>56B Whitehaven Mansions</a:line1><a:line2>Charterhouse Square</a:line2><a:startDate>0001-01-01T00:00:00</a:startDate><a:state>England</a:state><a:zip i:nil="true" /></a:address><a:householdId>0</a:householdId><a:memberId>1</a:memberId><a:person><a:dateOfBirth>1876-04-01T00:00:00</a:dateOfBirth><a:gender>MALE</a:gender><a:name><a:firstName>Hercule</a:firstName><a:lastName>Poirot</a:lastName><a:middleName i:nil="true" /><a:prefix i:nil="true" /><a:suffix i:nil="true" /></a:name><a:socialSecurityNumber>554-98-0001</a:socialSecurityNumber></a:person><a:phone i:nil="true" /></getMemberDetailResult></getMemberDetailResponse></s:Body></s:Envelope>. Target element name: OutputXml. Display Name: OutputXml
+2017-10-23 14:58:13,918 [3] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: -250167849. Create element for key: VTD_Message. Value: Web service call performed successfully. Target element name: VTD_Message. Display Name: Message
+2017-10-23 14:58:13,918 [14] INFO  HP.ST.Fwk.RunTimeFWK.STActivityBase [(null)] - Sequence12 is leaving Execute() method
+2017-10-23 14:58:13,918 [3] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: -250167849. Create element for key: Name. Value: 'getMemberDetail'. Target element name: Name. Display Name: Name
+2017-10-23 14:58:13,918 [3] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: -250167849. Create element for key: Comment. Value: ''. Target element name: Comment. Display Name: Comment
+2017-10-23 14:58:13,918 [3] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: -250167849. Create element for key: VTD_Status. Value: Done. Target element name: VTD_Status. Display Name: Status
+2017-10-23 14:58:13,918 [3] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: -250167849. Create element for key: fileName. Value: Step6.xml. Target element name: fileName. Display Name: 
+2017-10-23 14:58:13,919 [14] INFO  HP.ST.Fwk.RunTimeFWK.STActivityBase [(null)] - DataCursorActivity17 is entering Execute() method
+2017-10-23 14:58:13,919 [8] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: -293888023. Create element for key: VTD_Type. Value: HP.ST.Fwk.RunTimeFWK.CompositeActivities.Sequence. Target element name: VTD_Type. Display Name: Type
+2017-10-23 14:58:13,920 [8] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: -293888023. Create element for key: VTD_Name. Value: Sequence12. Target element name: VTD_Name. Display Name: Step ID
+2017-10-23 14:58:13,920 [8] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: -293888023. Create element for key: IconPath. Value: . Target element name: IconPath. Display Name: 
+2017-10-23 14:58:13,920 [8] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: -293888023. Create element for key: StartTime. Value: 10/23/2017 2:58:13 PM. Target element name: StartTime. Display Name: 
+2017-10-23 14:58:13,920 [8] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: -293888023. Create element for key: DataMapping. Value: . Target element name: DataMapping. Display Name: 
+2017-10-23 14:58:13,920 [8] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: -293888023. Create element for key: EndTime. Value: 10/23/2017 2:58:13 PM. Target element name: EndTime. Display Name: 
+2017-10-23 14:58:13,920 [8] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: -293888023. Create element for key: Metadata_IsTestFlowIterration. Value: True. Target element name: Metadata_IsTestFlowIterration. Display Name: 
+2017-10-23 14:58:13,920 [8] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: -293888023. Create element for key: Name. Value: 'Iteration 1'. Target element name: Name. Display Name: Name
+2017-10-23 14:58:13,920 [8] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: -293888023. Create element for key: Comment. Value: ''. Target element name: Comment. Display Name: Comment
+2017-10-23 14:58:13,920 [8] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: -293888023. Create element for key: VTD_Status. Value: Done. Target element name: VTD_Status. Display Name: Status
+2017-10-23 14:58:13,920 [8] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: -293888023. Create element for key: fileName. Value: Step7.xml. Target element name: fileName. Display Name: 
+2017-10-23 14:58:13,920 [14] WARN  HP.ST.Fwk.RunTimeFWK.STActivityBase [(null)] - SetInitalValues failed, Param name: InTable  could not be found
+2017-10-23 14:58:13,920 [14] INFO  HP.ST.Fwk.RunTimeFWK.STActivityBase [(null)] - DataCursorActivity17 is trying to get the value of property OutTable from DataFetchActivity13
+2017-10-23 14:58:13,920 [14] INFO  HP.ST.Fwk.RunTimeFWK.STActivityBase [(null)] - Value HP.ST.Ext.BasicActivities.DataFetchActivity received for property OutTable.
+2017-10-23 14:58:13,920 [14] INFO  HP.ST.Fwk.RunTimeFWK.STActivityBase [(null)] - DataCursorActivity17 is trying to set the value: HP.ST.Ext.BasicActivities.DataFetchActivity to property InTable
+2017-10-23 14:58:13,920 [14] DEBUG HP.ST.Fwk.RunTimeFWK.STActivityBase [(null)] - DataCursorActivity17, GetDataFromInDirections() succeed
+2017-10-23 14:58:13,920 [14] INFO  HP.ST.Ext.BasicActivities.DataCursorActivity [(null)] - Moving cursor for '0050e89f-6653-4cec-ab78-e64a5b6f1e81'
+2017-10-23 14:58:13,920 [14] INFO  HP.ST.Ext.BasicActivities.QueryCursor [(null)] - Current index moved to 1
+2017-10-23 14:58:13,920 [14] DEBUG HP.ST.Fwk.RunTimeFWK.STActivityBase [(null)] - DataCursorActivity17, GetDataFromInDirections() succeed
+2017-10-23 14:58:13,921 [14] INFO  HP.ST.Fwk.RunTimeFWK.STActivityBase [(null)] - DataCursorActivity17 is leaving Execute() method
+2017-10-23 14:58:13,921 [14] INFO  HP.ST.Fwk.RunTimeFWK.STActivityBase [(null)] - Sequence12 is entering Execute() method
+2017-10-23 14:58:13,923 [14] DEBUG HP.ST.Fwk.ReporterFWK.Reporter [(null)] - Adding a new node to the report tree
+2017-10-23 14:58:13,923 [14] DEBUG HP.ST.Fwk.ReporterFWK.Reporter [(null)] - StepID=-293887000, ParentID=-1084243033, Time=10/23/2017 14:58:13
+2017-10-23 14:58:13,923 [14] DEBUG HP.ST.Fwk.RunTimeFWK.STActivityBase [(null)] - Sequence12, GetDataFromInDirections() succeed
+2017-10-23 14:58:13,923 [14] INFO  HP.ST.Fwk.RunTimeFWK.STActivityBase [(null)] - StServiceCallActivity7 is entering Execute() method
+2017-10-23 14:58:13,924 [14] DEBUG HP.ST.Fwk.ReporterFWK.Reporter [(null)] - Adding a new node to the report tree
+2017-10-23 14:58:13,924 [14] DEBUG HP.ST.Fwk.ReporterFWK.Reporter [(null)] - StepID=210022494, ParentID=-293887000, Time=10/23/2017 14:58:13
+2017-10-23 14:58:13,925 [14] INFO  HP.ST.Fwk.RunTimeFWK.STActivityBase [(null)] - StServiceCallActivity7 is trying to get the value of property SSN from DataCursorActivity17
+2017-10-23 14:58:13,925 [14] INFO  HP.ST.Fwk.RunTimeFWK.STActivityBase [(null)] - Value 332-10-0002 received for property SSN.
+2017-10-23 14:58:13,925 [14] INFO  HP.ST.Fwk.RunTimeFWK.STActivityBase [(null)] - StServiceCallActivity7 is trying to set the value: 332-10-0002 to property InputEnvelope
+2017-10-23 14:58:13,925 [14] INFO  HP.ST.Ext.BindingImpl.Setters.StringFormaterDecorator [(null)] - Value before formating="{DataSource.Members.SSN}", token="{DataSource.Members.SSN}", token value="332-10-0002"
+2017-10-23 14:58:13,925 [14] INFO  HP.ST.Ext.BindingImpl.Setters.StringFormaterDecorator [(null)] - Value after formating="332-10-0002"
+2017-10-23 14:58:13,925 [14] INFO  HP.ST.Fwk.RunTimeFWK.STActivityBase [(null)] - StServiceCallActivity7 is trying to get the value of property LastName from DataCursorActivity17
+2017-10-23 14:58:13,925 [14] INFO  HP.ST.Fwk.RunTimeFWK.STActivityBase [(null)] - Value Holmes received for property LastName.
+2017-10-23 14:58:13,925 [14] INFO  HP.ST.Fwk.RunTimeFWK.STActivityBase [(null)] - StServiceCallActivity7 is trying to set the value: Holmes to property InputEnvelope
+2017-10-23 14:58:13,925 [14] INFO  HP.ST.Ext.BindingImpl.Setters.StringFormaterDecorator [(null)] - Value before formating="{DataSource.Members.LastName}", token="{DataSource.Members.LastName}", token value="Holmes"
+2017-10-23 14:58:13,925 [14] INFO  HP.ST.Ext.BindingImpl.Setters.StringFormaterDecorator [(null)] - Value after formating="Holmes"
+2017-10-23 14:58:13,925 [14] INFO  HP.ST.Fwk.RunTimeFWK.STActivityBase [(null)] - StServiceCallActivity7 is trying to get the value of property FirstName from DataCursorActivity17
+2017-10-23 14:58:13,925 [14] INFO  HP.ST.Fwk.RunTimeFWK.STActivityBase [(null)] - Value Sherlock received for property FirstName.
+2017-10-23 14:58:13,925 [14] INFO  HP.ST.Fwk.RunTimeFWK.STActivityBase [(null)] - StServiceCallActivity7 is trying to set the value: Sherlock to property InputEnvelope
+2017-10-23 14:58:13,925 [14] INFO  HP.ST.Ext.BindingImpl.Setters.StringFormaterDecorator [(null)] - Value before formating="{DataSource.Members.FirstName}", token="{DataSource.Members.FirstName}", token value="Sherlock"
+2017-10-23 14:58:13,925 [14] INFO  HP.ST.Ext.BindingImpl.Setters.StringFormaterDecorator [(null)] - Value after formating="Sherlock"
+2017-10-23 14:58:13,926 [14] DEBUG HP.ST.Fwk.RunTimeFWK.STActivityBase [(null)] - StServiceCallActivity7, GetDataFromInDirections() succeed
+2017-10-23 14:58:13,926 [14] INFO  HP.ST.Ext.WebServicesActivities.StServiceCallActivity [(null)] - Operation input:
+<Envelope xmlns="http://schemas.xmlsoap.org/soap/envelope/" xmlns:p1="http://www.w3.org/2001/XMLSchema-instance">
+  <Body>
+    <memberSearch xmlns="http://hp.com/SOAQ/ServiceSimulation/2010/demo/01">
+      <name>
+        <firstName xmlns="http://schemas.datacontract.org/2004/07/HP.SOAQ.ServiceSimulation.Demo">Sherlock</firstName>
+        <lastName xmlns="http://schemas.datacontract.org/2004/07/HP.SOAQ.ServiceSimulation.Demo">Holmes</lastName>
+      </name>
+      <socialSecurityNumber>332-10-0002</socialSecurityNumber>
+    </memberSearch>
+  </Body>
+</Envelope>
+2017-10-23 14:58:13,928 [14] INFO  HP.ST.Ext.WebServicesActivities.StServiceCallActivity [(null)] - Endpoint URL: http://dockerclient:7200/MemberAccounts
+2017-10-23 14:58:13,928 [14] INFO  HP.ST.Ext.WebServicesActivities.StServiceCallActivity [(null)] - Setting request HTTP headers
+2017-10-23 14:58:13,928 [14] INFO  HP.ST.Ext.WebServicesActivities.StServiceCallActivity [(null)] - 'SOAPAction' HTTP Header: http://hp.com/SOAQ/ServiceSimulation/2010/demo/01/IMemberAccounts/memberSearch
+2017-10-23 14:58:13,928 [14] INFO  HP.ST.Ext.WebServicesActivities.StServiceCallActivity [(null)] - 'Content-Type' HTTP Header: text/xml; charset=utf-8
+2017-10-23 14:58:13,928 [14] INFO  HP.ST.Ext.WebServicesActivities.StServiceCallActivity [(null)] - HTTP method: POST
+2017-10-23 14:58:13,928 [14] INFO  HP.ST.Ext.CommunicationChannels.Channels.ChannelPipelineFactory [(null)] - Creating channel pipeline...
+2017-10-23 14:58:13,928 [14] INFO  HP.ST.Ext.CommunicationChannels.Models.HttpChannelBinding [(null)] - Creating HTTP Channel
+2017-10-23 14:58:13,928 [14] INFO  HP.ST.Ext.CommunicationChannels.ConcreteChannels.HttpChannel [(null)] - Creating HTTP Channel
+2017-10-23 14:58:13,928 [14] INFO  HP.ST.Ext.CommunicationChannels.Channels.ChannelPipelineFactory [(null)] - 'HP.ST.Ext.CommunicationChannels.ConcreteChannels.HttpChannel' channel created
+2017-10-23 14:58:13,928 [14] INFO  HP.ST.Ext.CommunicationChannels.Channels.ChannelPipelineFactory [(null)] - 'HP.ST.Ext.CommunicationChannels.ConcreteChannels.EncodingChannel' channel created
+2017-10-23 14:58:13,928 [14] INFO  HP.ST.Ext.WebServicesActivities.StServiceCallActivity [(null)] - Sending the message through the 'HP.ST.Ext.CommunicationChannels.ConcreteChannels.EncodingChannel' channel
+2017-10-23 14:58:13,931 [14] INFO  HP.ST.Ext.CommunicationChannels.ConcreteChannels.HttpChannel [(null)] - HTTP Channel is processing the message
+2017-10-23 14:58:13,931 [14] INFO  HP.ST.Ext.CommunicationChannels.ConcreteChannels.HttpChannel [(null)] - URL: http://dockerclient:7200/MemberAccounts
+2017-10-23 14:58:14,147 [14] INFO  HP.ST.Ext.WebServicesActivities.StServiceCallActivity [(null)] - Operation raw output: <?xml version="1.0" encoding="utf-8"?><s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"><s:Body><memberSearchResponse xmlns:s="http://schemas.xmlsoap.org/soap/envelope/" xmlns="http://hp.com/SOAQ/ServiceSimulation/2010/demo/01"><memberSearchResult xmlns:a="http://schemas.datacontract.org/2004/07/HP.SOAQ.ServiceSimulation.Demo" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><a:Member><a:householdId>0</a:householdId><a:memberId>2</a:memberId><a:socialSecurityNumber>332-10-0002</a:socialSecurityNumber></a:Member></memberSearchResult></memberSearchResponse></s:Body></s:Envelope>
+2017-10-23 14:58:14,147 [14] INFO  HP.ST.Ext.WebServicesActivities.StServiceCallActivity [(null)] - Operation output:
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Body>
+    <memberSearchResponse xmlns:s="http://schemas.xmlsoap.org/soap/envelope/" xmlns="http://hp.com/SOAQ/ServiceSimulation/2010/demo/01">
+      <memberSearchResult xmlns:a="http://schemas.datacontract.org/2004/07/HP.SOAQ.ServiceSimulation.Demo" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+        <a:Member>
+          <a:householdId>0</a:householdId>
+          <a:memberId>2</a:memberId>
+          <a:socialSecurityNumber>332-10-0002</a:socialSecurityNumber>
+        </a:Member>
+      </memberSearchResult>
+    </memberSearchResponse>
+  </s:Body>
+</s:Envelope>
+2017-10-23 14:58:14,148 [14] DEBUG HP.ST.Fwk.RunTimeFWK.STActivityBase [(null)] - StServiceCallActivity7, GetDataFromInDirections() succeed
+2017-10-23 14:58:14,148 [14] INFO  HP.ST.Fwk.RunTimeFWK.CheckpointFWK.BaseCPRule [(null)] - value from getter= System.Xml.XmlElement
+2017-10-23 14:58:14,148 [14] DEBUG HP.ST.Fwk.RunTimeFWK.CheckpointFWK.BaseCPRule [(null)] - Cant get directory path
+2017-10-23 14:58:14,149 [14] DEBUG HP.ST.Shared.XmlGridModel.ValidationUtils [(null)] - Validating XML: 
+ <?xml version="1.0" encoding="utf-8"?><s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"><s:Body><memberSearchResponse xmlns:s="http://schemas.xmlsoap.org/soap/envelope/" xmlns="http://hp.com/SOAQ/ServiceSimulation/2010/demo/01"><memberSearchResult xmlns:a="http://schemas.datacontract.org/2004/07/HP.SOAQ.ServiceSimulation.Demo" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><a:Member><a:householdId>0</a:householdId><a:memberId>2</a:memberId><a:socialSecurityNumber>332-10-0002</a:socialSecurityNumber></a:Member></memberSearchResult></memberSearchResponse></s:Body></s:Envelope>
+2017-10-23 14:58:14,150 [14] DEBUG HP.ST.Fwk.ReporterFWK.Reporter [(null)] - Adding a new node to the report tree
+2017-10-23 14:58:14,150 [14] DEBUG HP.ST.Fwk.ReporterFWK.Reporter [(null)] - StepID=210022494,CPManager, ParentID=210022494, Time=10/23/2017 14:58:14
+2017-10-23 14:58:14,150 [14] DEBUG HP.ST.Fwk.ReporterFWK.Reporter [(null)] - Adding a new node to the report tree
+2017-10-23 14:58:14,150 [14] DEBUG HP.ST.Fwk.ReporterFWK.Reporter [(null)] - StepID=Checkpoint 0-0-2, ParentID=210022494,CPManager, Time=10/23/2017 14:58:14
+2017-10-23 14:58:14,150 [14] DEBUG HP.ST.Fwk.ReporterFWK.Reporter [(null)] - Adding a new node to the report tree
+2017-10-23 14:58:14,150 [14] DEBUG HP.ST.Fwk.ReporterFWK.Reporter [(null)] - StepID=Checkpoint 0-0-2,DataWraper, ParentID=Checkpoint 0-0-2, Time=10/23/2017 14:58:14
+2017-10-23 14:58:14,150 [14] ERROR HP.ST.Fwk.RunTimeFWK.CheckpointFWK.ReportImpl [(null)] - Failed to log checkpoint status:
+2017-10-23 14:58:14,150 [14] ERROR HP.ST.Fwk.RunTimeFWK.CheckpointFWK.ReportImpl [(null)] - System.Collections.Generic.KeyNotFoundException: The given key was not present in the dictionary.
+   at System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   at HP.ST.Fwk.RunTimeFWK.CheckpointFWK.ReportImpl.WriteCPToLog(Dictionary`2 reportData, ILog log)
+   at HP.ST.Fwk.RunTimeFWK.CheckpointFWK.ReportImpl.ReportToInternalLog(ISTRunTimeContext context, Dictionary`2 reportData)
+2017-10-23 14:58:14,150 [3] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: 210022494,CPManager. Create element for key: VTD_Name. Value: Checkpoints. Target element name: VTD_Name. Display Name: 
+2017-10-23 14:58:14,150 [3] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: 210022494,CPManager. Create element for key: Name. Value: Checkpoints. Target element name: Name. Display Name: 
+2017-10-23 14:58:14,150 [3] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: 210022494,CPManager. Create element for key: VTD_Type. Value: HP.ST.Fwk.RunTimeFWK.CPManager. Target element name: VTD_Type. Display Name: 
+2017-10-23 14:58:14,150 [3] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: 210022494,CPManager. Create element for key: VTD_Status. Value: Success. Target element name: VTD_Status. Display Name: 
+2017-10-23 14:58:14,150 [3] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: 210022494,CPManager. Create element for key: fileName. Value: Step8.xml. Target element name: fileName. Display Name: 
+2017-10-23 14:58:14,150 [3] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: Checkpoint 0-0-2. Create element for key: VTD_Type. Value: VTD_byRef. Target element name: VTD_Type. Display Name: 
+2017-10-23 14:58:14,150 [3] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: Checkpoint 0-0-2. Create element for key: VTD_Name. Value: Checkpoint. Target element name: VTD_Name. Display Name: 
+2017-10-23 14:58:14,151 [3] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: Checkpoint 0-0-2. Create element for key: Name. Value: Checkpoint. Target element name: Name. Display Name: 
+2017-10-23 14:58:14,151 [3] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: Checkpoint 0-0-2,DataWraper. Create element for key: VTD_Type. Value: HP.ST.Ext.CheckpointRules.StracturalRule. Target element name: VTD_Type. Display Name: 
+2017-10-23 14:58:14,151 [3] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: Checkpoint 0-0-2,DataWraper. Create element for key: VTD_Name. Value: Checkpoint 0. Target element name: VTD_Name. Display Name: 
+2017-10-23 14:58:14,151 [3] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: Checkpoint 0-0-2,DataWraper. Create element for key: VTD_Operation. Value: Structural Validation. Target element name: VTD_Operation. Display Name: 
+2017-10-23 14:58:14,151 [3] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: Checkpoint 0-0-2,DataWraper. Create element for key: VTD_Status. Value: Success. Target element name: VTD_Status. Display Name: 
+2017-10-23 14:58:14,151 [14] INFO  HP.ST.Fwk.RunTimeFWK.STActivityBase [(null)] - StServiceCallActivity7 is leaving Execute() method
+2017-10-23 14:58:14,151 [14] INFO  HP.ST.Fwk.RunTimeFWK.STActivityBase [(null)] - StServiceCallActivity6 is entering Execute() method
+2017-10-23 14:58:14,151 [3] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: 210022494. Create element for key: VTD_Type. Value: HP.ST.Ext.WebServicesActivities.StServiceCallActivity. Target element name: VTD_Type. Display Name: Type
+2017-10-23 14:58:14,151 [3] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: 210022494. Create element for key: VTD_Name. Value: StServiceCallActivity7. Target element name: VTD_Name. Display Name: Step ID
+2017-10-23 14:58:14,151 [3] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: 210022494. Create element for key: IconPath. Value: AddIns\ServiceTest\WSImportTechnology\ictb_service_operations_16.png. Target element name: IconPath. Display Name: 
+2017-10-23 14:58:14,151 [3] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: 210022494. Create element for key: DataMapping. Value: Members/2. Target element name: DataMapping. Display Name: 
+2017-10-23 14:58:14,151 [3] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: 210022494. Create element for key: StartTime. Value: 10/23/2017 2:58:13 PM. Target element name: StartTime. Display Name: 
+2017-10-23 14:58:14,151 [3] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: 210022494. Create element for key: InputXml. Value: <Envelope xmlns="http://schemas.xmlsoap.org/soap/envelope/" xmlns:p1="http://www.w3.org/2001/XMLSchema-instance"><Body><memberSearch xmlns="http://hp.com/SOAQ/ServiceSimulation/2010/demo/01"><name><firstName xmlns="http://schemas.datacontract.org/2004/07/HP.SOAQ.ServiceSimulation.Demo">Sherlock</firstName><lastName xmlns="http://schemas.datacontract.org/2004/07/HP.SOAQ.ServiceSimulation.Demo">Holmes</lastName></name><socialSecurityNumber>332-10-0002</socialSecurityNumber></memberSearch></Body></Envelope>. Target element name: InputXml. Display Name: 
+2017-10-23 14:58:14,151 [3] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: 210022494. Create element for key: Service. Value: MemberAccounts. Target element name: Service. Display Name: Service
+2017-10-23 14:58:14,151 [3] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: 210022494. Create element for key: Port. Value: BasicHttpBinding_IMemberAccounts. Target element name: Port. Display Name: Port
+2017-10-23 14:58:14,151 [3] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: 210022494. Create element for key: Operation. Value: memberSearch. Target element name: Operation. Display Name: Operation
+2017-10-23 14:58:14,151 [3] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: 210022494. Create element for key: Address. Value: http://dockerclient:7200/MemberAccounts. Target element name: Address. Display Name: Address
+2017-10-23 14:58:14,151 [3] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: 210022494. Create element for key: SOAPAction. Value: http://hp.com/SOAQ/ServiceSimulation/2010/demo/01/IMemberAccounts/memberSearch. Target element name: SOAPAction. Display Name: SOAPAction
+2017-10-23 14:58:14,152 [3] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: 210022494. Create element for key: ContentType. Value: text/xml; charset=utf-8. Target element name: ContentType. Display Name: ContentType
+2017-10-23 14:58:14,152 [3] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: 210022494. Create element for key: MessageExchangePattern. Value: Request Response. Target element name: MessageExchangePattern. Display Name: MessageExchangePattern
+2017-10-23 14:58:14,152 [3] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: 210022494. Create element for key: Full request. Value: <Envelope xmlns="http://schemas.xmlsoap.org/soap/envelope/" xmlns:p1="http://www.w3.org/2001/XMLSchema-instance">
+  <Body>
+    <memberSearch xmlns="http://hp.com/SOAQ/ServiceSimulation/2010/demo/01">
+      <name>
+        <firstName xmlns="http://schemas.datacontract.org/2004/07/HP.SOAQ.ServiceSimulation.Demo">Sherlock</firstName>
+        <lastName xmlns="http://schemas.datacontract.org/2004/07/HP.SOAQ.ServiceSimulation.Demo">Holmes</lastName>
+      </name>
+      <socialSecurityNumber>332-10-0002</socialSecurityNumber>
+    </memberSearch>
+  </Body>
+</Envelope>. Target element name: Full_request. Display Name: Full request
+2017-10-23 14:58:14,152 [3] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: 210022494. Create element for key: InputHeader. Value: SOAPAction:	http://hp.com/SOAQ/ServiceSimulation/2010/demo/01/IMemberAccounts/memberSearch
+Content-Type:	text/xml; charset=utf-8
+Host:	dockerclient:7200
+Content-Length:	509
+Expect:	100-continue
+Connection:	Close
+. Target element name: InputHeader. Display Name: InputHeader
+2017-10-23 14:58:14,152 [3] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: 210022494. Create element for key: OutputHeader. Value: Connection:	close
+Content-Length:	600
+Content-Type:	text/xml; charset=utf-8
+Date:	Mon, 23 Oct 2017 19:58:14 GMT
+Server:	Microsoft-HTTPAPI/2.0
+. Target element name: OutputHeader. Display Name: OutputHeader
+2017-10-23 14:58:14,152 [3] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: 210022494. Create element for key: OutputText. Value: <?xml version="1.0" encoding="utf-8"?><s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"><s:Body><memberSearchResponse xmlns:s="http://schemas.xmlsoap.org/soap/envelope/" xmlns="http://hp.com/SOAQ/ServiceSimulation/2010/demo/01"><memberSearchResult xmlns:a="http://schemas.datacontract.org/2004/07/HP.SOAQ.ServiceSimulation.Demo" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><a:Member><a:householdId>0</a:householdId><a:memberId>2</a:memberId><a:socialSecurityNumber>332-10-0002</a:socialSecurityNumber></a:Member></memberSearchResult></memberSearchResponse></s:Body></s:Envelope>. Target element name: OutputText. Display Name: OutputText
+2017-10-23 14:58:14,152 [3] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: 210022494. Create element for key: HttpStatusCode. Value: 200 : OK. Target element name: HttpStatusCode. Display Name: HttpStatusCode
+2017-10-23 14:58:14,152 [3] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: 210022494. Create element for key: OutputXml. Value: <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"><s:Body><memberSearchResponse xmlns:s="http://schemas.xmlsoap.org/soap/envelope/" xmlns="http://hp.com/SOAQ/ServiceSimulation/2010/demo/01"><memberSearchResult xmlns:a="http://schemas.datacontract.org/2004/07/HP.SOAQ.ServiceSimulation.Demo" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><a:Member><a:householdId>0</a:householdId><a:memberId>2</a:memberId><a:socialSecurityNumber>332-10-0002</a:socialSecurityNumber></a:Member></memberSearchResult></memberSearchResponse></s:Body></s:Envelope>. Target element name: OutputXml. Display Name: OutputXml
+2017-10-23 14:58:14,152 [3] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: 210022494. Create element for key: VTD_Message. Value: Web service call performed successfully. Target element name: VTD_Message. Display Name: Message
+2017-10-23 14:58:14,152 [3] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: 210022494. Create element for key: Name. Value: 'memberSearch'. Target element name: Name. Display Name: Name
+2017-10-23 14:58:14,152 [3] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: 210022494. Create element for key: Comment. Value: ''. Target element name: Comment. Display Name: Comment
+2017-10-23 14:58:14,152 [3] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: 210022494. Create element for key: VTD_Status. Value: Done. Target element name: VTD_Status. Display Name: Status
+2017-10-23 14:58:14,152 [3] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: 210022494. Create element for key: fileName. Value: Step9.xml. Target element name: fileName. Display Name: 
+2017-10-23 14:58:14,153 [14] DEBUG HP.ST.Fwk.ReporterFWK.Reporter [(null)] - Adding a new node to the report tree
+2017-10-23 14:58:14,153 [14] DEBUG HP.ST.Fwk.ReporterFWK.Reporter [(null)] - StepID=168681598, ParentID=-293887000, Time=10/23/2017 14:58:14
+2017-10-23 14:58:14,153 [14] INFO  HP.ST.Fwk.RunTimeFWK.STActivityBase [(null)] - StServiceCallActivity6 is trying to get the value of property OutputEnvelope from StServiceCallActivity7
+2017-10-23 14:58:14,153 [14] INFO  HP.ST.Fwk.RunTimeFWK.STActivityBase [(null)] - Value 2 received for property OutputEnvelope.
+2017-10-23 14:58:14,153 [14] INFO  HP.ST.Fwk.RunTimeFWK.STActivityBase [(null)] - StServiceCallActivity6 is trying to set the value: 2 to property InputEnvelope
+2017-10-23 14:58:14,154 [14] DEBUG HP.ST.Fwk.RunTimeFWK.STActivityBase [(null)] - StServiceCallActivity6, GetDataFromInDirections() succeed
+2017-10-23 14:58:14,154 [14] INFO  HP.ST.Ext.WebServicesActivities.StServiceCallActivity [(null)] - Operation input:
+<Envelope xmlns="http://schemas.xmlsoap.org/soap/envelope/">
+  <Body>
+    <getMemberPlan xmlns="http://hp.com/SOAQ/ServiceSimulation/2010/demo/01">
+      <memberId>2</memberId>
+    </getMemberPlan>
+  </Body>
+</Envelope>
+2017-10-23 14:58:14,155 [14] INFO  HP.ST.Ext.WebServicesActivities.StServiceCallActivity [(null)] - Endpoint URL: http://dockerclient:7200/MemberAccounts
+2017-10-23 14:58:14,155 [14] INFO  HP.ST.Ext.WebServicesActivities.StServiceCallActivity [(null)] - Setting request HTTP headers
+2017-10-23 14:58:14,155 [14] INFO  HP.ST.Ext.WebServicesActivities.StServiceCallActivity [(null)] - 'SOAPAction' HTTP Header: http://hp.com/SOAQ/ServiceSimulation/2010/demo/01/IMemberAccounts/getMemberPlan
+2017-10-23 14:58:14,155 [14] INFO  HP.ST.Ext.WebServicesActivities.StServiceCallActivity [(null)] - 'Content-Type' HTTP Header: text/xml; charset=utf-8
+2017-10-23 14:58:14,155 [14] INFO  HP.ST.Ext.WebServicesActivities.StServiceCallActivity [(null)] - HTTP method: POST
+2017-10-23 14:58:14,155 [14] INFO  HP.ST.Ext.CommunicationChannels.Channels.ChannelPipelineFactory [(null)] - Creating channel pipeline...
+2017-10-23 14:58:14,155 [14] INFO  HP.ST.Ext.CommunicationChannels.Models.HttpChannelBinding [(null)] - Creating HTTP Channel
+2017-10-23 14:58:14,155 [14] INFO  HP.ST.Ext.CommunicationChannels.ConcreteChannels.HttpChannel [(null)] - Creating HTTP Channel
+2017-10-23 14:58:14,155 [14] INFO  HP.ST.Ext.CommunicationChannels.Channels.ChannelPipelineFactory [(null)] - 'HP.ST.Ext.CommunicationChannels.ConcreteChannels.HttpChannel' channel created
+2017-10-23 14:58:14,155 [14] INFO  HP.ST.Ext.CommunicationChannels.Channels.ChannelPipelineFactory [(null)] - 'HP.ST.Ext.CommunicationChannels.ConcreteChannels.EncodingChannel' channel created
+2017-10-23 14:58:14,155 [14] INFO  HP.ST.Ext.WebServicesActivities.StServiceCallActivity [(null)] - Sending the message through the 'HP.ST.Ext.CommunicationChannels.ConcreteChannels.EncodingChannel' channel
+2017-10-23 14:58:14,157 [14] INFO  HP.ST.Ext.CommunicationChannels.ConcreteChannels.HttpChannel [(null)] - HTTP Channel is processing the message
+2017-10-23 14:58:14,157 [14] INFO  HP.ST.Ext.CommunicationChannels.ConcreteChannels.HttpChannel [(null)] - URL: http://dockerclient:7200/MemberAccounts
+2017-10-23 14:58:14,352 [14] INFO  HP.ST.Ext.WebServicesActivities.StServiceCallActivity [(null)] - Operation raw output: <?xml version="1.0" encoding="utf-8"?><s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"><s:Body><getMemberPlanResponse xmlns:s="http://schemas.xmlsoap.org/soap/envelope/" xmlns="http://hp.com/SOAQ/ServiceSimulation/2010/demo/01"><getMemberPlanResult xmlns:a="http://schemas.datacontract.org/2004/07/HP.SOAQ.ServiceSimulation.Demo" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><a:approvalLimit>500</a:approvalLimit><a:id>2</a:id><a:name>Allpay Select 500</a:name></getMemberPlanResult></getMemberPlanResponse></s:Body></s:Envelope>
+2017-10-23 14:58:14,352 [14] INFO  HP.ST.Ext.WebServicesActivities.StServiceCallActivity [(null)] - Operation output:
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Body>
+    <getMemberPlanResponse xmlns:s="http://schemas.xmlsoap.org/soap/envelope/" xmlns="http://hp.com/SOAQ/ServiceSimulation/2010/demo/01">
+      <getMemberPlanResult xmlns:a="http://schemas.datacontract.org/2004/07/HP.SOAQ.ServiceSimulation.Demo" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+        <a:approvalLimit>500</a:approvalLimit>
+        <a:id>2</a:id>
+        <a:name>Allpay Select 500</a:name>
+      </getMemberPlanResult>
+    </getMemberPlanResponse>
+  </s:Body>
+</s:Envelope>
+2017-10-23 14:58:14,353 [14] DEBUG HP.ST.Fwk.RunTimeFWK.STActivityBase [(null)] - StServiceCallActivity6, GetDataFromInDirections() succeed
+2017-10-23 14:58:14,353 [14] INFO  HP.ST.Fwk.RunTimeFWK.CheckpointFWK.BaseCPRule [(null)] - value from getter= System.Xml.XmlElement
+2017-10-23 14:58:14,353 [14] DEBUG HP.ST.Fwk.RunTimeFWK.CheckpointFWK.BaseCPRule [(null)] - Cant get directory path
+2017-10-23 14:58:14,355 [14] DEBUG HP.ST.Shared.XmlGridModel.ValidationUtils [(null)] - Validating XML: 
+ <?xml version="1.0" encoding="utf-8"?><s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"><s:Body><getMemberPlanResponse xmlns:s="http://schemas.xmlsoap.org/soap/envelope/" xmlns="http://hp.com/SOAQ/ServiceSimulation/2010/demo/01"><getMemberPlanResult xmlns:a="http://schemas.datacontract.org/2004/07/HP.SOAQ.ServiceSimulation.Demo" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><a:approvalLimit>500</a:approvalLimit><a:id>2</a:id><a:name>Allpay Select 500</a:name></getMemberPlanResult></getMemberPlanResponse></s:Body></s:Envelope>
+2017-10-23 14:58:14,355 [14] DEBUG HP.ST.Fwk.ReporterFWK.Reporter [(null)] - Adding a new node to the report tree
+2017-10-23 14:58:14,356 [14] DEBUG HP.ST.Fwk.ReporterFWK.Reporter [(null)] - StepID=168681598,CPManager, ParentID=168681598, Time=10/23/2017 14:58:14
+2017-10-23 14:58:14,356 [14] DEBUG HP.ST.Fwk.ReporterFWK.Reporter [(null)] - Adding a new node to the report tree
+2017-10-23 14:58:14,356 [14] DEBUG HP.ST.Fwk.ReporterFWK.Reporter [(null)] - StepID=Checkpoint 1-1-2, ParentID=168681598,CPManager, Time=10/23/2017 14:58:14
+2017-10-23 14:58:14,356 [14] DEBUG HP.ST.Fwk.ReporterFWK.Reporter [(null)] - Adding a new node to the report tree
+2017-10-23 14:58:14,356 [14] DEBUG HP.ST.Fwk.ReporterFWK.Reporter [(null)] - StepID=Checkpoint 1-1-2,DataWraper, ParentID=Checkpoint 1-1-2, Time=10/23/2017 14:58:14
+2017-10-23 14:58:14,356 [14] ERROR HP.ST.Fwk.RunTimeFWK.CheckpointFWK.ReportImpl [(null)] - Failed to log checkpoint status:
+2017-10-23 14:58:14,356 [14] ERROR HP.ST.Fwk.RunTimeFWK.CheckpointFWK.ReportImpl [(null)] - System.Collections.Generic.KeyNotFoundException: The given key was not present in the dictionary.
+   at System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   at HP.ST.Fwk.RunTimeFWK.CheckpointFWK.ReportImpl.WriteCPToLog(Dictionary`2 reportData, ILog log)
+   at HP.ST.Fwk.RunTimeFWK.CheckpointFWK.ReportImpl.ReportToInternalLog(ISTRunTimeContext context, Dictionary`2 reportData)
+2017-10-23 14:58:14,356 [3] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: 168681598,CPManager. Create element for key: VTD_Name. Value: Checkpoints. Target element name: VTD_Name. Display Name: 
+2017-10-23 14:58:14,356 [3] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: 168681598,CPManager. Create element for key: Name. Value: Checkpoints. Target element name: Name. Display Name: 
+2017-10-23 14:58:14,356 [3] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: 168681598,CPManager. Create element for key: VTD_Type. Value: HP.ST.Fwk.RunTimeFWK.CPManager. Target element name: VTD_Type. Display Name: 
+2017-10-23 14:58:14,356 [3] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: 168681598,CPManager. Create element for key: VTD_Status. Value: Success. Target element name: VTD_Status. Display Name: 
+2017-10-23 14:58:14,356 [3] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: 168681598,CPManager. Create element for key: fileName. Value: Step10.xml. Target element name: fileName. Display Name: 
+2017-10-23 14:58:14,356 [3] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: Checkpoint 1-1-2. Create element for key: VTD_Type. Value: VTD_byRef. Target element name: VTD_Type. Display Name: 
+2017-10-23 14:58:14,356 [3] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: Checkpoint 1-1-2. Create element for key: VTD_Name. Value: Checkpoint. Target element name: VTD_Name. Display Name: 
+2017-10-23 14:58:14,356 [3] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: Checkpoint 1-1-2. Create element for key: Name. Value: Checkpoint. Target element name: Name. Display Name: 
+2017-10-23 14:58:14,356 [3] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: Checkpoint 1-1-2,DataWraper. Create element for key: VTD_Type. Value: HP.ST.Ext.CheckpointRules.StracturalRule. Target element name: VTD_Type. Display Name: 
+2017-10-23 14:58:14,356 [14] INFO  HP.ST.Fwk.RunTimeFWK.STActivityBase [(null)] - StServiceCallActivity6 is leaving Execute() method
+2017-10-23 14:58:14,358 [3] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: Checkpoint 1-1-2,DataWraper. Create element for key: VTD_Name. Value: Checkpoint 1. Target element name: VTD_Name. Display Name: 
+2017-10-23 14:58:14,359 [14] INFO  HP.ST.Fwk.RunTimeFWK.STActivityBase [(null)] - StServiceCallActivity5 is entering Execute() method
+2017-10-23 14:58:14,360 [4] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: 168681598. Create element for key: VTD_Type. Value: HP.ST.Ext.WebServicesActivities.StServiceCallActivity. Target element name: VTD_Type. Display Name: Type
+2017-10-23 14:58:14,360 [4] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: 168681598. Create element for key: VTD_Name. Value: StServiceCallActivity6. Target element name: VTD_Name. Display Name: Step ID
+2017-10-23 14:58:14,360 [4] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: 168681598. Create element for key: IconPath. Value: AddIns\ServiceTest\WSImportTechnology\ictb_service_operations_16.png. Target element name: IconPath. Display Name: 
+2017-10-23 14:58:14,360 [4] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: 168681598. Create element for key: DataMapping. Value: . Target element name: DataMapping. Display Name: 
+2017-10-23 14:58:14,365 [4] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: 168681598. Create element for key: StartTime. Value: 10/23/2017 2:58:14 PM. Target element name: StartTime. Display Name: 
+2017-10-23 14:58:14,365 [4] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: 168681598. Create element for key: InputXml. Value: <Envelope xmlns="http://schemas.xmlsoap.org/soap/envelope/"><Body><getMemberPlan xmlns="http://hp.com/SOAQ/ServiceSimulation/2010/demo/01"><memberId>2</memberId></getMemberPlan></Body></Envelope>. Target element name: InputXml. Display Name: 
+2017-10-23 14:58:14,365 [4] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: 168681598. Create element for key: Service. Value: MemberAccounts. Target element name: Service. Display Name: Service
+2017-10-23 14:58:14,365 [4] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: 168681598. Create element for key: Port. Value: BasicHttpBinding_IMemberAccounts. Target element name: Port. Display Name: Port
+2017-10-23 14:58:14,365 [4] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: 168681598. Create element for key: Operation. Value: getMemberPlan. Target element name: Operation. Display Name: Operation
+2017-10-23 14:58:14,365 [4] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: 168681598. Create element for key: Address. Value: http://dockerclient:7200/MemberAccounts. Target element name: Address. Display Name: Address
+2017-10-23 14:58:14,365 [4] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: 168681598. Create element for key: SOAPAction. Value: http://hp.com/SOAQ/ServiceSimulation/2010/demo/01/IMemberAccounts/getMemberPlan. Target element name: SOAPAction. Display Name: SOAPAction
+2017-10-23 14:58:14,365 [4] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: 168681598. Create element for key: ContentType. Value: text/xml; charset=utf-8. Target element name: ContentType. Display Name: ContentType
+2017-10-23 14:58:14,365 [4] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: 168681598. Create element for key: MessageExchangePattern. Value: Request Response. Target element name: MessageExchangePattern. Display Name: MessageExchangePattern
+2017-10-23 14:58:14,365 [4] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: 168681598. Create element for key: Full request. Value: <Envelope xmlns="http://schemas.xmlsoap.org/soap/envelope/">
+  <Body>
+    <getMemberPlan xmlns="http://hp.com/SOAQ/ServiceSimulation/2010/demo/01">
+      <memberId>2</memberId>
+    </getMemberPlan>
+  </Body>
+</Envelope>. Target element name: Full_request. Display Name: Full request
+2017-10-23 14:58:14,365 [4] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: 168681598. Create element for key: InputHeader. Value: SOAPAction:	http://hp.com/SOAQ/ServiceSimulation/2010/demo/01/IMemberAccounts/getMemberPlan
+Content-Type:	text/xml; charset=utf-8
+Host:	dockerclient:7200
+Content-Length:	195
+Expect:	100-continue
+Connection:	Close
+. Target element name: InputHeader. Display Name: InputHeader
+2017-10-23 14:58:14,365 [4] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: 168681598. Create element for key: OutputHeader. Value: Connection:	close
+Content-Length:	551
+Content-Type:	text/xml; charset=utf-8
+Date:	Mon, 23 Oct 2017 19:58:14 GMT
+Server:	Microsoft-HTTPAPI/2.0
+. Target element name: OutputHeader. Display Name: OutputHeader
+2017-10-23 14:58:14,365 [4] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: 168681598. Create element for key: OutputText. Value: <?xml version="1.0" encoding="utf-8"?><s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"><s:Body><getMemberPlanResponse xmlns:s="http://schemas.xmlsoap.org/soap/envelope/" xmlns="http://hp.com/SOAQ/ServiceSimulation/2010/demo/01"><getMemberPlanResult xmlns:a="http://schemas.datacontract.org/2004/07/HP.SOAQ.ServiceSimulation.Demo" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><a:approvalLimit>500</a:approvalLimit><a:id>2</a:id><a:name>Allpay Select 500</a:name></getMemberPlanResult></getMemberPlanResponse></s:Body></s:Envelope>. Target element name: OutputText. Display Name: OutputText
+2017-10-23 14:58:14,365 [4] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: 168681598. Create element for key: HttpStatusCode. Value: 200 : OK. Target element name: HttpStatusCode. Display Name: HttpStatusCode
+2017-10-23 14:58:14,365 [4] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: 168681598. Create element for key: OutputXml. Value: <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"><s:Body><getMemberPlanResponse xmlns:s="http://schemas.xmlsoap.org/soap/envelope/" xmlns="http://hp.com/SOAQ/ServiceSimulation/2010/demo/01"><getMemberPlanResult xmlns:a="http://schemas.datacontract.org/2004/07/HP.SOAQ.ServiceSimulation.Demo" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><a:approvalLimit>500</a:approvalLimit><a:id>2</a:id><a:name>Allpay Select 500</a:name></getMemberPlanResult></getMemberPlanResponse></s:Body></s:Envelope>. Target element name: OutputXml. Display Name: OutputXml
+2017-10-23 14:58:14,365 [4] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: 168681598. Create element for key: VTD_Message. Value: Web service call performed successfully. Target element name: VTD_Message. Display Name: Message
+2017-10-23 14:58:14,365 [4] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: 168681598. Create element for key: Name. Value: 'getMemberPlan'. Target element name: Name. Display Name: Name
+2017-10-23 14:58:14,365 [4] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: 168681598. Create element for key: Comment. Value: ''. Target element name: Comment. Display Name: Comment
+2017-10-23 14:58:14,365 [4] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: 168681598. Create element for key: VTD_Status. Value: Done. Target element name: VTD_Status. Display Name: Status
+2017-10-23 14:58:14,365 [4] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: 168681598. Create element for key: fileName. Value: Step11.xml. Target element name: fileName. Display Name: 
+2017-10-23 14:58:14,365 [3] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: Checkpoint 1-1-2,DataWraper. Create element for key: VTD_Operation. Value: Structural Validation. Target element name: VTD_Operation. Display Name: 
+2017-10-23 14:58:14,365 [3] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: Checkpoint 1-1-2,DataWraper. Create element for key: VTD_Status. Value: Success. Target element name: VTD_Status. Display Name: 
+2017-10-23 14:58:14,369 [14] DEBUG HP.ST.Fwk.ReporterFWK.Reporter [(null)] - Adding a new node to the report tree
+2017-10-23 14:58:14,369 [14] DEBUG HP.ST.Fwk.ReporterFWK.Reporter [(null)] - StepID=-511501300, ParentID=-293887000, Time=10/23/2017 14:58:14
+2017-10-23 14:58:14,369 [14] INFO  HP.ST.Fwk.RunTimeFWK.STActivityBase [(null)] - StServiceCallActivity5 is trying to get the value of property OutputEnvelope from StServiceCallActivity7
+2017-10-23 14:58:14,369 [14] INFO  HP.ST.Fwk.RunTimeFWK.STActivityBase [(null)] - Value 2 received for property OutputEnvelope.
+2017-10-23 14:58:14,369 [14] INFO  HP.ST.Fwk.RunTimeFWK.STActivityBase [(null)] - StServiceCallActivity5 is trying to set the value: 2 to property InputEnvelope
+2017-10-23 14:58:14,369 [14] DEBUG HP.ST.Fwk.RunTimeFWK.STActivityBase [(null)] - StServiceCallActivity5, GetDataFromInDirections() succeed
+2017-10-23 14:58:14,369 [14] INFO  HP.ST.Ext.WebServicesActivities.StServiceCallActivity [(null)] - Operation input:
+<Envelope xmlns="http://schemas.xmlsoap.org/soap/envelope/">
+  <Body>
+    <getMemberDetail xmlns="http://hp.com/SOAQ/ServiceSimulation/2010/demo/01">
+      <memberId>2</memberId>
+    </getMemberDetail>
+  </Body>
+</Envelope>
+2017-10-23 14:58:14,371 [14] INFO  HP.ST.Ext.WebServicesActivities.StServiceCallActivity [(null)] - Endpoint URL: http://dockerclient:7200/MemberAccounts
+2017-10-23 14:58:14,371 [14] INFO  HP.ST.Ext.WebServicesActivities.StServiceCallActivity [(null)] - Setting request HTTP headers
+2017-10-23 14:58:14,371 [14] INFO  HP.ST.Ext.WebServicesActivities.StServiceCallActivity [(null)] - 'SOAPAction' HTTP Header: http://hp.com/SOAQ/ServiceSimulation/2010/demo/01/IMemberAccounts/getMemberDetail
+2017-10-23 14:58:14,371 [14] INFO  HP.ST.Ext.WebServicesActivities.StServiceCallActivity [(null)] - 'Content-Type' HTTP Header: text/xml; charset=utf-8
+2017-10-23 14:58:14,371 [14] INFO  HP.ST.Ext.WebServicesActivities.StServiceCallActivity [(null)] - HTTP method: POST
+2017-10-23 14:58:14,371 [14] INFO  HP.ST.Ext.CommunicationChannels.Channels.ChannelPipelineFactory [(null)] - Creating channel pipeline...
+2017-10-23 14:58:14,371 [14] INFO  HP.ST.Ext.CommunicationChannels.Models.HttpChannelBinding [(null)] - Creating HTTP Channel
+2017-10-23 14:58:14,371 [14] INFO  HP.ST.Ext.CommunicationChannels.ConcreteChannels.HttpChannel [(null)] - Creating HTTP Channel
+2017-10-23 14:58:14,371 [14] INFO  HP.ST.Ext.CommunicationChannels.Channels.ChannelPipelineFactory [(null)] - 'HP.ST.Ext.CommunicationChannels.ConcreteChannels.HttpChannel' channel created
+2017-10-23 14:58:14,371 [14] INFO  HP.ST.Ext.CommunicationChannels.Channels.ChannelPipelineFactory [(null)] - 'HP.ST.Ext.CommunicationChannels.ConcreteChannels.EncodingChannel' channel created
+2017-10-23 14:58:14,371 [14] INFO  HP.ST.Ext.WebServicesActivities.StServiceCallActivity [(null)] - Sending the message through the 'HP.ST.Ext.CommunicationChannels.ConcreteChannels.EncodingChannel' channel
+2017-10-23 14:58:14,376 [14] INFO  HP.ST.Ext.CommunicationChannels.ConcreteChannels.HttpChannel [(null)] - HTTP Channel is processing the message
+2017-10-23 14:58:14,376 [14] INFO  HP.ST.Ext.CommunicationChannels.ConcreteChannels.HttpChannel [(null)] - URL: http://dockerclient:7200/MemberAccounts
+2017-10-23 14:58:14,692 [14] INFO  HP.ST.Ext.WebServicesActivities.StServiceCallActivity [(null)] - Operation raw output: <?xml version="1.0" encoding="utf-8"?><s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"><s:Body><getMemberDetailResponse xmlns:s="http://schemas.xmlsoap.org/soap/envelope/" xmlns="http://hp.com/SOAQ/ServiceSimulation/2010/demo/01"><getMemberDetailResult xmlns:a="http://schemas.datacontract.org/2004/07/HP.SOAQ.ServiceSimulation.Demo" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><a:address><a:city>London NW1 6XE</a:city><a:country>Great Britain</a:country><a:endDate>0001-01-01T00:00:00</a:endDate><a:line1>221b Baker Street</a:line1><a:line2 i:nil="true" /><a:startDate>0001-01-01T00:00:00</a:startDate><a:state>England</a:state><a:zip i:nil="true" /></a:address><a:householdId>0</a:householdId><a:memberId>2</a:memberId><a:person><a:dateOfBirth>1854-01-06T00:00:00</a:dateOfBirth><a:gender>MALE</a:gender><a:name><a:firstName>Sherlock</a:firstName><a:lastName>Holmes</a:lastName><a:middleName i:nil="true" /><a:prefix i:nil="true" /><a:suffix i:nil="true" /></a:name><a:socialSecurityNumber>332-10-0002</a:socialSecurityNumber></a:person><a:phone i:nil="true" /></getMemberDetailResult></getMemberDetailResponse></s:Body></s:Envelope>
+2017-10-23 14:58:14,692 [14] INFO  HP.ST.Ext.WebServicesActivities.StServiceCallActivity [(null)] - Operation output:
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Body>
+    <getMemberDetailResponse xmlns:s="http://schemas.xmlsoap.org/soap/envelope/" xmlns="http://hp.com/SOAQ/ServiceSimulation/2010/demo/01">
+      <getMemberDetailResult xmlns:a="http://schemas.datacontract.org/2004/07/HP.SOAQ.ServiceSimulation.Demo" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+        <a:address>
+          <a:city>London NW1 6XE</a:city>
+          <a:country>Great Britain</a:country>
+          <a:endDate>0001-01-01T00:00:00</a:endDate>
+          <a:line1>221b Baker Street</a:line1>
+          <a:line2 i:nil="true" />
+          <a:startDate>0001-01-01T00:00:00</a:startDate>
+          <a:state>England</a:state>
+          <a:zip i:nil="true" />
+        </a:address>
+        <a:householdId>0</a:householdId>
+        <a:memberId>2</a:memberId>
+        <a:person>
+          <a:dateOfBirth>1854-01-06T00:00:00</a:dateOfBirth>
+          <a:gender>MALE</a:gender>
+          <a:name>
+            <a:firstName>Sherlock</a:firstName>
+            <a:lastName>Holmes</a:lastName>
+            <a:middleName i:nil="true" />
+            <a:prefix i:nil="true" />
+            <a:suffix i:nil="true" />
+          </a:name>
+          <a:socialSecurityNumber>332-10-0002</a:socialSecurityNumber>
+        </a:person>
+        <a:phone i:nil="true" />
+      </getMemberDetailResult>
+    </getMemberDetailResponse>
+  </s:Body>
+</s:Envelope>
+2017-10-23 14:58:14,693 [14] DEBUG HP.ST.Fwk.RunTimeFWK.STActivityBase [(null)] - StServiceCallActivity5, GetDataFromInDirections() succeed
+2017-10-23 14:58:14,693 [14] INFO  HP.ST.Fwk.RunTimeFWK.CheckpointFWK.BaseCPRule [(null)] - value from getter= System.Xml.XmlElement
+2017-10-23 14:58:14,693 [14] DEBUG HP.ST.Fwk.RunTimeFWK.CheckpointFWK.BaseCPRule [(null)] - Cant get directory path
+2017-10-23 14:58:14,695 [14] DEBUG HP.ST.Shared.XmlGridModel.ValidationUtils [(null)] - Validating XML: 
+ <?xml version="1.0" encoding="utf-8"?><s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"><s:Body><getMemberDetailResponse xmlns:s="http://schemas.xmlsoap.org/soap/envelope/" xmlns="http://hp.com/SOAQ/ServiceSimulation/2010/demo/01"><getMemberDetailResult xmlns:a="http://schemas.datacontract.org/2004/07/HP.SOAQ.ServiceSimulation.Demo" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><a:address><a:city>London NW1 6XE</a:city><a:country>Great Britain</a:country><a:endDate>0001-01-01T00:00:00</a:endDate><a:line1>221b Baker Street</a:line1><a:line2 i:nil="true" /><a:startDate>0001-01-01T00:00:00</a:startDate><a:state>England</a:state><a:zip i:nil="true" /></a:address><a:householdId>0</a:householdId><a:memberId>2</a:memberId><a:person><a:dateOfBirth>1854-01-06T00:00:00</a:dateOfBirth><a:gender>MALE</a:gender><a:name><a:firstName>Sherlock</a:firstName><a:lastName>Holmes</a:lastName><a:middleName i:nil="true" /><a:prefix i:nil="true" /><a:suffix i:nil="true" /></a:name><a:socialSecurityNumber>332-10-0002</a:socialSecurityNumber></a:person><a:phone i:nil="true" /></getMemberDetailResult></getMemberDetailResponse></s:Body></s:Envelope>
+2017-10-23 14:58:14,695 [14] DEBUG HP.ST.Fwk.ReporterFWK.Reporter [(null)] - Adding a new node to the report tree
+2017-10-23 14:58:14,695 [14] DEBUG HP.ST.Fwk.ReporterFWK.Reporter [(null)] - StepID=-511501300,CPManager, ParentID=-511501300, Time=10/23/2017 14:58:14
+2017-10-23 14:58:14,695 [14] DEBUG HP.ST.Fwk.ReporterFWK.Reporter [(null)] - Adding a new node to the report tree
+2017-10-23 14:58:14,695 [14] DEBUG HP.ST.Fwk.ReporterFWK.Reporter [(null)] - StepID=Checkpoint 2-2-2, ParentID=-511501300,CPManager, Time=10/23/2017 14:58:14
+2017-10-23 14:58:14,695 [14] DEBUG HP.ST.Fwk.ReporterFWK.Reporter [(null)] - Adding a new node to the report tree
+2017-10-23 14:58:14,695 [14] DEBUG HP.ST.Fwk.ReporterFWK.Reporter [(null)] - StepID=Checkpoint 2-2-2,DataWraper, ParentID=Checkpoint 2-2-2, Time=10/23/2017 14:58:14
+2017-10-23 14:58:14,695 [14] ERROR HP.ST.Fwk.RunTimeFWK.CheckpointFWK.ReportImpl [(null)] - Failed to log checkpoint status:
+2017-10-23 14:58:14,696 [14] ERROR HP.ST.Fwk.RunTimeFWK.CheckpointFWK.ReportImpl [(null)] - System.Collections.Generic.KeyNotFoundException: The given key was not present in the dictionary.
+   at System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   at HP.ST.Fwk.RunTimeFWK.CheckpointFWK.ReportImpl.WriteCPToLog(Dictionary`2 reportData, ILog log)
+   at HP.ST.Fwk.RunTimeFWK.CheckpointFWK.ReportImpl.ReportToInternalLog(ISTRunTimeContext context, Dictionary`2 reportData)
+2017-10-23 14:58:14,696 [3] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: -511501300,CPManager. Create element for key: VTD_Name. Value: Checkpoints. Target element name: VTD_Name. Display Name: 
+2017-10-23 14:58:14,696 [3] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: -511501300,CPManager. Create element for key: Name. Value: Checkpoints. Target element name: Name. Display Name: 
+2017-10-23 14:58:14,696 [3] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: -511501300,CPManager. Create element for key: VTD_Type. Value: HP.ST.Fwk.RunTimeFWK.CPManager. Target element name: VTD_Type. Display Name: 
+2017-10-23 14:58:14,696 [3] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: -511501300,CPManager. Create element for key: VTD_Status. Value: Success. Target element name: VTD_Status. Display Name: 
+2017-10-23 14:58:14,696 [3] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: -511501300,CPManager. Create element for key: fileName. Value: Step12.xml. Target element name: fileName. Display Name: 
+2017-10-23 14:58:14,696 [3] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: Checkpoint 2-2-2. Create element for key: VTD_Type. Value: VTD_byRef. Target element name: VTD_Type. Display Name: 
+2017-10-23 14:58:14,696 [3] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: Checkpoint 2-2-2. Create element for key: VTD_Name. Value: Checkpoint. Target element name: VTD_Name. Display Name: 
+2017-10-23 14:58:14,696 [3] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: Checkpoint 2-2-2. Create element for key: Name. Value: Checkpoint. Target element name: Name. Display Name: 
+2017-10-23 14:58:14,696 [3] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: Checkpoint 2-2-2,DataWraper. Create element for key: VTD_Type. Value: HP.ST.Ext.CheckpointRules.StracturalRule. Target element name: VTD_Type. Display Name: 
+2017-10-23 14:58:14,696 [3] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: Checkpoint 2-2-2,DataWraper. Create element for key: VTD_Name. Value: Checkpoint 2. Target element name: VTD_Name. Display Name: 
+2017-10-23 14:58:14,696 [3] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: Checkpoint 2-2-2,DataWraper. Create element for key: VTD_Operation. Value: Structural Validation. Target element name: VTD_Operation. Display Name: 
+2017-10-23 14:58:14,696 [3] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: Checkpoint 2-2-2,DataWraper. Create element for key: VTD_Status. Value: Success. Target element name: VTD_Status. Display Name: 
+2017-10-23 14:58:14,698 [14] INFO  HP.ST.Fwk.RunTimeFWK.STActivityBase [(null)] - StServiceCallActivity5 is leaving Execute() method
+2017-10-23 14:58:14,699 [14] DEBUG HP.ST.Fwk.RunTimeFWK.STActivityBase [(null)] - Sequence12, GetDataFromInDirections() succeed
+2017-10-23 14:58:14,699 [4] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: -511501300. Create element for key: VTD_Type. Value: HP.ST.Ext.WebServicesActivities.StServiceCallActivity. Target element name: VTD_Type. Display Name: Type
+2017-10-23 14:58:14,699 [4] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: -511501300. Create element for key: VTD_Name. Value: StServiceCallActivity5. Target element name: VTD_Name. Display Name: Step ID
+2017-10-23 14:58:14,699 [4] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: -511501300. Create element for key: IconPath. Value: AddIns\ServiceTest\WSImportTechnology\ictb_service_operations_16.png. Target element name: IconPath. Display Name: 
+2017-10-23 14:58:14,699 [4] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: -511501300. Create element for key: DataMapping. Value: . Target element name: DataMapping. Display Name: 
+2017-10-23 14:58:14,699 [4] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: -511501300. Create element for key: StartTime. Value: 10/23/2017 2:58:14 PM. Target element name: StartTime. Display Name: 
+2017-10-23 14:58:14,699 [4] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: -511501300. Create element for key: InputXml. Value: <Envelope xmlns="http://schemas.xmlsoap.org/soap/envelope/"><Body><getMemberDetail xmlns="http://hp.com/SOAQ/ServiceSimulation/2010/demo/01"><memberId>2</memberId></getMemberDetail></Body></Envelope>. Target element name: InputXml. Display Name: 
+2017-10-23 14:58:14,699 [4] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: -511501300. Create element for key: Service. Value: MemberAccounts. Target element name: Service. Display Name: Service
+2017-10-23 14:58:14,699 [4] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: -511501300. Create element for key: Port. Value: BasicHttpBinding_IMemberAccounts. Target element name: Port. Display Name: Port
+2017-10-23 14:58:14,699 [4] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: -511501300. Create element for key: Operation. Value: getMemberDetail. Target element name: Operation. Display Name: Operation
+2017-10-23 14:58:14,699 [4] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: -511501300. Create element for key: Address. Value: http://dockerclient:7200/MemberAccounts. Target element name: Address. Display Name: Address
+2017-10-23 14:58:14,699 [4] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: -511501300. Create element for key: SOAPAction. Value: http://hp.com/SOAQ/ServiceSimulation/2010/demo/01/IMemberAccounts/getMemberDetail. Target element name: SOAPAction. Display Name: SOAPAction
+2017-10-23 14:58:14,699 [4] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: -511501300. Create element for key: ContentType. Value: text/xml; charset=utf-8. Target element name: ContentType. Display Name: ContentType
+2017-10-23 14:58:14,699 [4] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: -511501300. Create element for key: MessageExchangePattern. Value: Request Response. Target element name: MessageExchangePattern. Display Name: MessageExchangePattern
+2017-10-23 14:58:14,699 [4] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: -511501300. Create element for key: Full request. Value: <Envelope xmlns="http://schemas.xmlsoap.org/soap/envelope/">
+  <Body>
+    <getMemberDetail xmlns="http://hp.com/SOAQ/ServiceSimulation/2010/demo/01">
+      <memberId>2</memberId>
+    </getMemberDetail>
+  </Body>
+</Envelope>. Target element name: Full_request. Display Name: Full request
+2017-10-23 14:58:14,699 [4] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: -511501300. Create element for key: InputHeader. Value: SOAPAction:	http://hp.com/SOAQ/ServiceSimulation/2010/demo/01/IMemberAccounts/getMemberDetail
+Content-Type:	text/xml; charset=utf-8
+Host:	dockerclient:7200
+Content-Length:	199
+Expect:	100-continue
+Connection:	Close
+. Target element name: InputHeader. Display Name: InputHeader
+2017-10-23 14:58:14,699 [4] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: -511501300. Create element for key: OutputHeader. Value: Connection:	close
+Content-Length:	1159
+Content-Type:	text/xml; charset=utf-8
+Date:	Mon, 23 Oct 2017 19:58:14 GMT
+Server:	Microsoft-HTTPAPI/2.0
+. Target element name: OutputHeader. Display Name: OutputHeader
+2017-10-23 14:58:14,699 [4] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: -511501300. Create element for key: OutputText. Value: <?xml version="1.0" encoding="utf-8"?><s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"><s:Body><getMemberDetailResponse xmlns:s="http://schemas.xmlsoap.org/soap/envelope/" xmlns="http://hp.com/SOAQ/ServiceSimulation/2010/demo/01"><getMemberDetailResult xmlns:a="http://schemas.datacontract.org/2004/07/HP.SOAQ.ServiceSimulation.Demo" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><a:address><a:city>London NW1 6XE</a:city><a:country>Great Britain</a:country><a:endDate>0001-01-01T00:00:00</a:endDate><a:line1>221b Baker Street</a:line1><a:line2 i:nil="true" /><a:startDate>0001-01-01T00:00:00</a:startDate><a:state>England</a:state><a:zip i:nil="true" /></a:address><a:householdId>0</a:householdId><a:memberId>2</a:memberId><a:person><a:dateOfBirth>1854-01-06T00:00:00</a:dateOfBirth><a:gender>MALE</a:gender><a:name><a:firstName>Sherlock</a:firstName><a:lastName>Holmes</a:lastName><a:middleName i:nil="true" /><a:prefix i:nil="true" /><a:suffix i:nil="true" /></a:name><a:socialSecurityNumber>332-10-0002</a:socialSecurityNumber></a:person><a:phone i:nil="true" /></getMemberDetailResult></getMemberDetailResponse></s:Body></s:Envelope>. Target element name: OutputText. Display Name: OutputText
+2017-10-23 14:58:14,699 [4] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: -511501300. Create element for key: HttpStatusCode. Value: 200 : OK. Target element name: HttpStatusCode. Display Name: HttpStatusCode
+2017-10-23 14:58:14,699 [14] INFO  HP.ST.Fwk.RunTimeFWK.STActivityBase [(null)] - Sequence12 is leaving Execute() method
+2017-10-23 14:58:14,699 [4] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: -511501300. Create element for key: OutputXml. Value: <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"><s:Body><getMemberDetailResponse xmlns:s="http://schemas.xmlsoap.org/soap/envelope/" xmlns="http://hp.com/SOAQ/ServiceSimulation/2010/demo/01"><getMemberDetailResult xmlns:a="http://schemas.datacontract.org/2004/07/HP.SOAQ.ServiceSimulation.Demo" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><a:address><a:city>London NW1 6XE</a:city><a:country>Great Britain</a:country><a:endDate>0001-01-01T00:00:00</a:endDate><a:line1>221b Baker Street</a:line1><a:line2 i:nil="true" /><a:startDate>0001-01-01T00:00:00</a:startDate><a:state>England</a:state><a:zip i:nil="true" /></a:address><a:householdId>0</a:householdId><a:memberId>2</a:memberId><a:person><a:dateOfBirth>1854-01-06T00:00:00</a:dateOfBirth><a:gender>MALE</a:gender><a:name><a:firstName>Sherlock</a:firstName><a:lastName>Holmes</a:lastName><a:middleName i:nil="true" /><a:prefix i:nil="true" /><a:suffix i:nil="true" /></a:name><a:socialSecurityNumber>332-10-0002</a:socialSecurityNumber></a:person><a:phone i:nil="true" /></getMemberDetailResult></getMemberDetailResponse></s:Body></s:Envelope>. Target element name: OutputXml. Display Name: OutputXml
+2017-10-23 14:58:14,699 [4] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: -511501300. Create element for key: VTD_Message. Value: Web service call performed successfully. Target element name: VTD_Message. Display Name: Message
+2017-10-23 14:58:14,699 [4] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: -511501300. Create element for key: Name. Value: 'getMemberDetail'. Target element name: Name. Display Name: Name
+2017-10-23 14:58:14,699 [4] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: -511501300. Create element for key: Comment. Value: ''. Target element name: Comment. Display Name: Comment
+2017-10-23 14:58:14,699 [4] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: -511501300. Create element for key: VTD_Status. Value: Done. Target element name: VTD_Status. Display Name: Status
+2017-10-23 14:58:14,699 [4] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: -511501300. Create element for key: fileName. Value: Step13.xml. Target element name: fileName. Display Name: 
+2017-10-23 14:58:14,700 [14] DEBUG HP.ST.Fwk.RunTimeFWK.STActivityBase [(null)] - Loop2, GetDataFromInDirections() succeed
+2017-10-23 14:58:14,701 [14] INFO  HP.ST.Fwk.RunTimeFWK.STActivityBase [(null)] - Loop2 is leaving Execute() method
+2017-10-23 14:58:14,701 [8] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: -293887000. Create element for key: VTD_Type. Value: HP.ST.Fwk.RunTimeFWK.CompositeActivities.Sequence. Target element name: VTD_Type. Display Name: Type
+2017-10-23 14:58:14,701 [8] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: -293887000. Create element for key: VTD_Name. Value: Sequence12. Target element name: VTD_Name. Display Name: Step ID
+2017-10-23 14:58:14,701 [8] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: -293887000. Create element for key: IconPath. Value: . Target element name: IconPath. Display Name: 
+2017-10-23 14:58:14,701 [8] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: -293887000. Create element for key: StartTime. Value: 10/23/2017 2:58:13 PM. Target element name: StartTime. Display Name: 
+2017-10-23 14:58:14,701 [8] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: -293887000. Create element for key: DataMapping. Value: . Target element name: DataMapping. Display Name: 
+2017-10-23 14:58:14,701 [8] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: -293887000. Create element for key: EndTime. Value: 10/23/2017 2:58:14 PM. Target element name: EndTime. Display Name: 
+2017-10-23 14:58:14,701 [8] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: -293887000. Create element for key: Metadata_IsTestFlowIterration. Value: True. Target element name: Metadata_IsTestFlowIterration. Display Name: 
+2017-10-23 14:58:14,701 [8] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: -293887000. Create element for key: Name. Value: 'Iteration 2'. Target element name: Name. Display Name: Name
+2017-10-23 14:58:14,701 [8] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: -293887000. Create element for key: Comment. Value: ''. Target element name: Comment. Display Name: Comment
+2017-10-23 14:58:14,701 [8] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: -293887000. Create element for key: VTD_Status. Value: Done. Target element name: VTD_Status. Display Name: Status
+2017-10-23 14:58:14,701 [8] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: -293887000. Create element for key: fileName. Value: Step14.xml. Target element name: fileName. Display Name: 
+2017-10-23 14:58:14,701 [14] INFO  HP.ST.Fwk.RunTimeFWK.STActivityBase [(null)] - DataExporterActivity15 is entering Execute() method
+2017-10-23 14:58:14,702 [3] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: -1084243033. Create element for key: VTD_Type. Value: HP.ST.Fwk.RunTimeFWK.CompositeActivities.Loop`1[Loop2Input]. Target element name: VTD_Type. Display Name: Type
+2017-10-23 14:58:14,702 [3] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: -1084243033. Create element for key: VTD_Name. Value: Loop2. Target element name: VTD_Name. Display Name: Step ID
+2017-10-23 14:58:14,702 [3] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: -1084243033. Create element for key: IconPath. Value: AddIns\ServiceTest\BasicActivities\toolbox_loop.png. Target element name: IconPath. Display Name: 
+2017-10-23 14:58:14,702 [3] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: -1084243033. Create element for key: StartTime. Value: 10/23/2017 2:58:13 PM. Target element name: StartTime. Display Name: 
+2017-10-23 14:58:14,702 [3] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: -1084243033. Create element for key: LoopType. Value: For. Target element name: LoopType. Display Name: Loop Type
+2017-10-23 14:58:14,702 [3] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: -1084243033. Create element for key: ConditionAsString. Value: 'Run for 2 iterations'. Target element name: ConditionAsString. Display Name: Condition
+2017-10-23 14:58:14,702 [3] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: -1084243033. Create element for key: Name. Value: 'Test Flow'. Target element name: Name. Display Name: Name
+2017-10-23 14:58:14,702 [3] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: -1084243033. Create element for key: Comment. Value: ''. Target element name: Comment. Display Name: Comment
+2017-10-23 14:58:14,702 [3] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: -1084243033. Create element for key: VTD_Status. Value: Done. Target element name: VTD_Status. Display Name: Status
+2017-10-23 14:58:14,702 [3] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: -1084243033. Create element for key: fileName. Value: Step15.xml. Target element name: fileName. Display Name: 
+2017-10-23 14:58:14,702 [14] WARN  HP.ST.Fwk.RunTimeFWK.STActivityBase [(null)] - SetInitalValues failed, Param name: Data  could not be found
+2017-10-23 14:58:14,702 [14] INFO  HP.ST.Fwk.RunTimeFWK.STActivityBase [(null)] - DataExporterActivity15 is trying to get the value of property OutTable from DataFetchActivity13
+2017-10-23 14:58:14,702 [14] INFO  HP.ST.Fwk.RunTimeFWK.STActivityBase [(null)] - Value HP.ST.Ext.BasicActivities.DataFetchActivity received for property OutTable.
+2017-10-23 14:58:14,702 [14] INFO  HP.ST.Fwk.RunTimeFWK.STActivityBase [(null)] - DataExporterActivity15 is trying to set the value: HP.ST.Ext.BasicActivities.DataFetchActivity to property Data
+2017-10-23 14:58:14,702 [14] DEBUG HP.ST.Fwk.RunTimeFWK.STActivityBase [(null)] - DataExporterActivity15, GetDataFromInDirections() succeed
+2017-10-23 14:58:14,747 [14] INFO  HP.ST.Fwk.RunTimeFWK.STActivityBase [(null)] - DataExporterActivity15 is leaving Execute() method
+2017-10-23 14:58:14,747 [1] WARN  HP.ST.Fwk.ReporterFWK.Reporter [(null)] - Not all step.xml cache cleaned , flushing the remainings :
+2017-10-23 14:58:14,748 [4] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: Checkpoint 0-0-2,DataWraper. Create element for key: VTD_Type. Value: HP.ST.Ext.CheckpointRules.StracturalRule. Target element name: VTD_Type. Display Name: 
+2017-10-23 14:58:14,748 [4] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: Checkpoint 0-0-2,DataWraper. Create element for key: VTD_Name. Value: Checkpoint 0. Target element name: VTD_Name. Display Name: 
+2017-10-23 14:58:14,748 [3] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: Checkpoint 2-2-1. Create element for key: VTD_Type. Value: VTD_byRef. Target element name: VTD_Type. Display Name: 
+2017-10-23 14:58:14,748 [4] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: Checkpoint 0-0-2,DataWraper. Create element for key: VTD_Operation. Value: Structural Validation. Target element name: VTD_Operation. Display Name: 
+2017-10-23 14:58:14,748 [3] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: Checkpoint 2-2-1. Create element for key: VTD_Name. Value: Checkpoint. Target element name: VTD_Name. Display Name: 
+2017-10-23 14:58:14,748 [4] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: Checkpoint 0-0-2,DataWraper. Create element for key: VTD_Status. Value: Success. Target element name: VTD_Status. Display Name: 
+2017-10-23 14:58:14,748 [3] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: Checkpoint 2-2-1. Create element for key: Name. Value: Checkpoint. Target element name: Name. Display Name: 
+2017-10-23 14:58:14,748 [4] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: Checkpoint 0-0-2,DataWraper. Create element for key: fileName. Value: Step16.xml. Target element name: fileName. Display Name: 
+2017-10-23 14:58:14,748 [3] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: Checkpoint 2-2-1. Create element for key: fileName. Value: Step17.xml. Target element name: fileName. Display Name: 
+2017-10-23 14:58:14,748 [3] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: Checkpoint 2-2-2,DataWraper. Create element for key: VTD_Type. Value: HP.ST.Ext.CheckpointRules.StracturalRule. Target element name: VTD_Type. Display Name: 
+2017-10-23 14:58:14,748 [3] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: Checkpoint 2-2-2,DataWraper. Create element for key: VTD_Name. Value: Checkpoint 2. Target element name: VTD_Name. Display Name: 
+2017-10-23 14:58:14,748 [3] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: Checkpoint 2-2-2,DataWraper. Create element for key: VTD_Operation. Value: Structural Validation. Target element name: VTD_Operation. Display Name: 
+2017-10-23 14:58:14,748 [3] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: Checkpoint 2-2-2,DataWraper. Create element for key: VTD_Status. Value: Success. Target element name: VTD_Status. Display Name: 
+2017-10-23 14:58:14,748 [3] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: Checkpoint 2-2-2,DataWraper. Create element for key: fileName. Value: Step18.xml. Target element name: fileName. Display Name: 
+2017-10-23 14:58:14,748 [8] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: Checkpoint 0-0-1. Create element for key: VTD_Type. Value: VTD_byRef. Target element name: VTD_Type. Display Name: 
+2017-10-23 14:58:14,748 [8] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: Checkpoint 0-0-1. Create element for key: VTD_Name. Value: Checkpoint. Target element name: VTD_Name. Display Name: 
+2017-10-23 14:58:14,748 [8] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: Checkpoint 0-0-1. Create element for key: Name. Value: Checkpoint. Target element name: Name. Display Name: 
+2017-10-23 14:58:14,748 [8] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: Checkpoint 0-0-1. Create element for key: fileName. Value: Step19.xml. Target element name: fileName. Display Name: 
+2017-10-23 14:58:14,748 [8] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: Checkpoint 1-1-1,DataWraper. Create element for key: VTD_Type. Value: HP.ST.Ext.CheckpointRules.StracturalRule. Target element name: VTD_Type. Display Name: 
+2017-10-23 14:58:14,748 [8] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: Checkpoint 1-1-1,DataWraper. Create element for key: VTD_Name. Value: Checkpoint 1. Target element name: VTD_Name. Display Name: 
+2017-10-23 14:58:14,748 [8] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: Checkpoint 1-1-1,DataWraper. Create element for key: VTD_Operation. Value: Structural Validation. Target element name: VTD_Operation. Display Name: 
+2017-10-23 14:58:14,748 [8] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: Checkpoint 1-1-1,DataWraper. Create element for key: VTD_Status. Value: Success. Target element name: VTD_Status. Display Name: 
+2017-10-23 14:58:14,748 [8] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: Checkpoint 1-1-1,DataWraper. Create element for key: fileName. Value: Step20.xml. Target element name: fileName. Display Name: 
+2017-10-23 14:58:14,748 [4] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: Checkpoint 1-1-2,DataWraper. Create element for key: VTD_Type. Value: HP.ST.Ext.CheckpointRules.StracturalRule. Target element name: VTD_Type. Display Name: 
+2017-10-23 14:58:14,748 [4] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: Checkpoint 1-1-2,DataWraper. Create element for key: VTD_Name. Value: Checkpoint 1. Target element name: VTD_Name. Display Name: 
+2017-10-23 14:58:14,748 [4] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: Checkpoint 1-1-2,DataWraper. Create element for key: VTD_Operation. Value: Structural Validation. Target element name: VTD_Operation. Display Name: 
+2017-10-23 14:58:14,748 [4] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: Checkpoint 1-1-2,DataWraper. Create element for key: VTD_Status. Value: Success. Target element name: VTD_Status. Display Name: 
+2017-10-23 14:58:14,748 [4] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: Checkpoint 1-1-2,DataWraper. Create element for key: fileName. Value: Step21.xml. Target element name: fileName. Display Name: 
+2017-10-23 14:58:14,748 [3] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: Checkpoint 2-2-1,DataWraper. Create element for key: VTD_Type. Value: HP.ST.Ext.CheckpointRules.StracturalRule. Target element name: VTD_Type. Display Name: 
+2017-10-23 14:58:14,748 [3] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: Checkpoint 2-2-1,DataWraper. Create element for key: VTD_Name. Value: Checkpoint 2. Target element name: VTD_Name. Display Name: 
+2017-10-23 14:58:14,748 [3] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: Checkpoint 2-2-1,DataWraper. Create element for key: VTD_Operation. Value: Structural Validation. Target element name: VTD_Operation. Display Name: 
+2017-10-23 14:58:14,748 [3] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: Checkpoint 2-2-1,DataWraper. Create element for key: VTD_Status. Value: Success. Target element name: VTD_Status. Display Name: 
+2017-10-23 14:58:14,748 [3] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: Checkpoint 2-2-1,DataWraper. Create element for key: fileName. Value: Step22.xml. Target element name: fileName. Display Name: 
+2017-10-23 14:58:14,749 [8] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: Checkpoint 1-1-1. Create element for key: VTD_Type. Value: VTD_byRef. Target element name: VTD_Type. Display Name: 
+2017-10-23 14:58:14,749 [8] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: Checkpoint 1-1-1. Create element for key: VTD_Name. Value: Checkpoint. Target element name: VTD_Name. Display Name: 
+2017-10-23 14:58:14,749 [8] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: Checkpoint 1-1-1. Create element for key: Name. Value: Checkpoint. Target element name: Name. Display Name: 
+2017-10-23 14:58:14,749 [8] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: Checkpoint 1-1-1. Create element for key: fileName. Value: Step23.xml. Target element name: fileName. Display Name: 
+2017-10-23 14:58:14,749 [8] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: Checkpoint 0-0-2. Create element for key: VTD_Type. Value: VTD_byRef. Target element name: VTD_Type. Display Name: 
+2017-10-23 14:58:14,749 [8] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: Checkpoint 0-0-2. Create element for key: VTD_Name. Value: Checkpoint. Target element name: VTD_Name. Display Name: 
+2017-10-23 14:58:14,749 [8] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: Checkpoint 0-0-2. Create element for key: Name. Value: Checkpoint. Target element name: Name. Display Name: 
+2017-10-23 14:58:14,749 [8] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: Checkpoint 0-0-2. Create element for key: fileName. Value: Step24.xml. Target element name: fileName. Display Name: 
+2017-10-23 14:58:14,749 [8] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: Checkpoint 0-0-1,DataWraper. Create element for key: VTD_Type. Value: HP.ST.Ext.CheckpointRules.StracturalRule. Target element name: VTD_Type. Display Name: 
+2017-10-23 14:58:14,749 [8] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: Checkpoint 0-0-1,DataWraper. Create element for key: VTD_Name. Value: Checkpoint 0. Target element name: VTD_Name. Display Name: 
+2017-10-23 14:58:14,749 [8] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: Checkpoint 0-0-1,DataWraper. Create element for key: VTD_Operation. Value: Structural Validation. Target element name: VTD_Operation. Display Name: 
+2017-10-23 14:58:14,749 [8] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: Checkpoint 0-0-1,DataWraper. Create element for key: VTD_Status. Value: Success. Target element name: VTD_Status. Display Name: 
+2017-10-23 14:58:14,749 [8] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: Checkpoint 0-0-1,DataWraper. Create element for key: fileName. Value: Step25.xml. Target element name: fileName. Display Name: 
+2017-10-23 14:58:14,749 [4] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: 31450711. Create element for key: VTD_Type. Value: Script.WorkFlowScript. Target element name: VTD_Type. Display Name: 
+2017-10-23 14:58:14,749 [4] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: 31450711. Create element for key: VTD_Name. Value: test. Target element name: VTD_Name. Display Name: 
+2017-10-23 14:58:14,749 [4] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: 31450711. Create element for key: fileName. Value: Step26.xml. Target element name: fileName. Display Name: 
+2017-10-23 14:58:14,749 [3] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: Checkpoint 1-1-2. Create element for key: VTD_Type. Value: VTD_byRef. Target element name: VTD_Type. Display Name: 
+2017-10-23 14:58:14,749 [3] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: Checkpoint 1-1-2. Create element for key: VTD_Name. Value: Checkpoint. Target element name: VTD_Name. Display Name: 
+2017-10-23 14:58:14,749 [3] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: Checkpoint 1-1-2. Create element for key: Name. Value: Checkpoint. Target element name: Name. Display Name: 
+2017-10-23 14:58:14,749 [3] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: Checkpoint 1-1-2. Create element for key: fileName. Value: Step27.xml. Target element name: fileName. Display Name: 
+2017-10-23 14:58:14,749 [3] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: Checkpoint 2-2-2. Create element for key: VTD_Type. Value: VTD_byRef. Target element name: VTD_Type. Display Name: 
+2017-10-23 14:58:14,749 [3] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: Checkpoint 2-2-2. Create element for key: VTD_Name. Value: Checkpoint. Target element name: VTD_Name. Display Name: 
+2017-10-23 14:58:14,749 [3] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: Checkpoint 2-2-2. Create element for key: Name. Value: Checkpoint. Target element name: Name. Display Name: 
+2017-10-23 14:58:14,749 [3] DEBUG HP.ST.Fwk.ReportCreator.QTPEngine.Utils [(null)] - GetNodeInfo. StepID: Checkpoint 2-2-2. Create element for key: fileName. Value: Step28.xml. Target element name: fileName. Display Name: 

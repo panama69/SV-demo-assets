@@ -1,0 +1,1 @@
+-usr "C:\tmp\SV-demo-assets\scripts\ClaimProcessingAPI\ClaimProcessingAPI.usr" -msg_suffix_enable 0 -out "C:\tmp\SV-demo-assets\scripts\ClaimProcessingAPI\" -drv_log_file "C:\tmp\SV-demo-assets\scripts\ClaimProcessingAPI\mdrv.log" -cfg "C:\tmp\SV-demo-assets\scripts\ClaimProcessingAPI\default.cfg" -product_name vugen

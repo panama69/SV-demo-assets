@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<deploymentManifest id="manifest_02c08066-0e3b-4510-bbd6-338db5944234" rootItemId="02c08066-0e3b-4510-bbd6-338db5944234" xmlns="http://hp.com/SOAQ/ServiceVirtualization/2010/">
+  <Item id="02c08066-0e3b-4510-bbd6-338db5944234" type="VirtualService">
+    <References>
+      <Ref id="5ed63012-dae6-4466-9c01-f30584bdc006" />
+      <Ref id="6763873f-be1e-4e85-bec4-3b8a8db42261" />
+      <Ref id="6fda1c9c-c826-4a56-9411-944d08addb71" />
+      <Ref id="a1b93f02-27d9-473d-ac4f-0feb40cc188c" />
+      <Ref id="afa5e7ae-1f29-402b-8e20-173ae166d300" />
+      <Ref id="b2062b91-f435-4576-a1c1-4883d115f8d6" />
+    </References>
+  </Item>
+  <Item id="29e4a59b-009d-41c1-bfdf-565db14416d2" type="Dataset" contentHashcode="1334587409">
+    <References />
+  </Item>
+  <Item id="3b9e625d-74ba-4270-837a-645d148bc8f4" type="Dataset" contentHashcode="1022213029">
+    <References />
+  </Item>
+  <Item id="59ff9647-7583-4a35-b718-7acac8332bf8" type="Dataset" contentHashcode="-736472914">
+    <References />
+  </Item>
+  <Item id="5ed63012-dae6-4466-9c01-f30584bdc006" type="PerformanceModel">
+    <References />
+  </Item>
+  <Item id="6763873f-be1e-4e85-bec4-3b8a8db42261" type="ServiceDescription">
+    <References />
+  </Item>
+  <Item id="6fda1c9c-c826-4a56-9411-944d08addb71" type="DataModel">
+    <References>
+      <Ref id="29e4a59b-009d-41c1-bfdf-565db14416d2" />
+      <Ref id="3b9e625d-74ba-4270-837a-645d148bc8f4" />
+      <Ref id="59ff9647-7583-4a35-b718-7acac8332bf8" />
+      <Ref id="6763873f-be1e-4e85-bec4-3b8a8db42261" />
+      <Ref id="cff78b0a-d31d-4fbc-af5e-bc42eb95c3e3" />
+      <Ref id="e004aa61-b2c0-4939-9094-6dae240803ac" />
+      <Ref id="f9f296ae-1541-49be-ad53-ef75e4d0f9a4" />
+    </References>
+  </Item>
+  <Item id="a1b93f02-27d9-473d-ac4f-0feb40cc188c" type="PerformanceModel">
+    <References />
+  </Item>
+  <Item id="afa5e7ae-1f29-402b-8e20-173ae166d300" type="PerformanceModel">
+    <References />
+  </Item>
+  <Item id="b2062b91-f435-4576-a1c1-4883d115f8d6" type="PerformanceModel">
+    <References />
+  </Item>
+  <Item id="cff78b0a-d31d-4fbc-af5e-bc42eb95c3e3" type="Dataset" contentHashcode="2014809547">
+    <References />
+  </Item>
+  <Item id="e004aa61-b2c0-4939-9094-6dae240803ac" type="Dataset" contentHashcode="-1670471074">
+    <References />
+  </Item>
+  <Item id="f9f296ae-1541-49be-ad53-ef75e4d0f9a4" type="Dataset" contentHashcode="-566288928">
+    <References />
+  </Item>
+</deploymentManifest>

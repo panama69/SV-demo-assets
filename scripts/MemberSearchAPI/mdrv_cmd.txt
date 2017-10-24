@@ -1,0 +1,1 @@
+-usr "c:\tmp\MemberSearchAPI\MemberSearchAPI.usr" -msg_suffix_enable 0 -out "c:\tmp\MemberSearchAPI\" -drv_log_file "c:\tmp\MemberSearchAPI\mdrv.log" -cfg "c:\tmp\MemberSearchAPI\default.cfg" -product_name vugen

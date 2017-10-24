@@ -1,0 +1,396 @@
+2017-10-23 14:58:12,789 [1] INFO  UserLogger [(null)] - Loaded appender: UserLoggerAppender
+2017-10-23 14:58:12,792 [1] INFO  UserLogger [(null)] - Loaded appender: FileAppenderExternal
+2017-10-23 14:58:12,792 [1] INFO  UserLogger [(null)] - Loaded appender: LRAppender
+2017-10-23 14:58:12,793 [1] INFO  UserLogger [(null)] - Loaded appender: FileAppenderInternal
+2017-10-23 14:58:12,793 [1] INFO  UserLogger [(null)] - Loaded appender: UserLoggerAppender
+2017-10-23 14:58:12,793 [1] INFO  UserLogger [(null)] - Loaded appender: FileAppenderExternal
+2017-10-23 14:58:12,793 [1] INFO  UserLogger [(null)] - Loaded appender: LRAppender
+2017-10-23 14:58:12,793 [1] INFO  UserLogger [(null)] - Loaded appender: FileAppenderInternal
+2017-10-23 14:58:13,022 [14] INFO  UserLogger [(null)] - Step 'Start' : Step 'Start' started
+2017-10-23 14:58:13,026 [14] DEBUG UserLogger [(null)] - Step 'Start' : Parent Step: 'test'
+2017-10-23 14:58:13,053 [14] INFO  UserLogger [(null)] - Step 'Start' ended successfully
+2017-10-23 14:58:13,054 [14] INFO  UserLogger [(null)] - Step 'Test Flow' : Step 'Test Flow' started
+2017-10-23 14:58:13,055 [14] DEBUG UserLogger [(null)] - Step 'Test Flow' : Parent Step: 'test'
+2017-10-23 14:58:13,081 [14] INFO  UserLogger [(null)] - Step 'Iteration 1' : Step 'Iteration 1' started
+2017-10-23 14:58:13,083 [14] DEBUG UserLogger [(null)] - Step 'Iteration 1' : Parent Step: 'Loop2'
+2017-10-23 14:58:13,085 [14] INFO  UserLogger [(null)] - Step 'memberSearch' : Step 'memberSearch' started
+2017-10-23 14:58:13,085 [14] DEBUG UserLogger [(null)] - Step 'memberSearch' : Parent Step: 'Sequence12'
+2017-10-23 14:58:13,098 [14] INFO  UserLogger [(null)] - 
+Request:
+
+<Envelope xmlns="http://schemas.xmlsoap.org/soap/envelope/" xmlns:p1="http://www.w3.org/2001/XMLSchema-instance">
+  <Body>
+    <memberSearch xmlns="http://hp.com/SOAQ/ServiceSimulation/2010/demo/01">
+      <name>
+        <firstName xmlns="http://schemas.datacontract.org/2004/07/HP.SOAQ.ServiceSimulation.Demo">Hercule</firstName>
+        <lastName xmlns="http://schemas.datacontract.org/2004/07/HP.SOAQ.ServiceSimulation.Demo">Poirot</lastName>
+      </name>
+      <socialSecurityNumber>554-98-0001</socialSecurityNumber>
+    </memberSearch>
+  </Body>
+</Envelope>
+
+2017-10-23 14:58:13,108 [14] DEBUG UserLogger [(null)] - Encoding channel is processing the message
+2017-10-23 14:58:13,111 [14] DEBUG UserLogger [(null)] - Sending the following message: <Envelope xmlns="http://schemas.xmlsoap.org/soap/envelope/" xmlns:p1="http://www.w3.org/2001/XMLSchema-instance"><Body><memberSearch xmlns="http://hp.com/SOAQ/ServiceSimulation/2010/demo/01"><name><firstName xmlns="http://schemas.datacontract.org/2004/07/HP.SOAQ.ServiceSimulation.Demo">Hercule</firstName><lastName xmlns="http://schemas.datacontract.org/2004/07/HP.SOAQ.ServiceSimulation.Demo">Poirot</lastName></name><socialSecurityNumber>554-98-0001</socialSecurityNumber></memberSearch></Body></Envelope>
+2017-10-23 14:58:13,112 [14] DEBUG UserLogger [(null)] - HTTP channel is processing the message
+2017-10-23 14:58:13,117 [14] INFO  UserLogger [(null)] - URL: http://dockerclient:7200/MemberAccounts
+2017-10-23 14:58:13,126 [14] DEBUG UserLogger [(null)] - Sending the request to the server
+2017-10-23 14:58:13,129 [14] DEBUG UserLogger [(null)] - 
+
+Request after processing:
+
+<Envelope xmlns="http://schemas.xmlsoap.org/soap/envelope/" xmlns:p1="http://www.w3.org/2001/XMLSchema-instance">
+  <Body>
+    <memberSearch xmlns="http://hp.com/SOAQ/ServiceSimulation/2010/demo/01">
+      <name>
+        <firstName xmlns="http://schemas.datacontract.org/2004/07/HP.SOAQ.ServiceSimulation.Demo">Hercule</firstName>
+        <lastName xmlns="http://schemas.datacontract.org/2004/07/HP.SOAQ.ServiceSimulation.Demo">Poirot</lastName>
+      </name>
+      <socialSecurityNumber>554-98-0001</socialSecurityNumber>
+    </memberSearch>
+  </Body>
+</Envelope>
+
+
+2017-10-23 14:58:13,351 [14] INFO  UserLogger [(null)] - Returning the response to the previous channel
+2017-10-23 14:58:13,352 [14] DEBUG UserLogger [(null)] - HTTP channel - done
+2017-10-23 14:58:13,353 [14] DEBUG UserLogger [(null)] - Received the following message: <?xml version="1.0" encoding="utf-8"?><s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"><s:Body><memberSearchResponse xmlns:s="http://schemas.xmlsoap.org/soap/envelope/" xmlns="http://hp.com/SOAQ/ServiceSimulation/2010/demo/01"><memberSearchResult xmlns:a="http://schemas.datacontract.org/2004/07/HP.SOAQ.ServiceSimulation.Demo" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><a:Member><a:householdId>0</a:householdId><a:memberId>1</a:memberId><a:socialSecurityNumber>554-98-0001</a:socialSecurityNumber></a:Member></memberSearchResult></memberSearchResponse></s:Body></s:Envelope>
+2017-10-23 14:58:13,354 [14] DEBUG UserLogger [(null)] - Encoding channel - done
+2017-10-23 14:58:13,358 [14] INFO  UserLogger [(null)] - 
+Response:
+
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Body>
+    <memberSearchResponse xmlns:s="http://schemas.xmlsoap.org/soap/envelope/" xmlns="http://hp.com/SOAQ/ServiceSimulation/2010/demo/01">
+      <memberSearchResult xmlns:a="http://schemas.datacontract.org/2004/07/HP.SOAQ.ServiceSimulation.Demo" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+        <a:Member>
+          <a:householdId>0</a:householdId>
+          <a:memberId>1</a:memberId>
+          <a:socialSecurityNumber>554-98-0001</a:socialSecurityNumber>
+        </a:Member>
+      </memberSearchResult>
+    </memberSearchResponse>
+  </s:Body>
+</s:Envelope>
+
+2017-10-23 14:58:13,373 [14] INFO  UserLogger [(null)] - Structural Validation: True
+2017-10-23 14:58:13,380 [14] INFO  UserLogger [(null)] - Step 'memberSearch' ended successfully
+2017-10-23 14:58:13,381 [14] INFO  UserLogger [(null)] - Step 'getMemberPlan' : Step 'getMemberPlan' started
+2017-10-23 14:58:13,382 [14] DEBUG UserLogger [(null)] - Step 'getMemberPlan' : Parent Step: 'Sequence12'
+2017-10-23 14:58:13,383 [14] INFO  UserLogger [(null)] - 
+Request:
+
+<Envelope xmlns="http://schemas.xmlsoap.org/soap/envelope/">
+  <Body>
+    <getMemberPlan xmlns="http://hp.com/SOAQ/ServiceSimulation/2010/demo/01">
+      <memberId>1</memberId>
+    </getMemberPlan>
+  </Body>
+</Envelope>
+
+2017-10-23 14:58:13,384 [14] DEBUG UserLogger [(null)] - Encoding channel is processing the message
+2017-10-23 14:58:13,386 [14] DEBUG UserLogger [(null)] - Sending the following message: <Envelope xmlns="http://schemas.xmlsoap.org/soap/envelope/"><Body><getMemberPlan xmlns="http://hp.com/SOAQ/ServiceSimulation/2010/demo/01"><memberId>1</memberId></getMemberPlan></Body></Envelope>
+2017-10-23 14:58:13,386 [14] DEBUG UserLogger [(null)] - HTTP channel is processing the message
+2017-10-23 14:58:13,387 [14] INFO  UserLogger [(null)] - URL: http://dockerclient:7200/MemberAccounts
+2017-10-23 14:58:13,388 [14] DEBUG UserLogger [(null)] - Sending the request to the server
+2017-10-23 14:58:13,389 [14] DEBUG UserLogger [(null)] - 
+
+Request after processing:
+
+<Envelope xmlns="http://schemas.xmlsoap.org/soap/envelope/">
+  <Body>
+    <getMemberPlan xmlns="http://hp.com/SOAQ/ServiceSimulation/2010/demo/01">
+      <memberId>1</memberId>
+    </getMemberPlan>
+  </Body>
+</Envelope>
+
+
+2017-10-23 14:58:13,578 [14] INFO  UserLogger [(null)] - Returning the response to the previous channel
+2017-10-23 14:58:13,579 [14] DEBUG UserLogger [(null)] - HTTP channel - done
+2017-10-23 14:58:13,580 [14] DEBUG UserLogger [(null)] - Received the following message: <?xml version="1.0" encoding="utf-8"?><s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"><s:Body><getMemberPlanResponse xmlns:s="http://schemas.xmlsoap.org/soap/envelope/" xmlns="http://hp.com/SOAQ/ServiceSimulation/2010/demo/01"><getMemberPlanResult xmlns:a="http://schemas.datacontract.org/2004/07/HP.SOAQ.ServiceSimulation.Demo" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><a:approvalLimit>1000</a:approvalLimit><a:id>1</a:id><a:name>Allpay Total 1000</a:name></getMemberPlanResult></getMemberPlanResponse></s:Body></s:Envelope>
+2017-10-23 14:58:13,581 [14] DEBUG UserLogger [(null)] - Encoding channel - done
+2017-10-23 14:58:13,582 [14] INFO  UserLogger [(null)] - 
+Response:
+
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Body>
+    <getMemberPlanResponse xmlns:s="http://schemas.xmlsoap.org/soap/envelope/" xmlns="http://hp.com/SOAQ/ServiceSimulation/2010/demo/01">
+      <getMemberPlanResult xmlns:a="http://schemas.datacontract.org/2004/07/HP.SOAQ.ServiceSimulation.Demo" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+        <a:approvalLimit>1000</a:approvalLimit>
+        <a:id>1</a:id>
+        <a:name>Allpay Total 1000</a:name>
+      </getMemberPlanResult>
+    </getMemberPlanResponse>
+  </s:Body>
+</s:Envelope>
+
+2017-10-23 14:58:13,585 [14] INFO  UserLogger [(null)] - Structural Validation: True
+2017-10-23 14:58:13,588 [14] INFO  UserLogger [(null)] - Step 'getMemberPlan' ended successfully
+2017-10-23 14:58:13,589 [14] INFO  UserLogger [(null)] - Step 'getMemberDetail' : Step 'getMemberDetail' started
+2017-10-23 14:58:13,590 [14] DEBUG UserLogger [(null)] - Step 'getMemberDetail' : Parent Step: 'Sequence12'
+2017-10-23 14:58:13,592 [14] INFO  UserLogger [(null)] - 
+Request:
+
+<Envelope xmlns="http://schemas.xmlsoap.org/soap/envelope/">
+  <Body>
+    <getMemberDetail xmlns="http://hp.com/SOAQ/ServiceSimulation/2010/demo/01">
+      <memberId>1</memberId>
+    </getMemberDetail>
+  </Body>
+</Envelope>
+
+2017-10-23 14:58:13,593 [14] DEBUG UserLogger [(null)] - Encoding channel is processing the message
+2017-10-23 14:58:13,594 [14] DEBUG UserLogger [(null)] - Sending the following message: <Envelope xmlns="http://schemas.xmlsoap.org/soap/envelope/"><Body><getMemberDetail xmlns="http://hp.com/SOAQ/ServiceSimulation/2010/demo/01"><memberId>1</memberId></getMemberDetail></Body></Envelope>
+2017-10-23 14:58:13,595 [14] DEBUG UserLogger [(null)] - HTTP channel is processing the message
+2017-10-23 14:58:13,595 [14] INFO  UserLogger [(null)] - URL: http://dockerclient:7200/MemberAccounts
+2017-10-23 14:58:13,596 [14] DEBUG UserLogger [(null)] - Sending the request to the server
+2017-10-23 14:58:13,597 [14] DEBUG UserLogger [(null)] - 
+
+Request after processing:
+
+<Envelope xmlns="http://schemas.xmlsoap.org/soap/envelope/">
+  <Body>
+    <getMemberDetail xmlns="http://hp.com/SOAQ/ServiceSimulation/2010/demo/01">
+      <memberId>1</memberId>
+    </getMemberDetail>
+  </Body>
+</Envelope>
+
+
+2017-10-23 14:58:13,908 [14] INFO  UserLogger [(null)] - Returning the response to the previous channel
+2017-10-23 14:58:13,909 [14] DEBUG UserLogger [(null)] - HTTP channel - done
+2017-10-23 14:58:13,909 [14] DEBUG UserLogger [(null)] - Received the following message: <?xml version="1.0" encoding="utf-8"?><s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"><s:Body><getMemberDetailResponse xmlns:s="http://schemas.xmlsoap.org/soap/envelope/" xmlns="http://hp.com/SOAQ/ServiceSimulation/2010/demo/01"><getMemberDetailResult xmlns:a="http://schemas.datacontract.org/2004/07/HP.SOAQ.ServiceSimulation.Demo" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><a:address><a:city>Smithfield London W1</a:city><a:country>Great Britain</a:country><a:endDate>0001-01-01T00:00:00</a:endDate><a:line1>56B Whitehaven Mansions</a:line1><a:line2>Charterhouse Square</a:line2><a:startDate>0001-01-01T00:00:00</a:startDate><a:state>England</a:state><a:zip i:nil="true" /></a:address><a:householdId>0</a:householdId><a:memberId>1</a:memberId><a:person><a:dateOfBirth>1876-04-01T00:00:00</a:dateOfBirth><a:gender>MALE</a:gender><a:name><a:firstName>Hercule</a:firstName><a:lastName>Poirot</a:lastName><a:middleName i:nil="true" /><a:prefix i:nil="true" /><a:suffix i:nil="true" /></a:name><a:socialSecurityNumber>554-98-0001</a:socialSecurityNumber></a:person><a:phone i:nil="true" /></getMemberDetailResult></getMemberDetailResponse></s:Body></s:Envelope>
+2017-10-23 14:58:13,910 [14] DEBUG UserLogger [(null)] - Encoding channel - done
+2017-10-23 14:58:13,911 [14] INFO  UserLogger [(null)] - 
+Response:
+
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Body>
+    <getMemberDetailResponse xmlns:s="http://schemas.xmlsoap.org/soap/envelope/" xmlns="http://hp.com/SOAQ/ServiceSimulation/2010/demo/01">
+      <getMemberDetailResult xmlns:a="http://schemas.datacontract.org/2004/07/HP.SOAQ.ServiceSimulation.Demo" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+        <a:address>
+          <a:city>Smithfield London W1</a:city>
+          <a:country>Great Britain</a:country>
+          <a:endDate>0001-01-01T00:00:00</a:endDate>
+          <a:line1>56B Whitehaven Mansions</a:line1>
+          <a:line2>Charterhouse Square</a:line2>
+          <a:startDate>0001-01-01T00:00:00</a:startDate>
+          <a:state>England</a:state>
+          <a:zip i:nil="true" />
+        </a:address>
+        <a:householdId>0</a:householdId>
+        <a:memberId>1</a:memberId>
+        <a:person>
+          <a:dateOfBirth>1876-04-01T00:00:00</a:dateOfBirth>
+          <a:gender>MALE</a:gender>
+          <a:name>
+            <a:firstName>Hercule</a:firstName>
+            <a:lastName>Poirot</a:lastName>
+            <a:middleName i:nil="true" />
+            <a:prefix i:nil="true" />
+            <a:suffix i:nil="true" />
+          </a:name>
+          <a:socialSecurityNumber>554-98-0001</a:socialSecurityNumber>
+        </a:person>
+        <a:phone i:nil="true" />
+      </getMemberDetailResult>
+    </getMemberDetailResponse>
+  </s:Body>
+</s:Envelope>
+
+2017-10-23 14:58:13,914 [14] INFO  UserLogger [(null)] - Structural Validation: True
+2017-10-23 14:58:13,915 [14] INFO  UserLogger [(null)] - Step 'getMemberDetail' ended successfully
+2017-10-23 14:58:13,918 [14] INFO  UserLogger [(null)] - Step 'Iteration 1' ended successfully
+2017-10-23 14:58:13,921 [14] INFO  UserLogger [(null)] - Step 'Iteration 2' : Step 'Iteration 2' started
+2017-10-23 14:58:13,922 [14] DEBUG UserLogger [(null)] - Step 'Iteration 2' : Parent Step: 'Loop2'
+2017-10-23 14:58:13,923 [14] INFO  UserLogger [(null)] - Step 'memberSearch' : Step 'memberSearch' started
+2017-10-23 14:58:13,924 [14] DEBUG UserLogger [(null)] - Step 'memberSearch' : Parent Step: 'Sequence12'
+2017-10-23 14:58:13,926 [14] INFO  UserLogger [(null)] - 
+Request:
+
+<Envelope xmlns="http://schemas.xmlsoap.org/soap/envelope/" xmlns:p1="http://www.w3.org/2001/XMLSchema-instance">
+  <Body>
+    <memberSearch xmlns="http://hp.com/SOAQ/ServiceSimulation/2010/demo/01">
+      <name>
+        <firstName xmlns="http://schemas.datacontract.org/2004/07/HP.SOAQ.ServiceSimulation.Demo">Sherlock</firstName>
+        <lastName xmlns="http://schemas.datacontract.org/2004/07/HP.SOAQ.ServiceSimulation.Demo">Holmes</lastName>
+      </name>
+      <socialSecurityNumber>332-10-0002</socialSecurityNumber>
+    </memberSearch>
+  </Body>
+</Envelope>
+
+2017-10-23 14:58:13,928 [14] DEBUG UserLogger [(null)] - Encoding channel is processing the message
+2017-10-23 14:58:13,929 [14] DEBUG UserLogger [(null)] - Sending the following message: <Envelope xmlns="http://schemas.xmlsoap.org/soap/envelope/" xmlns:p1="http://www.w3.org/2001/XMLSchema-instance"><Body><memberSearch xmlns="http://hp.com/SOAQ/ServiceSimulation/2010/demo/01"><name><firstName xmlns="http://schemas.datacontract.org/2004/07/HP.SOAQ.ServiceSimulation.Demo">Sherlock</firstName><lastName xmlns="http://schemas.datacontract.org/2004/07/HP.SOAQ.ServiceSimulation.Demo">Holmes</lastName></name><socialSecurityNumber>332-10-0002</socialSecurityNumber></memberSearch></Body></Envelope>
+2017-10-23 14:58:13,930 [14] DEBUG UserLogger [(null)] - HTTP channel is processing the message
+2017-10-23 14:58:13,931 [14] INFO  UserLogger [(null)] - URL: http://dockerclient:7200/MemberAccounts
+2017-10-23 14:58:13,932 [14] DEBUG UserLogger [(null)] - Sending the request to the server
+2017-10-23 14:58:13,933 [14] DEBUG UserLogger [(null)] - 
+
+Request after processing:
+
+<Envelope xmlns="http://schemas.xmlsoap.org/soap/envelope/" xmlns:p1="http://www.w3.org/2001/XMLSchema-instance">
+  <Body>
+    <memberSearch xmlns="http://hp.com/SOAQ/ServiceSimulation/2010/demo/01">
+      <name>
+        <firstName xmlns="http://schemas.datacontract.org/2004/07/HP.SOAQ.ServiceSimulation.Demo">Sherlock</firstName>
+        <lastName xmlns="http://schemas.datacontract.org/2004/07/HP.SOAQ.ServiceSimulation.Demo">Holmes</lastName>
+      </name>
+      <socialSecurityNumber>332-10-0002</socialSecurityNumber>
+    </memberSearch>
+  </Body>
+</Envelope>
+
+
+2017-10-23 14:58:14,143 [14] INFO  UserLogger [(null)] - Returning the response to the previous channel
+2017-10-23 14:58:14,144 [14] DEBUG UserLogger [(null)] - HTTP channel - done
+2017-10-23 14:58:14,145 [14] DEBUG UserLogger [(null)] - Received the following message: <?xml version="1.0" encoding="utf-8"?><s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"><s:Body><memberSearchResponse xmlns:s="http://schemas.xmlsoap.org/soap/envelope/" xmlns="http://hp.com/SOAQ/ServiceSimulation/2010/demo/01"><memberSearchResult xmlns:a="http://schemas.datacontract.org/2004/07/HP.SOAQ.ServiceSimulation.Demo" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><a:Member><a:householdId>0</a:householdId><a:memberId>2</a:memberId><a:socialSecurityNumber>332-10-0002</a:socialSecurityNumber></a:Member></memberSearchResult></memberSearchResponse></s:Body></s:Envelope>
+2017-10-23 14:58:14,146 [14] DEBUG UserLogger [(null)] - Encoding channel - done
+2017-10-23 14:58:14,147 [14] INFO  UserLogger [(null)] - 
+Response:
+
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Body>
+    <memberSearchResponse xmlns:s="http://schemas.xmlsoap.org/soap/envelope/" xmlns="http://hp.com/SOAQ/ServiceSimulation/2010/demo/01">
+      <memberSearchResult xmlns:a="http://schemas.datacontract.org/2004/07/HP.SOAQ.ServiceSimulation.Demo" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+        <a:Member>
+          <a:householdId>0</a:householdId>
+          <a:memberId>2</a:memberId>
+          <a:socialSecurityNumber>332-10-0002</a:socialSecurityNumber>
+        </a:Member>
+      </memberSearchResult>
+    </memberSearchResponse>
+  </s:Body>
+</s:Envelope>
+
+2017-10-23 14:58:14,149 [14] INFO  UserLogger [(null)] - Structural Validation: True
+2017-10-23 14:58:14,151 [14] INFO  UserLogger [(null)] - Step 'memberSearch' ended successfully
+2017-10-23 14:58:14,151 [14] INFO  UserLogger [(null)] - Step 'getMemberPlan' : Step 'getMemberPlan' started
+2017-10-23 14:58:14,153 [14] DEBUG UserLogger [(null)] - Step 'getMemberPlan' : Parent Step: 'Sequence12'
+2017-10-23 14:58:14,154 [14] INFO  UserLogger [(null)] - 
+Request:
+
+<Envelope xmlns="http://schemas.xmlsoap.org/soap/envelope/">
+  <Body>
+    <getMemberPlan xmlns="http://hp.com/SOAQ/ServiceSimulation/2010/demo/01">
+      <memberId>2</memberId>
+    </getMemberPlan>
+  </Body>
+</Envelope>
+
+2017-10-23 14:58:14,155 [14] DEBUG UserLogger [(null)] - Encoding channel is processing the message
+2017-10-23 14:58:14,155 [14] DEBUG UserLogger [(null)] - Sending the following message: <Envelope xmlns="http://schemas.xmlsoap.org/soap/envelope/"><Body><getMemberPlan xmlns="http://hp.com/SOAQ/ServiceSimulation/2010/demo/01"><memberId>2</memberId></getMemberPlan></Body></Envelope>
+2017-10-23 14:58:14,156 [14] DEBUG UserLogger [(null)] - HTTP channel is processing the message
+2017-10-23 14:58:14,157 [14] INFO  UserLogger [(null)] - URL: http://dockerclient:7200/MemberAccounts
+2017-10-23 14:58:14,157 [14] DEBUG UserLogger [(null)] - Sending the request to the server
+2017-10-23 14:58:14,158 [14] DEBUG UserLogger [(null)] - 
+
+Request after processing:
+
+<Envelope xmlns="http://schemas.xmlsoap.org/soap/envelope/">
+  <Body>
+    <getMemberPlan xmlns="http://hp.com/SOAQ/ServiceSimulation/2010/demo/01">
+      <memberId>2</memberId>
+    </getMemberPlan>
+  </Body>
+</Envelope>
+
+
+2017-10-23 14:58:14,347 [14] INFO  UserLogger [(null)] - Returning the response to the previous channel
+2017-10-23 14:58:14,349 [14] DEBUG UserLogger [(null)] - HTTP channel - done
+2017-10-23 14:58:14,350 [14] DEBUG UserLogger [(null)] - Received the following message: <?xml version="1.0" encoding="utf-8"?><s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"><s:Body><getMemberPlanResponse xmlns:s="http://schemas.xmlsoap.org/soap/envelope/" xmlns="http://hp.com/SOAQ/ServiceSimulation/2010/demo/01"><getMemberPlanResult xmlns:a="http://schemas.datacontract.org/2004/07/HP.SOAQ.ServiceSimulation.Demo" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><a:approvalLimit>500</a:approvalLimit><a:id>2</a:id><a:name>Allpay Select 500</a:name></getMemberPlanResult></getMemberPlanResponse></s:Body></s:Envelope>
+2017-10-23 14:58:14,351 [14] DEBUG UserLogger [(null)] - Encoding channel - done
+2017-10-23 14:58:14,352 [14] INFO  UserLogger [(null)] - 
+Response:
+
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Body>
+    <getMemberPlanResponse xmlns:s="http://schemas.xmlsoap.org/soap/envelope/" xmlns="http://hp.com/SOAQ/ServiceSimulation/2010/demo/01">
+      <getMemberPlanResult xmlns:a="http://schemas.datacontract.org/2004/07/HP.SOAQ.ServiceSimulation.Demo" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+        <a:approvalLimit>500</a:approvalLimit>
+        <a:id>2</a:id>
+        <a:name>Allpay Select 500</a:name>
+      </getMemberPlanResult>
+    </getMemberPlanResponse>
+  </s:Body>
+</s:Envelope>
+
+2017-10-23 14:58:14,355 [14] INFO  UserLogger [(null)] - Structural Validation: True
+2017-10-23 14:58:14,359 [14] INFO  UserLogger [(null)] - Step 'getMemberPlan' ended successfully
+2017-10-23 14:58:14,359 [14] INFO  UserLogger [(null)] - Step 'getMemberDetail' : Step 'getMemberDetail' started
+2017-10-23 14:58:14,360 [14] DEBUG UserLogger [(null)] - Step 'getMemberDetail' : Parent Step: 'Sequence12'
+2017-10-23 14:58:14,369 [14] INFO  UserLogger [(null)] - 
+Request:
+
+<Envelope xmlns="http://schemas.xmlsoap.org/soap/envelope/">
+  <Body>
+    <getMemberDetail xmlns="http://hp.com/SOAQ/ServiceSimulation/2010/demo/01">
+      <memberId>2</memberId>
+    </getMemberDetail>
+  </Body>
+</Envelope>
+
+2017-10-23 14:58:14,371 [14] DEBUG UserLogger [(null)] - Encoding channel is processing the message
+2017-10-23 14:58:14,372 [14] DEBUG UserLogger [(null)] - Sending the following message: <Envelope xmlns="http://schemas.xmlsoap.org/soap/envelope/"><Body><getMemberDetail xmlns="http://hp.com/SOAQ/ServiceSimulation/2010/demo/01"><memberId>2</memberId></getMemberDetail></Body></Envelope>
+2017-10-23 14:58:14,374 [14] DEBUG UserLogger [(null)] - HTTP channel is processing the message
+2017-10-23 14:58:14,376 [14] INFO  UserLogger [(null)] - URL: http://dockerclient:7200/MemberAccounts
+2017-10-23 14:58:14,377 [14] DEBUG UserLogger [(null)] - Sending the request to the server
+2017-10-23 14:58:14,377 [14] DEBUG UserLogger [(null)] - 
+
+Request after processing:
+
+<Envelope xmlns="http://schemas.xmlsoap.org/soap/envelope/">
+  <Body>
+    <getMemberDetail xmlns="http://hp.com/SOAQ/ServiceSimulation/2010/demo/01">
+      <memberId>2</memberId>
+    </getMemberDetail>
+  </Body>
+</Envelope>
+
+
+2017-10-23 14:58:14,687 [14] INFO  UserLogger [(null)] - Returning the response to the previous channel
+2017-10-23 14:58:14,689 [14] DEBUG UserLogger [(null)] - HTTP channel - done
+2017-10-23 14:58:14,690 [14] DEBUG UserLogger [(null)] - Received the following message: <?xml version="1.0" encoding="utf-8"?><s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"><s:Body><getMemberDetailResponse xmlns:s="http://schemas.xmlsoap.org/soap/envelope/" xmlns="http://hp.com/SOAQ/ServiceSimulation/2010/demo/01"><getMemberDetailResult xmlns:a="http://schemas.datacontract.org/2004/07/HP.SOAQ.ServiceSimulation.Demo" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><a:address><a:city>London NW1 6XE</a:city><a:country>Great Britain</a:country><a:endDate>0001-01-01T00:00:00</a:endDate><a:line1>221b Baker Street</a:line1><a:line2 i:nil="true" /><a:startDate>0001-01-01T00:00:00</a:startDate><a:state>England</a:state><a:zip i:nil="true" /></a:address><a:householdId>0</a:householdId><a:memberId>2</a:memberId><a:person><a:dateOfBirth>1854-01-06T00:00:00</a:dateOfBirth><a:gender>MALE</a:gender><a:name><a:firstName>Sherlock</a:firstName><a:lastName>Holmes</a:lastName><a:middleName i:nil="true" /><a:prefix i:nil="true" /><a:suffix i:nil="true" /></a:name><a:socialSecurityNumber>332-10-0002</a:socialSecurityNumber></a:person><a:phone i:nil="true" /></getMemberDetailResult></getMemberDetailResponse></s:Body></s:Envelope>
+2017-10-23 14:58:14,691 [14] DEBUG UserLogger [(null)] - Encoding channel - done
+2017-10-23 14:58:14,692 [14] INFO  UserLogger [(null)] - 
+Response:
+
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Body>
+    <getMemberDetailResponse xmlns:s="http://schemas.xmlsoap.org/soap/envelope/" xmlns="http://hp.com/SOAQ/ServiceSimulation/2010/demo/01">
+      <getMemberDetailResult xmlns:a="http://schemas.datacontract.org/2004/07/HP.SOAQ.ServiceSimulation.Demo" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+        <a:address>
+          <a:city>London NW1 6XE</a:city>
+          <a:country>Great Britain</a:country>
+          <a:endDate>0001-01-01T00:00:00</a:endDate>
+          <a:line1>221b Baker Street</a:line1>
+          <a:line2 i:nil="true" />
+          <a:startDate>0001-01-01T00:00:00</a:startDate>
+          <a:state>England</a:state>
+          <a:zip i:nil="true" />
+        </a:address>
+        <a:householdId>0</a:householdId>
+        <a:memberId>2</a:memberId>
+        <a:person>
+          <a:dateOfBirth>1854-01-06T00:00:00</a:dateOfBirth>
+          <a:gender>MALE</a:gender>
+          <a:name>
+            <a:firstName>Sherlock</a:firstName>
+            <a:lastName>Holmes</a:lastName>
+            <a:middleName i:nil="true" />
+            <a:prefix i:nil="true" />
+            <a:suffix i:nil="true" />
+          </a:name>
+          <a:socialSecurityNumber>332-10-0002</a:socialSecurityNumber>
+        </a:person>
+        <a:phone i:nil="true" />
+      </getMemberDetailResult>
+    </getMemberDetailResponse>
+  </s:Body>
+</s:Envelope>
+
+2017-10-23 14:58:14,695 [14] INFO  UserLogger [(null)] - Structural Validation: True
+2017-10-23 14:58:14,698 [14] INFO  UserLogger [(null)] - Step 'getMemberDetail' ended successfully
+2017-10-23 14:58:14,699 [14] INFO  UserLogger [(null)] - Step 'Iteration 2' ended successfully
+2017-10-23 14:58:14,701 [14] INFO  UserLogger [(null)] - Step 'Test Flow' ended successfully
