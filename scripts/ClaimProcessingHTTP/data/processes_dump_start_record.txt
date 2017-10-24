@@ -1,0 +1,62 @@
+Failed to get information of process Id: 0
+Failed to get information of process Id: 4
+Failed to get information of process Id: 252
+Failed to get information of process Id: 364
+Failed to get information of process Id: 416
+Failed to get information of process Id: 424
+Failed to get information of process Id: 472
+Failed to get information of process Id: 516
+Failed to get information of process Id: 532
+Failed to get information of process Id: 540
+Failed to get information of process Id: 648
+Failed to get information of process Id: 708
+Failed to get information of process Id: 736
+Failed to get information of process Id: 744
+Failed to get information of process Id: 876
+Failed to get information of process Id: 952
+Failed to get information of process Id: 1020
+Failed to get information of process Id: 1036
+Failed to get information of process Id: 1068
+Failed to get information of process Id: 1188
+Failed to get information of process Id: 1320
+Failed to get information of process Id: 1440
+Failed to get information of process Id: 1488
+Failed to get information of process Id: 1596
+Failed to get information of process Id: 1672
+Failed to get information of process Id: 1708
+Failed to get information of process Id: 1780
+Failed to get information of process Id: 1812
+Failed to get information of process Id: 1904
+Failed to get information of process Id: 1968
+Failed to get information of process Id: 2204
+Failed to get information of process Id: 2364
+Failed to get information of process Id: 2468
+Failed to get information of process Id: 2492
+PROCESS 0xb14       taskhost.exe
+PROCESS 0xb34       rdpclip.exe
+PROCESS 0xc88       dwm.exe
+PROCESS 0xca0       explorer.exe
+PROCESS 0xd0c       vmwaretray.exe
+PROCESS 0xd2c       jusched.exe
+PROCESS 0xd8c       adobearm.exe
+Failed to get information of process Id: 3560
+Failed to get information of process Id: 3704
+Failed to get information of process Id: 2976
+Failed to get information of process Id: 2652
+PROCESS 0xf40       magentproc.exe
+PROCESS 0xfa8       totalcmd.exe
+PROCESS 0x988       googletoolbaruser_32.exe
+PROCESS 0x894       virtualservicedesigner.exe
+PROCESS 0xe44       memberaccountsservice.exe
+PROCESS 0xc28       claimprocessingservice.exe
+PROCESS 0x898       approvalservice.exe
+PROCESS 0x994       exchangerateservice.exe
+PROCESS 0xba8       guiclient.exe
+PROCESS 0xfe4       conhost.exe
+PROCESS 0x240       conhost.exe
+PROCESS 0x5f4       conhost.exe
+PROCESS 0xf0c       conhost.exe
+PROCESS 0xac4       lrlauncherapp.exe
+Failed to get information of process Id: 320
+PROCESS 0xfbc       vugen.exe
+PROCESS 0xff8       guiclient.exe

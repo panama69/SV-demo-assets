@@ -1,0 +1,6 @@
+c:\opt\sv\trunk\net\Demo\ClaimProcessingDemo\Application\ClaimProcessingService\bin\Debug\ClaimProcessingService.exe.config
+c:\opt\sv\trunk\net\Demo\ClaimProcessingDemo\Application\ClaimProcessingService\bin\Debug\ClaimProcessingService.exe
+c:\opt\sv\trunk\net\Demo\ClaimProcessingDemo\Application\ClaimProcessingService\bin\Debug\ClaimProcessingService.pdb
+c:\opt\sv\trunk\net\Demo\ClaimProcessingDemo\Application\ClaimProcessingService\obj\x86\Debug\ResolveAssemblyReference.cache
+c:\opt\sv\trunk\net\Demo\ClaimProcessingDemo\Application\ClaimProcessingService\obj\x86\Debug\ClaimProcessingService.exe
+c:\opt\sv\trunk\net\Demo\ClaimProcessingDemo\Application\ClaimProcessingService\obj\x86\Debug\ClaimProcessingService.pdb

@@ -1,0 +1,33 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="TIBCOMemberAccountsService" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="ProviderUrl" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">localhost</Value>
+    </Setting>
+    <Setting Name="ServiceUsername" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">memberAccountsServiceUser</Value>
+    </Setting>
+    <Setting Name="ServicePassword" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">changeit</Value>
+    </Setting>
+    <Setting Name="DestinationName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">memberAccounts.topic.input</Value>
+    </Setting>
+    <Setting Name="DestinatioType" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Topic</Value>
+    </Setting>
+    <Setting Name="ReplyToDestinationName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">memberAccounts.topic.reply</Value>
+    </Setting>
+    <Setting Name="ReplyToDestinationType" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Topic</Value>
+    </Setting>
+    <Setting Name="AgentUsername" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">admin</Value>
+    </Setting>
+    <Setting Name="AgentPassword" Type="System.String" Scope="Application">
+      <Value Profile="(Default)" />
+    </Setting>
+  </Settings>
+</SettingsFile>

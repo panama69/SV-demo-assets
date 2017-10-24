@@ -1,0 +1,271 @@
+<Configuration>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="E54E7F4B-A990-4C84-A716-43741D89A78C/f:ClaimRegistry.cs" caret="72" fromTop="0" />
+      <File id="A7F5F6E1-7DB9-45E0-BDC5-7B3FD9A4CBDB/f:SharedDBConnection.cs" caret="190" fromTop="6" />
+      <File id="E2CE9EF3-A444-41D6-8541-C21E93F24669/f:IApproval.cs" caret="0" fromTop="0" />
+      <File id="BDD37F30-3906-4659-B9D9-587A1DED5C64/f:ExchangeRate.cs" caret="1575" fromTop="5" />
+      <File id="E2CE9EF3-A444-41D6-8541-C21E93F24669/f:Approval.cs" caret="70" fromTop="2" />
+      <File id="E54E7F4B-A990-4C84-A716-43741D89A78C/d:services/f:MemberAccounts.cs" caret="806" fromTop="17" />
+      <File id="A7F5F6E1-7DB9-45E0-BDC5-7B3FD9A4CBDB/f:MedicalHistoryGenerator.cs" caret="0" fromTop="0" />
+      <File id="AFFC9B3B-756F-49F7-B78D-235F7B896FD1/f:MedicalHistory.cs" caret="159" fromTop="9" />
+      <File id="A7F5F6E1-7DB9-45E0-BDC5-7B3FD9A4CBDB/f:IMemberAccounts.cs" caret="644" fromTop="21" />
+      <File id="7C7238D0-ED15-44FE-AE20-B09E0C4F791B/f:PrintSchema.cs" caret="342" fromTop="14" />
+      <File id="A7F5F6E1-7DB9-45E0-BDC5-7B3FD9A4CBDB/f:MemberAccounts.cs" caret="1730" fromTop="27" />
+      <File id="7C7238D0-ED15-44FE-AE20-B09E0C4F791B/f:IXMLMemberAccounts.cs" caret="529" fromTop="20" />
+      <File id="7C7238D0-ED15-44FE-AE20-B09E0C4F791B/d:Properties/f:Settings.Designer.cs" caret="0" fromTop="0" />
+      <File id="C09C48F1-8AFF-48DF-9DD3-6DC62EC2EEB8/f:app.config" caret="0" fromTop="0" />
+      <File id="E54E7F4B-A990-4C84-A716-43741D89A78C/f:ClaimProcessing.cs" caret="448" fromTop="0" />
+      <File id="C09C48F1-8AFF-48DF-9DD3-6DC62EC2EEB8/f:ClaimProcessingService.cs" caret="0" fromTop="0" />
+      <File id="C09C48F1-8AFF-48DF-9DD3-6DC62EC2EEB8/f:IClaimProcessing.cs" caret="3601" fromTop="18" />
+      <File id="C09C48F1-8AFF-48DF-9DD3-6DC62EC2EEB8/d:services/f:Approval.cs" caret="8306" fromTop="0" />
+      <File id="009EE204-F55F-427A-892E-8596C185F455/d:Ems/f:EmsListener.cs" caret="4715" fromTop="94" />
+      <File id="009EE204-F55F-427A-892E-8596C185F455/d:Ems/f:EmsProducer.cs" caret="1460" fromTop="20" />
+      <File id="C09C48F1-8AFF-48DF-9DD3-6DC62EC2EEB8/f:TIBCOMemberAccountsClient.cs" caret="3489" fromTop="31" />
+      <File id="7C7238D0-ED15-44FE-AE20-B09E0C4F791B/f:XMLMemberAccounts.cs" caret="1233" fromTop="24" />
+      <File id="1C42EC70-6582-456A-9FFF-F643DE33C5E8/f:Program.cs" caret="0" fromTop="0" />
+      <File id="1C42EC70-6582-456A-9FFF-F643DE33C5E8/f:Model.cs" caret="0" fromTop="0" />
+      <File id="7C7238D0-ED15-44FE-AE20-B09E0C4F791B/f:TIBCOMemberAccountsService.cs" caret="0" fromTop="0" />
+      <File id="1C42EC70-6582-456A-9FFF-F643DE33C5E8/f:EnterClaimForm.Designer.cs" caret="0" fromTop="0" />
+      <File id="1C42EC70-6582-456A-9FFF-F643DE33C5E8/f:EnterClaimForm.cs" caret="2418" fromTop="11" />
+      <File id="C09C48F1-8AFF-48DF-9DD3-6DC62EC2EEB8/f:TIBCOClaimProcessing.cs" caret="5897" fromTop="10" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="C09C48F1-8AFF-48DF-9DD3-6DC62EC2EEB8/f:TIBCOMemberAccountsClient.cs" caret="2555" fromTop="9" />
+      <File id="C09C48F1-8AFF-48DF-9DD3-6DC62EC2EEB8/f:TIBCOMemberAccountsClient.cs" caret="1242" fromTop="31" />
+      <File id="C09C48F1-8AFF-48DF-9DD3-6DC62EC2EEB8/f:TIBCOMemberAccountsClient.cs" caret="11540" fromTop="21" />
+      <File id="C09C48F1-8AFF-48DF-9DD3-6DC62EC2EEB8/f:TIBCOMemberAccountsClient.cs" caret="1189" fromTop="35" />
+      <File id="C09C48F1-8AFF-48DF-9DD3-6DC62EC2EEB8/f:TIBCOMemberAccountsClient.cs" caret="1097" fromTop="29" />
+      <File id="C09C48F1-8AFF-48DF-9DD3-6DC62EC2EEB8/f:TIBCOClaimProcessing.cs" caret="276" fromTop="8" />
+      <File id="C09C48F1-8AFF-48DF-9DD3-6DC62EC2EEB8/f:TIBCOMemberAccountsClient.cs" caret="946" fromTop="25" />
+      <File id="C09C48F1-8AFF-48DF-9DD3-6DC62EC2EEB8/f:TIBCOMemberAccountsClient.cs" caret="4329" fromTop="17" />
+      <File id="C09C48F1-8AFF-48DF-9DD3-6DC62EC2EEB8/f:TIBCOMemberAccountsClient.cs" caret="12597" fromTop="24" />
+      <File id="C09C48F1-8AFF-48DF-9DD3-6DC62EC2EEB8/f:TIBCOMemberAccountsClient.cs" caret="4295" fromTop="27" />
+      <File id="C09C48F1-8AFF-48DF-9DD3-6DC62EC2EEB8/f:TIBCOMemberAccountsClient.cs" caret="4312" fromTop="33" />
+      <File id="C09C48F1-8AFF-48DF-9DD3-6DC62EC2EEB8/f:TIBCOMemberAccountsClient.cs" caret="3772" fromTop="23" />
+      <File id="C09C48F1-8AFF-48DF-9DD3-6DC62EC2EEB8/f:TIBCOMemberAccountsClient.cs" caret="3346" fromTop="27" />
+      <File id="C09C48F1-8AFF-48DF-9DD3-6DC62EC2EEB8/f:TIBCOMemberAccountsClient.cs" caret="3489" fromTop="31" />
+      <File id="1C42EC70-6582-456A-9FFF-F643DE33C5E8/f:EnterClaimForm.cs" caret="1867" fromTop="4" />
+      <File id="1C42EC70-6582-456A-9FFF-F643DE33C5E8/f:EnterClaimForm.cs" caret="1630" fromTop="20" />
+      <File id="1C42EC70-6582-456A-9FFF-F643DE33C5E8/f:EnterClaimForm.cs" caret="3759" fromTop="27" />
+      <File id="1C42EC70-6582-456A-9FFF-F643DE33C5E8/f:EnterClaimForm.Designer.cs" caret="13247" fromTop="0" />
+      <File id="1C42EC70-6582-456A-9FFF-F643DE33C5E8/f:EnterClaimForm.Designer.cs" caret="13247" fromTop="0" />
+      <File id="1C42EC70-6582-456A-9FFF-F643DE33C5E8/f:EnterClaimForm.Designer.cs" caret="690" fromTop="0" />
+      <File id="1C42EC70-6582-456A-9FFF-F643DE33C5E8/f:EnterClaimForm.Designer.cs" caret="13247" fromTop="17" />
+      <File id="1C42EC70-6582-456A-9FFF-F643DE33C5E8/f:EnterClaimForm.Designer.cs" caret="0" fromTop="0" />
+      <File id="1C42EC70-6582-456A-9FFF-F643DE33C5E8/f:EnterClaimForm.cs" caret="3313" fromTop="29" />
+      <File id="1C42EC70-6582-456A-9FFF-F643DE33C5E8/f:EnterClaimForm.cs" caret="3473" fromTop="34" />
+      <File id="1C42EC70-6582-456A-9FFF-F643DE33C5E8/f:EnterClaimForm.cs" caret="4343" fromTop="32" />
+      <File id="1C42EC70-6582-456A-9FFF-F643DE33C5E8/f:EnterClaimForm.cs" caret="2558" fromTop="11" />
+      <File id="1C42EC70-6582-456A-9FFF-F643DE33C5E8/f:EnterClaimForm.cs" caret="2288" fromTop="5" />
+      <File id="C09C48F1-8AFF-48DF-9DD3-6DC62EC2EEB8/f:TIBCOClaimProcessing.cs" caret="7650" fromTop="34" />
+      <File id="C09C48F1-8AFF-48DF-9DD3-6DC62EC2EEB8/f:TIBCOClaimProcessing.cs" caret="7564" fromTop="33" />
+      <File id="C09C48F1-8AFF-48DF-9DD3-6DC62EC2EEB8/f:TIBCOClaimProcessing.cs" caret="6293" fromTop="14" />
+    </RecentEdits>
+  </RecentFiles>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir IsNull="False">
+    </NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Default">
+      <Item value="private" priority="8" />
+      <Item value="ClaimRegistry`0" priority="6" />
+      <Item value="ParamArrayAttribute`0" priority="0" />
+      <Item value="public" priority="7" />
+      <Item value="return" priority="5" />
+      <Item value="new" priority="11" />
+      <Item value="ClaimRegistry" priority="0" />
+      <Item value="void" priority="1" />
+      <Item value="Claim`0" priority="1" />
+      <Item value="lock" priority="2" />
+      <Item value="claimsById" priority="0" />
+      <Item value="long" priority="0" />
+      <Item value="MemberId`0" priority="0" />
+      <Item value="memberId" priority="1" />
+      <Item value="claimRegistry" priority="0" />
+      <Item value="claimId" priority="1" />
+      <Item value="static" priority="5" />
+      <Item value="readonly" priority="4" />
+      <Item value="ThreadStaticAttribute`0" priority="3" />
+      <Item value="MEMBER_SEARCH_RESPONSE_TIME" priority="0" />
+      <Item value="int" priority="1" />
+      <Item value="GET_MEMBER_PLAN_RESPONSE_TIME" priority="0" />
+      <Item value="SharedDBConnection`0" priority="1" />
+      <Item value="SharedDBConnection" priority="0" />
+      <Item value="INSTANCE" priority="0" />
+      <Item value="REQUEST_PROCESSING_TIME" priority="0" />
+      <Item value="RESPONSE_TIME" priority="0" />
+      <Item value="APPROVE_PROC_RESPONSE_TIME" priority="0" />
+      <Item value="APPROVE_PAYMENT_RESPONSE_TIME" priority="0" />
+      <Item value="exporter" priority="1" />
+      <Item value="ArrayList" priority="0" />
+      <Item value="types" priority="1" />
+      <Item value="ICollection`0" priority="0" />
+      <Item value="Type`0" priority="2" />
+      <Item value="Console`0" priority="3" />
+      <Item value="settings" priority="0" />
+      <Item value="Xml" priority="0" />
+      <Item value="SCHEMA_FILE" priority="1" />
+      <Item value="CLIENT_FILE" priority="1" />
+      <Item value="using" priority="0" />
+      <Item value="HP.SOAQ" priority="0" />
+      <Item value="IXMLMemberAccountsRequest`0" priority="3" />
+      <Item value="xmlMemberAccounts" priority="0" />
+      <Item value="IXMLMemberAccountsResponse`0" priority="2" />
+      <Item value="MemoryStream`0" priority="1" />
+      <Item value="outStream" priority="1" />
+      <Item value="response" priority="8" />
+      <Item value="members" priority="0" />
+      <Item value="detail" priority="0" />
+      <Item value="d" priority="0" />
+      <Item value="plan" priority="1" />
+      <Item value="Member" priority="0" />
+      <Item value="XMLMemberAccountsClient`0" priority="0" />
+      <Item value="xmlMemberAccountsClient" priority="1" />
+      <Item value="if" priority="1" />
+      <Item value="url" priority="0" />
+      <Item value="exchangeRateClient" priority="1" />
+      <Item value="else" priority="3" />
+      <Item value="XMLMemberAccountsClient" priority="1" />
+      <Item value="memberAccountsClient" priority="1" />
+      <Item value="IXMLMemberAccountsRequest" priority="0" />
+      <Item value="dateOfBirth" priority="0" />
+      <Item value="socialSecurityNumber" priority="0" />
+      <Item value="null" priority="0" />
+      <Item value="byte" priority="0" />
+      <Item value="false" priority="0" />
+      <Item value="approvalClient" priority="3" />
+      <Item value="ReleaseInstanceMode`0" priority="0" />
+      <Item value="ThreadStaticAttribute" priority="0" />
+      <Item value="memberAccountsClien" priority="0" />
+      <Item value="emsProducer" priority="2" />
+      <Item value="session" priority="0" />
+      <Item value="EmsListener`0" priority="0" />
+      <Item value="bytesMessage" priority="0" />
+      <Item value="emsListener" priority="0" />
+      <Item value="responseHandler" priority="0" />
+      <Item value="throw" priority="0" />
+      <Item value="Exception" priority="0" />
+      <Item value="Message`0" priority="0" />
+      <Item value="textResponse" priority="1" />
+      <Item value="NewsStyleUriParser`0" priority="0" />
+      <Item value="processed" priority="0" />
+      <Item value="StateChangeEventArgs`0" priority="0" />
+      <Item value="approvalStatus" priority="0" />
+      <Item value="ForeColor" priority="0" />
+      <Item value="Color`0" priority="0" />
+      <Item value="ApprovalResult`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:HP.SOAQ.ServiceSimulation.Demo.ClaimRegistry">
+      <Item value="addClaim`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.ServiceModel.ConcurrencyMode">
+      <Item value="Multiple" priority="1" />
+      <Item value="Reentrant" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.ServiceModel.InstanceContextMode">
+      <Item value="PerCall" priority="1" />
+      <Item value="Single" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.ArrayList">
+      <Item value="Add`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Runtime.Serialization.XsdDataContractExporter">
+      <Item value="Options" priority="0" />
+      <Item value="Schemas" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Xml.Schema.XmlSchemaSet">
+      <Item value="Compile`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Xml.XmlWriterSettings">
+      <Item value="OutputMethod" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Xml.XmlWriter">
+      <Item value="Close`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Console">
+      <Item value="Out" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.IO.TextWriter">
+      <Item value="Write`0" priority="0" />
+      <Item value="FormatProvider" priority="0" />
+      <Item value="WriteLine`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:HP.SOAQ.ServiceSimulation.Demo.XMLMemberAccounts">
+      <Item value="process`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.IO.MemoryStream">
+      <Item value="ToArray`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:HP.SOAQ.ServiceSimulation.Demo.IXMLMemberAccountsResponse">
+      <Item value="Equals`0" priority="0" />
+      <Item value="member" priority="4" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.String">
+      <Item value="StartsWith`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:HP.SOAQ.ServiceSimulation.Demo.Member">
+      <Item value="detail" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:HP.SOAQ.ServiceSimulation.Demo.Plan">
+      <Item value="approvalLimit" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:HP.SOAQ.ServiceSimulation.Demo.Claim">
+      <Item value="approved" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:ApprovalClient">
+      <Item value="Close`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:ExchangeRateClient">
+      <Item value="Close`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.ServiceModel.ReleaseInstanceMode">
+      <Item value="AfterCall" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:HP.SOAQ.ServiceVirtualization.JmsTibcoAgent.EmsProducer">
+      <Item value="Disconnect`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:TIBCO.EMS.Session">
+      <Item value="Close`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:TIBCO.EMS.BytesMessage">
+      <Item value="Acknowledge`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:HP.SOAQ.ServiceVirtualization.JmsTibcoAgent.NonIntrusive.EmsListener">
+      <Item value="StopListening`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.RichTextBox">
+      <Item value="Text" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.Label">
+      <Item value="Text" priority="0" />
+      <Item value="ForeColor" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Drawing.Color">
+      <Item value="DimGray" priority="0" />
+      <Item value="Green" priority="0" />
+      <Item value="Red" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:HP.SOAQ.ServiceSimulation.Demo.ApprovalResult">
+      <Item value="Equals`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@HP.SOAQ.ServiceSimulation.Demo.ApprovalResult">
+      <Item value="denied" priority="1" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+</Configuration>

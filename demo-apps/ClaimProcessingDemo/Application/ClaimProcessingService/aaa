@@ -1,0 +1,32 @@
+Index: ClaimProcessing.cs
+===================================================================
+--- ClaimProcessing.cs	(revision 3513)
++++ ClaimProcessing.cs	(working copy)
+@@ -19,13 +19,22 @@
+ 
+ 
+         public ClaimProcessing() {
+-            memberAccountsClient = new MemberAccountsClient();
+ 
++            BasicHttpBinding binding = new BasicHttpBinding() { Namespace = "http://hp.com/SOAQ/ServiceSimulation/2010/demo/01" };
++            binding.Security.Mode = BasicHttpSecurityMode.TransportCredentialOnly;
++            binding.Security.Transport.ClientCredentialType = HttpClientCredentialType.Ntlm;
++
++            String url = Config.getInstance().memberAcoountsServiceURL;
++            memberAccountsClient = new MemberAccountsClient(binding, new EndpointAddress(url));
++
++            memberAccountsClient.ClientCredentials.UserName.UserName = "jirka";
++            memberAccountsClient.ClientCredentials.UserName.Password = "Obl0ha14";
++
+             // update the URL of MemberAccountsService according to commandline argument
+-            String url = Config.getInstance().memberAcoountsServiceURL;
+-            if (url != null) {
+-                memberAccountsClient.Endpoint.Address = new EndpointAddress(url);
+-            }
++//            String url = Config.getInstance().memberAcoountsServiceURL;
++//            if (url != null) {
++//                memberAccountsClient.Endpoint.Address = new EndpointAddress(url);
++//            }
+         }
+ 
+         ~ClaimProcessing() {

@@ -1,0 +1,5 @@
+c:\opt\sv\trunk\net\Demo\ClaimApprovalPerformanceTesting\Application\bin\Debug\Types.dll
+c:\opt\sv\trunk\net\Demo\ClaimApprovalPerformanceTesting\Application\bin\Debug\Types.pdb
+c:\opt\sv\trunk\net\Demo\ClaimApprovalPerformanceTesting\Application\Types\obj\Debug\ResolveAssemblyReference.cache
+c:\opt\sv\trunk\net\Demo\ClaimApprovalPerformanceTesting\Application\Types\obj\Debug\Types.dll
+c:\opt\sv\trunk\net\Demo\ClaimApprovalPerformanceTesting\Application\Types\obj\Debug\Types.pdb

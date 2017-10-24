@@ -1,0 +1,295 @@
+------------------------------------------------------------------------------------------
+| Mercury Interactive - LoadRunner Recording Log File                                    |
+| Date Generated : Mon Aug 01 02:36:47 2011                                              |
+------------------------------------------------------------------------------------------
+
+[Op#:     1]------------------------------------------------------------------------------
+Record Section      : Action
+
+[Op#:     2]------------------------------------------------------------------------------
+Start Record        : 3
+
+[Op#:     3]------------------------------------------------------------------------------
+Api Event (4)       : Id=WPLUS Proc=0698:0c84  Start=337528156  End=337528171  Duration=15 msec
+Operation Name      : wplus_gethostbyname
+Argument#  1  IN  : [name] = "czvm152"
+Argument#  2  IN  : [ipaddress] = 16.55.178.195 (c3b23710)
+Return Value      : (void)
+
+[Op#:     4]------------------------------------------------------------------------------
+Api Event (5)       : Id=WPLUS Proc=0698:00b8  Start=337528390  End=337528390  Duration=0 msec
+Operation Name      : wplus_gethostbyname
+Argument#  1  IN  : [name] = "czvm152"
+Argument#  2  IN  : [ipaddress] = 16.55.178.195 (c3b23710)
+Return Value      : (void)
+
+[Op#:     5]------------------------------------------------------------------------------
+Api Event (6)       : Id=WPLUS Proc=0698:00b8  Start=337528390  End=337528390  Duration=0 msec
+Operation Name      : wplus_connect
+Argument#  1  IN  : [session_id] = 1
+Argument#  2  IN  : [ipaddress] = 0.0.0.0 (00000000)
+Argument#  3  IN  : [portnum] = 8102
+Argument#  4  IN  : [local_portnum] = 0
+Argument#  5  IN  : [flags] = 0
+Return Value      : (void)
+
+[Op#:     6]------------------------------------------------------------------------------
+Api Event (7)       : Id=HTTP Proc=0698:80001001  Start=337528406  End=337528890  Duration=484 msec
+Operation Name      : wplus_http_wsock_request_ex
+Argument#  1  IN  : [session_id] = 1
+Argument#  2  IN  : [http_id] = 1
+Argument#  3  IN  : [ipaddress] = 0.0.0.0 (00000000)
+Argument#  4  IN  : [portnum] = 8102
+Argument#  5  IN  : [urladdress] = ""
+Argument#  6  IN  : [hdr_buffer] = ->Array[0:340]{ "POST /ServiceSimulation/Demo/ClaimProcessingService/ClaimProcessingService HTTP/1.1\r\n"
+							"Content-Type: text/xml; charset=utf-8\r\n"
+							"SOAPAction: ""http://hp.com/SOAQ/ServiceSimulation/2010/demo/01/IClaimProcessing/enterClaim""\r\n"
+							"Host: localhost:8102\r\n"
+							"Content-Length: 727\r\n"
+							"Expect: 100-continue\r\n"
+							"Accept-Encoding: gzip, deflate\r\n"
+							"Connection: Keep-Alive\r\n"
+							"\r\n"
+							"" }
+Argument#  6  OUT : [hdr_buffer] = ->Array[0:172]{ "HTTP/1.1 100 Continue\r\n"
+							"\r\n"
+							"HTTP/1.1 200 OK\r\n"
+							"Content-Length: 378\r\n"
+							"Content-Type: text/xml; charset=utf-8\r\n"
+							"Server: Microsoft-HTTPAPI/2.0\r\n"
+							"Date: Mon, 01 Aug 2011 09:35:24 GMT\r\n"
+							"\r\n"
+							"" }
+Argument#  7  IN  : [hdr_buflen] = ->340
+Argument#  7  OUT : [hdr_buflen] = ->172
+Argument#  8  IN  : [body_buffer] = ->Array[0:727]{ "<s:Envelope xmlns:s=""http://schemas.xmlsoap.org/soap/envelope/""><s:Body><enterClaim xmlns=""http://hp.com/SOAQ/ServiceSimulation/2010/demo/01""><claim xmlns:a=""http://schemas.datacontract.org/2004/07/HP.SOAQ.ServiceSimulation.Demo"" xmlns:i=""http://www.w3.org/2001/XMLSchema-instance""><a:adjustedAmount>0</a:adjustedAmount><a:approvalStatus i:nil=""true""/><a:approved>false</a:approved><a:claimedAmount>24</a:claimedAmount><a:date>2010-01-01T00:00:00</a:date><a:description>premolar seal</a:description><a:firstName>Hercule</a:firstName><a:lastName>Poirot</a:lastName><a:memberId i:nil=""true""/><a:reimbursed>false</a:reimbursed><a:socialSecurityNumber>554-98-0001</a:socialSecurityNumber></claim></enterClaim></s:Body></s:Envelope>" }
+Argument#  8  OUT : [body_buffer] = ->Array[0:0]{ NULL }
+Argument#  9  IN  : [body_buflen] = ->727
+Argument#  9  OUT : [body_buflen] = ->0
+Argument# 10  IN  : [body_filename] = ->Array[0:0]{ NULL }
+Argument# 10  OUT : [body_filename] = ->Array[0:71]{ "C:\\Users\\admin\\AppData\\Local\\Temp\\noname1\\data\\http.db\\resp_001_001.dat" }
+Argument# 11  IN  : [body_filelen] = ->0
+Argument# 11  OUT : [body_filelen] = ->71
+Argument# 12  IN  : [flags] = ->0
+Argument# 12  OUT : [flags] = ->0
+Argument# 13  IN  : [sourceipaddress] = 16.55.178.195 (c3b23710)
+Argument# 14  IN  : [sourceportnum] = 9934
+Return Value      : (void)
+
+[Op#:     7]------------------------------------------------------------------------------
+Api Event (8)       : Id=HTTP Proc=0698:80001002  Start=337528906  End=337528921  Duration=15 msec
+Operation Name      : wplus_http_wsock_request_ex
+Argument#  1  IN  : [session_id] = 1
+Argument#  2  IN  : [http_id] = 2
+Argument#  3  IN  : [ipaddress] = 0.0.0.0 (00000000)
+Argument#  4  IN  : [portnum] = 8102
+Argument#  5  IN  : [urladdress] = ""
+Argument#  6  IN  : [hdr_buffer] = ->Array[0:314]{ "POST /ServiceSimulation/Demo/ClaimProcessingService/ClaimProcessingService HTTP/1.1\r\n"
+							"Content-Type: text/xml; charset=utf-8\r\n"
+							"SOAPAction: ""http://hp.com/SOAQ/ServiceSimulation/2010/demo/01/IClaimProcessing/getClaim""\r\n"
+							"Host: localhost:8102\r\n"
+							"Content-Length: 340\r\n"
+							"Expect: 100-continue\r\n"
+							"Accept-Encoding: gzip, deflate\r\n"
+							"\r\n"
+							"" }
+Argument#  6  OUT : [hdr_buffer] = ->Array[0:172]{ "HTTP/1.1 100 Continue\r\n"
+							"\r\n"
+							"HTTP/1.1 200 OK\r\n"
+							"Content-Length: 800\r\n"
+							"Content-Type: text/xml; charset=utf-8\r\n"
+							"Server: Microsoft-HTTPAPI/2.0\r\n"
+							"Date: Mon, 01 Aug 2011 09:35:24 GMT\r\n"
+							"\r\n"
+							"" }
+Argument#  7  IN  : [hdr_buflen] = ->314
+Argument#  7  OUT : [hdr_buflen] = ->172
+Argument#  8  IN  : [body_buffer] = ->Array[0:340]{ "<s:Envelope xmlns:s=""http://schemas.xmlsoap.org/soap/envelope/""><s:Body><getClaim xmlns=""http://hp.com/SOAQ/ServiceSimulation/2010/demo/01""><claimId xmlns:a=""http://schemas.datacontract.org/2004/07/HP.SOAQ.ServiceSimulation.Demo"" xmlns:i=""http://www.w3.org/2001/XMLSchema-instance""><a:id>10</a:id></claimId></getClaim></s:Body></s:Envelope>" }
+Argument#  8  OUT : [body_buffer] = ->Array[0:0]{ NULL }
+Argument#  9  IN  : [body_buflen] = ->340
+Argument#  9  OUT : [body_buflen] = ->0
+Argument# 10  IN  : [body_filename] = ->Array[0:0]{ NULL }
+Argument# 10  OUT : [body_filename] = ->Array[0:71]{ "C:\\Users\\admin\\AppData\\Local\\Temp\\noname1\\data\\http.db\\resp_001_002.dat" }
+Argument# 11  IN  : [body_filelen] = ->0
+Argument# 11  OUT : [body_filelen] = ->71
+Argument# 12  IN  : [flags] = ->0
+Argument# 12  OUT : [flags] = ->0
+Argument# 13  IN  : [sourceipaddress] = 16.55.178.195 (c3b23710)
+Argument# 14  IN  : [sourceportnum] = 9934
+Return Value      : (void)
+
+[Op#:     8]------------------------------------------------------------------------------
+Api Event (9)       : Id=HTTP Proc=0698:80001003  Start=337539375  End=337539593  Duration=218 msec
+Operation Name      : wplus_http_wsock_request_ex
+Argument#  1  IN  : [session_id] = 1
+Argument#  2  IN  : [http_id] = 3
+Argument#  3  IN  : [ipaddress] = 0.0.0.0 (00000000)
+Argument#  4  IN  : [portnum] = 8102
+Argument#  5  IN  : [urladdress] = ""
+Argument#  6  IN  : [hdr_buffer] = ->Array[0:316]{ "POST /ServiceSimulation/Demo/ClaimProcessingService/ClaimProcessingService HTTP/1.1\r\n"
+							"Content-Type: text/xml; charset=utf-8\r\n"
+							"SOAPAction: ""http://hp.com/SOAQ/ServiceSimulation/2010/demo/01/IClaimProcessing/enterClaim""\r\n"
+							"Host: localhost:8102\r\n"
+							"Content-Length: 677\r\n"
+							"Expect: 100-continue\r\n"
+							"Accept-Encoding: gzip, deflate\r\n"
+							"\r\n"
+							"" }
+Argument#  6  OUT : [hdr_buffer] = ->Array[0:191]{ "HTTP/1.1 100 Continue\r\n"
+							"\r\n"
+							"HTTP/1.1 500 Internal Server Error\r\n"
+							"Content-Length: 497\r\n"
+							"Content-Type: text/xml; charset=utf-8\r\n"
+							"Server: Microsoft-HTTPAPI/2.0\r\n"
+							"Date: Mon, 01 Aug 2011 09:35:35 GMT\r\n"
+							"\r\n"
+							"" }
+Argument#  7  IN  : [hdr_buflen] = ->316
+Argument#  7  OUT : [hdr_buflen] = ->191
+Argument#  8  IN  : [body_buffer] = ->Array[0:677]{ "<s:Envelope xmlns:s=""http://schemas.xmlsoap.org/soap/envelope/""><s:Body><enterClaim xmlns=""http://hp.com/SOAQ/ServiceSimulation/2010/demo/01""><claim xmlns:a=""http://schemas.datacontract.org/2004/07/HP.SOAQ.ServiceSimulation.Demo"" xmlns:i=""http://www.w3.org/2001/XMLSchema-instance""><a:adjustedAmount>0</a:adjustedAmount><a:approvalStatus i:nil=""true""/><a:approved>false</a:approved><a:claimedAmount>10</a:claimedAmount><a:date>2010-01-15T00:00:00</a:date><a:description>(fail: not unique)</a:description><a:firstName/><a:lastName>Poirot</a:lastName><a:memberId i:nil=""true""/><a:reimbursed>false</a:reimbursed><a:socialSecurityNumber/></claim></enterClaim></s:Body></s:Envelope>" }
+Argument#  8  OUT : [body_buffer] = ->Array[0:0]{ NULL }
+Argument#  9  IN  : [body_buflen] = ->677
+Argument#  9  OUT : [body_buflen] = ->0
+Argument# 10  IN  : [body_filename] = ->Array[0:0]{ NULL }
+Argument# 10  OUT : [body_filename] = ->Array[0:71]{ "C:\\Users\\admin\\AppData\\Local\\Temp\\noname1\\data\\http.db\\resp_001_003.dat" }
+Argument# 11  IN  : [body_filelen] = ->0
+Argument# 11  OUT : [body_filelen] = ->71
+Argument# 12  IN  : [flags] = ->0
+Argument# 12  OUT : [flags] = ->0
+Argument# 13  IN  : [sourceipaddress] = 16.55.178.195 (c3b23710)
+Argument# 14  IN  : [sourceportnum] = 9934
+Return Value      : (void)
+
+[Op#:     9]------------------------------------------------------------------------------
+Api Event (10)      : Id=HTTP Proc=0698:80001004  Start=337541265  End=337541500  Duration=235 msec
+Operation Name      : wplus_http_wsock_request_ex
+Argument#  1  IN  : [session_id] = 1
+Argument#  2  IN  : [http_id] = 4
+Argument#  3  IN  : [ipaddress] = 0.0.0.0 (00000000)
+Argument#  4  IN  : [portnum] = 8102
+Argument#  5  IN  : [urladdress] = ""
+Argument#  6  IN  : [hdr_buffer] = ->Array[0:316]{ "POST /ServiceSimulation/Demo/ClaimProcessingService/ClaimProcessingService HTTP/1.1\r\n"
+							"Content-Type: text/xml; charset=utf-8\r\n"
+							"SOAPAction: ""http://hp.com/SOAQ/ServiceSimulation/2010/demo/01/IClaimProcessing/enterClaim""\r\n"
+							"Host: localhost:8102\r\n"
+							"Content-Length: 717\r\n"
+							"Expect: 100-continue\r\n"
+							"Accept-Encoding: gzip, deflate\r\n"
+							"\r\n"
+							"" }
+Argument#  6  OUT : [hdr_buffer] = ->Array[0:191]{ "HTTP/1.1 100 Continue\r\n"
+							"\r\n"
+							"HTTP/1.1 500 Internal Server Error\r\n"
+							"Content-Length: 464\r\n"
+							"Content-Type: text/xml; charset=utf-8\r\n"
+							"Server: Microsoft-HTTPAPI/2.0\r\n"
+							"Date: Mon, 01 Aug 2011 09:35:37 GMT\r\n"
+							"\r\n"
+							"" }
+Argument#  7  IN  : [hdr_buflen] = ->316
+Argument#  7  OUT : [hdr_buflen] = ->191
+Argument#  8  IN  : [body_buffer] = ->Array[0:717]{ "<s:Envelope xmlns:s=""http://schemas.xmlsoap.org/soap/envelope/""><s:Body><enterClaim xmlns=""http://hp.com/SOAQ/ServiceSimulation/2010/demo/01""><claim xmlns:a=""http://schemas.datacontract.org/2004/07/HP.SOAQ.ServiceSimulation.Demo"" xmlns:i=""http://www.w3.org/2001/XMLSchema-instance""><a:adjustedAmount>0</a:adjustedAmount><a:approvalStatus i:nil=""true""/><a:approved>false</a:approved><a:claimedAmount>29.9</a:claimedAmount><a:date>2010-01-01T00:00:00</a:date><a:description>Klacid 500mg tbl 14</a:description><a:firstName>Karel</a:firstName><a:lastName>Got (fail: not in system)</a:lastName><a:memberId i:nil=""true""/><a:reimbursed>false</a:reimbursed><a:socialSecurityNumber/></claim></enterClaim></s:Body></s:Envelope>" }
+Argument#  8  OUT : [body_buffer] = ->Array[0:0]{ NULL }
+Argument#  9  IN  : [body_buflen] = ->717
+Argument#  9  OUT : [body_buflen] = ->0
+Argument# 10  IN  : [body_filename] = ->Array[0:0]{ NULL }
+Argument# 10  OUT : [body_filename] = ->Array[0:71]{ "C:\\Users\\admin\\AppData\\Local\\Temp\\noname1\\data\\http.db\\resp_001_004.dat" }
+Argument# 11  IN  : [body_filelen] = ->0
+Argument# 11  OUT : [body_filelen] = ->71
+Argument# 12  IN  : [flags] = ->0
+Argument# 12  OUT : [flags] = ->0
+Argument# 13  IN  : [sourceipaddress] = 16.55.178.195 (c3b23710)
+Argument# 14  IN  : [sourceportnum] = 9934
+Return Value      : (void)
+
+[Op#:    10]------------------------------------------------------------------------------
+Api Event (11)      : Id=HTTP Proc=0698:80001005  Start=337543921  End=337544406  Duration=485 msec
+Operation Name      : wplus_http_wsock_request_ex
+Argument#  1  IN  : [session_id] = 1
+Argument#  2  IN  : [http_id] = 5
+Argument#  3  IN  : [ipaddress] = 0.0.0.0 (00000000)
+Argument#  4  IN  : [portnum] = 8102
+Argument#  5  IN  : [urladdress] = ""
+Argument#  6  IN  : [hdr_buffer] = ->Array[0:316]{ "POST /ServiceSimulation/Demo/ClaimProcessingService/ClaimProcessingService HTTP/1.1\r\n"
+							"Content-Type: text/xml; charset=utf-8\r\n"
+							"SOAPAction: ""http://hp.com/SOAQ/ServiceSimulation/2010/demo/01/IClaimProcessing/enterClaim""\r\n"
+							"Host: localhost:8102\r\n"
+							"Content-Length: 727\r\n"
+							"Expect: 100-continue\r\n"
+							"Accept-Encoding: gzip, deflate\r\n"
+							"\r\n"
+							"" }
+Argument#  6  OUT : [hdr_buffer] = ->Array[0:172]{ "HTTP/1.1 100 Continue\r\n"
+							"\r\n"
+							"HTTP/1.1 200 OK\r\n"
+							"Content-Length: 378\r\n"
+							"Content-Type: text/xml; charset=utf-8\r\n"
+							"Server: Microsoft-HTTPAPI/2.0\r\n"
+							"Date: Mon, 01 Aug 2011 09:35:39 GMT\r\n"
+							"\r\n"
+							"" }
+Argument#  7  IN  : [hdr_buflen] = ->316
+Argument#  7  OUT : [hdr_buflen] = ->172
+Argument#  8  IN  : [body_buffer] = ->Array[0:727]{ "<s:Envelope xmlns:s=""http://schemas.xmlsoap.org/soap/envelope/""><s:Body><enterClaim xmlns=""http://hp.com/SOAQ/ServiceSimulation/2010/demo/01""><claim xmlns:a=""http://schemas.datacontract.org/2004/07/HP.SOAQ.ServiceSimulation.Demo"" xmlns:i=""http://www.w3.org/2001/XMLSchema-instance""><a:adjustedAmount>0</a:adjustedAmount><a:approvalStatus i:nil=""true""/><a:approved>false</a:approved><a:claimedAmount>400</a:claimedAmount><a:date>2010-02-01T00:00:00</a:date><a:description>ear surgery</a:description><a:firstName>Sherlock</a:firstName><a:lastName>Holmes</a:lastName><a:memberId i:nil=""true""/><a:reimbursed>false</a:reimbursed><a:socialSecurityNumber>332-10-0002</a:socialSecurityNumber></claim></enterClaim></s:Body></s:Envelope>" }
+Argument#  8  OUT : [body_buffer] = ->Array[0:0]{ NULL }
+Argument#  9  IN  : [body_buflen] = ->727
+Argument#  9  OUT : [body_buflen] = ->0
+Argument# 10  IN  : [body_filename] = ->Array[0:0]{ NULL }
+Argument# 10  OUT : [body_filename] = ->Array[0:71]{ "C:\\Users\\admin\\AppData\\Local\\Temp\\noname1\\data\\http.db\\resp_001_005.dat" }
+Argument# 11  IN  : [body_filelen] = ->0
+Argument# 11  OUT : [body_filelen] = ->71
+Argument# 12  IN  : [flags] = ->0
+Argument# 12  OUT : [flags] = ->0
+Argument# 13  IN  : [sourceipaddress] = 16.55.178.195 (c3b23710)
+Argument# 14  IN  : [sourceportnum] = 9934
+Return Value      : (void)
+
+[Op#:    11]------------------------------------------------------------------------------
+Api Event (12)      : Id=HTTP Proc=0698:80001006  Start=337544406  End=337544421  Duration=15 msec
+Operation Name      : wplus_http_wsock_request_ex
+Argument#  1  IN  : [session_id] = 1
+Argument#  2  IN  : [http_id] = 6
+Argument#  3  IN  : [ipaddress] = 0.0.0.0 (00000000)
+Argument#  4  IN  : [portnum] = 8102
+Argument#  5  IN  : [urladdress] = ""
+Argument#  6  IN  : [hdr_buffer] = ->Array[0:314]{ "POST /ServiceSimulation/Demo/ClaimProcessingService/ClaimProcessingService HTTP/1.1\r\n"
+							"Content-Type: text/xml; charset=utf-8\r\n"
+							"SOAPAction: ""http://hp.com/SOAQ/ServiceSimulation/2010/demo/01/IClaimProcessing/getClaim""\r\n"
+							"Host: localhost:8102\r\n"
+							"Content-Length: 340\r\n"
+							"Expect: 100-continue\r\n"
+							"Accept-Encoding: gzip, deflate\r\n"
+							"\r\n"
+							"" }
+Argument#  6  OUT : [hdr_buffer] = ->Array[0:172]{ "HTTP/1.1 100 Continue\r\n"
+							"\r\n"
+							"HTTP/1.1 200 OK\r\n"
+							"Content-Length: 800\r\n"
+							"Content-Type: text/xml; charset=utf-8\r\n"
+							"Server: Microsoft-HTTPAPI/2.0\r\n"
+							"Date: Mon, 01 Aug 2011 09:35:39 GMT\r\n"
+							"\r\n"
+							"" }
+Argument#  7  IN  : [hdr_buflen] = ->314
+Argument#  7  OUT : [hdr_buflen] = ->172
+Argument#  8  IN  : [body_buffer] = ->Array[0:340]{ "<s:Envelope xmlns:s=""http://schemas.xmlsoap.org/soap/envelope/""><s:Body><getClaim xmlns=""http://hp.com/SOAQ/ServiceSimulation/2010/demo/01""><claimId xmlns:a=""http://schemas.datacontract.org/2004/07/HP.SOAQ.ServiceSimulation.Demo"" xmlns:i=""http://www.w3.org/2001/XMLSchema-instance""><a:id>11</a:id></claimId></getClaim></s:Body></s:Envelope>" }
+Argument#  8  OUT : [body_buffer] = ->Array[0:0]{ NULL }
+Argument#  9  IN  : [body_buflen] = ->340
+Argument#  9  OUT : [body_buflen] = ->0
+Argument# 10  IN  : [body_filename] = ->Array[0:0]{ NULL }
+Argument# 10  OUT : [body_filename] = ->Array[0:71]{ "C:\\Users\\admin\\AppData\\Local\\Temp\\noname1\\data\\http.db\\resp_001_006.dat" }
+Argument# 11  IN  : [body_filelen] = ->0
+Argument# 11  OUT : [body_filelen] = ->71
+Argument# 12  IN  : [flags] = ->0
+Argument# 12  OUT : [flags] = ->0
+Argument# 13  IN  : [sourceipaddress] = 16.55.178.195 (c3b23710)
+Argument# 14  IN  : [sourceportnum] = 9934
+Return Value      : (void)
+
+[Op#:    12]------------------------------------------------------------------------------
+PauseEvent          : (null)
+
+[Op#:    13]------------------------------------------------------------------------------
+End Record          : END
+
+------------------------------------------------------------------------------------------

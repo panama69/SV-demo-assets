@@ -1,0 +1,367 @@
+WebServices notify: version 2 (11.0.9375.0)
+WebServices notify: Loading WSDL file http://localhost:7200/MemberAccounts?wsdl
+****** Start Log Message ******
+Web Recorder version : 11.0.9375.0 
+Recording Mode: HTML-based script
+Recording headers in list:
+	accept-charset
+	accept-encoding
+	accept-language
+	soapaction
+	user-agent
+Not excluding content types
+Do not record this content types as a resource:
+	text/html
+	text/xml
+Reset context between actions
+Record non-HTML elements in current HTML function
+Protocol Type: Multi-WS_SOAP
+
+$$$$$$ End Log Message $$$$$$
+
+Code generation version: 11.0.9375.0
+
+****** Request Header For Transaction With Id 7 ******
+POST /ServiceSimulation/Demo/ClaimProcessingService/ClaimProcessingService HTTP/1.1
+Content-Type: text/xml; charset=utf-8
+SOAPAction: "http://hp.com/SOAQ/ServiceSimulation/2010/demo/01/IClaimProcessing/enterClaim"
+Host: localhost:8102
+Content-Length: 727
+Expect: 100-continue
+Accept-Encoding: gzip, deflate
+Connection: Keep-Alive
+
+
+$$$$$$ Request Header For Transaction With Id 7 Ended $$$$$$
+
+****** Request Body For Transaction With Id 7 ******
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"><s:Body><enterClaim xmlns="http://hp.com/SOAQ/ServiceSimulation/2010/demo/01"><claim xmlns:a="http://schemas.datacontract.org/2004/07/HP.SOAQ.ServiceSimulation.Demo" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><a:adjustedAmount>0</a:adjustedAmount><a:approvalStatus i:nil="true"/><a:approved>false</a:approved><a:claimedAmount>24</a:claimedAmount><a:date>2010-01-01T00:00:00</a:date><a:description>premolar seal</a:description><a:firstName>Hercule</a:firstName><a:lastName>Poirot</a:lastName><a:memberId i:nil="true"/><a:reimbursed>false</a:reimbursed><a:socialSecurityNumber>554-98-0001</a:socialSecurityNumber></claim></enterClaim></s:Body></s:Envelope>
+$$$$$$ Request Body For Transaction With Id 7 Ended $$$$$$
+
+****** Response Header For Transaction With Id 7 ******
+HTTP/1.1 100 Continue
+
+HTTP/1.1 200 OK
+Content-Length: 378
+Content-Type: text/xml; charset=utf-8
+Server: Microsoft-HTTPAPI/2.0
+Date: Mon, 01 Aug 2011 09:35:24 GMT
+
+
+$$$$$$ Response Header For Transaction With Id 7 Ended $$$$$$
+
+****** Response Body For Transaction With Id 7 ******
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"><s:Body><enterClaimResponse xmlns="http://hp.com/SOAQ/ServiceSimulation/2010/demo/01"><enterClaimResult xmlns:a="http://schemas.datacontract.org/2004/07/HP.SOAQ.ServiceSimulation.Demo" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><a:id>10</a:id></enterClaimResult></enterClaimResponse></s:Body></s:Envelope>
+$$$$$$ Response Body For Transaction With Id 7 Ended $$$$$$
+
+****** Start Log Message ******
+
+Start Frames Hierarchy Tree Dump
+The Node has no URL
+End Frames Hierarchy Tree Dump
+
+$$$$$$ End Log Message $$$$$$
+
+****** Add Event For Transaction With Id 7 ****** (Location Flag : tFlagInsertEnd, Location ID : 7)
+	web_custom_request("ClaimProcessingService",
+		"URL=http://localhost:8102/ServiceSimulation/Demo/ClaimProcessingService/ClaimProcessingService",
+		"Method=POST",
+		"Resource=0",
+		"RecContentType=text/xml",
+		"Referer=",
+		"Snapshot=t1.inf",
+		"Mode=HTML",
+		"EncType=text/xml; charset=utf-8",
+		"Body=<s:Envelope xmlns:s=\"http://schemas.xmlsoap.org/soap/envelope/\"><s:Body><enterClaim xmlns=\"http://hp.com/SOAQ/ServiceSimulation/2010/demo/01\"><claim xmlns:a=\"http://schemas.datacontract.org/2004/07/HP.SOAQ.ServiceSimulation.Demo\" xmlns:i=\"http://www.w3.org/2001/XMLSchema-instance\"><a:adjustedAmount>0</a:adjustedAmount><a:approvalStatus i:nil=\"true\"/><a:approved>false</a:approved><a:claimedAmount>24</a:claimedAmount><a:date>2010-01-01T00:00:00</a:date><a:description>premolar seal</a:description><a:firstName>Hercule</a:firstName><a:lastName>Poirot</a:lastName><a:memberId i:nil=\"true\"/><a:reimbursed>false</a:reimbursed><a:socialSecurityNumber>554-98-0001</a:socialSecurityNumber></claim></enterClaim></s:Body></s:Envelope>",
+		LAST);
+
+
+$$$$$$ Add Event For Transaction With Id 7 Ended $$$$$$
+
+WebServices notify: Applying SOAP conversion on web_custom_request
+****** Request Header For Transaction With Id 8 ******
+POST /ServiceSimulation/Demo/ClaimProcessingService/ClaimProcessingService HTTP/1.1
+Content-Type: text/xml; charset=utf-8
+SOAPAction: "http://hp.com/SOAQ/ServiceSimulation/2010/demo/01/IClaimProcessing/getClaim"
+Host: localhost:8102
+Content-Length: 340
+Expect: 100-continue
+Accept-Encoding: gzip, deflate
+
+
+$$$$$$ Request Header For Transaction With Id 8 Ended $$$$$$
+
+****** Request Body For Transaction With Id 8 ******
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"><s:Body><getClaim xmlns="http://hp.com/SOAQ/ServiceSimulation/2010/demo/01"><claimId xmlns:a="http://schemas.datacontract.org/2004/07/HP.SOAQ.ServiceSimulation.Demo" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><a:id>10</a:id></claimId></getClaim></s:Body></s:Envelope>
+$$$$$$ Request Body For Transaction With Id 8 Ended $$$$$$
+
+****** Response Header For Transaction With Id 8 ******
+HTTP/1.1 100 Continue
+
+HTTP/1.1 200 OK
+Content-Length: 800
+Content-Type: text/xml; charset=utf-8
+Server: Microsoft-HTTPAPI/2.0
+Date: Mon, 01 Aug 2011 09:35:24 GMT
+
+
+$$$$$$ Response Header For Transaction With Id 8 Ended $$$$$$
+
+****** Response Body For Transaction With Id 8 ******
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"><s:Body><getClaimResponse xmlns="http://hp.com/SOAQ/ServiceSimulation/2010/demo/01"><getClaimResult xmlns:a="http://schemas.datacontract.org/2004/07/HP.SOAQ.ServiceSimulation.Demo" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><a:adjustedAmount>0</a:adjustedAmount><a:approvalStatus>approved within plan limit</a:approvalStatus><a:approved>true</a:approved><a:claimedAmount>24</a:claimedAmount><a:date>2010-01-01T00:00:00</a:date><a:description>premolar seal</a:description><a:firstName>Hercule</a:firstName><a:lastName>Poirot</a:lastName><a:memberId><a:id>1</a:id></a:memberId><a:reimbursed>false</a:reimbursed><a:socialSecurityNumber>554-98-0001</a:socialSecurityNumber></getClaimResult></getClaimResponse></s:Body></s:Envelope>
+$$$$$$ Response Body For Transaction With Id 8 Ended $$$$$$
+
+****** Start Log Message ******
+
+Start Frames Hierarchy Tree Dump
+/ServiceSimulation/Demo/ClaimProcessingService/ClaimProcessingService
+End Frames Hierarchy Tree Dump
+
+$$$$$$ End Log Message $$$$$$
+
+****** Add Event For Transaction With Id 8 ****** (Location Flag : tFlagInsertEnd, Location ID : 8)
+	web_custom_request("ClaimProcessingService_2",
+		"URL=http://localhost:8102/ServiceSimulation/Demo/ClaimProcessingService/ClaimProcessingService",
+		"Method=POST",
+		"Resource=0",
+		"RecContentType=text/xml",
+		"Referer=",
+		"Snapshot=t2.inf",
+		"Mode=HTML",
+		"EncType=text/xml; charset=utf-8",
+		"Body=<s:Envelope xmlns:s=\"http://schemas.xmlsoap.org/soap/envelope/\"><s:Body><getClaim xmlns=\"http://hp.com/SOAQ/ServiceSimulation/2010/demo/01\"><claimId xmlns:a=\"http://schemas.datacontract.org/2004/07/HP.SOAQ.ServiceSimulation.Demo\" xmlns:i=\"http://www.w3.org/2001/XMLSchema-instance\"><a:id>10</a:id></claimId></getClaim></s:Body></s:Envelope>",
+		LAST);
+
+
+$$$$$$ Add Event For Transaction With Id 8 Ended $$$$$$
+
+****** Add Event For Transaction With Id 0 ****** (Location Flag : tFlagInsertBefore, Location ID : 7)
+	web_add_header("SOAPAction",
+		"\"http://hp.com/SOAQ/ServiceSimulation/2010/demo/01/IClaimProcessing/enterClaim\"");
+
+
+$$$$$$ Add Event For Transaction With Id 0 Ended $$$$$$
+
+****** Add Event For Transaction With Id 0 ****** (Location Flag : tFlagInsertBefore, Location ID : 7)
+	web_add_auto_header("Accept-Encoding",
+		"gzip, deflate");
+
+
+$$$$$$ Add Event For Transaction With Id 0 Ended $$$$$$
+
+WebServices notify: Applying SOAP conversion on web_custom_request
+****** Request Header For Transaction With Id 9 ******
+POST /ServiceSimulation/Demo/ClaimProcessingService/ClaimProcessingService HTTP/1.1
+Content-Type: text/xml; charset=utf-8
+SOAPAction: "http://hp.com/SOAQ/ServiceSimulation/2010/demo/01/IClaimProcessing/enterClaim"
+Host: localhost:8102
+Content-Length: 677
+Expect: 100-continue
+Accept-Encoding: gzip, deflate
+
+
+$$$$$$ Request Header For Transaction With Id 9 Ended $$$$$$
+
+****** Request Body For Transaction With Id 9 ******
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"><s:Body><enterClaim xmlns="http://hp.com/SOAQ/ServiceSimulation/2010/demo/01"><claim xmlns:a="http://schemas.datacontract.org/2004/07/HP.SOAQ.ServiceSimulation.Demo" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><a:adjustedAmount>0</a:adjustedAmount><a:approvalStatus i:nil="true"/><a:approved>false</a:approved><a:claimedAmount>10</a:claimedAmount><a:date>2010-01-15T00:00:00</a:date><a:description>(fail: not unique)</a:description><a:firstName/><a:lastName>Poirot</a:lastName><a:memberId i:nil="true"/><a:reimbursed>false</a:reimbursed><a:socialSecurityNumber/></claim></enterClaim></s:Body></s:Envelope>
+$$$$$$ Request Body For Transaction With Id 9 Ended $$$$$$
+
+****** Response Header For Transaction With Id 9 ******
+HTTP/1.1 100 Continue
+
+HTTP/1.1 500 Internal Server Error
+Content-Length: 497
+Content-Type: text/xml; charset=utf-8
+Server: Microsoft-HTTPAPI/2.0
+Date: Mon, 01 Aug 2011 09:35:35 GMT
+
+
+$$$$$$ Response Header For Transaction With Id 9 Ended $$$$$$
+
+****** Response Body For Transaction With Id 9 ******
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"><s:Body><s:Fault><faultcode>s:Client</faultcode><faultstring xml:lang="en-US">The creator of this fault did not specify a Reason.</faultstring><detail><MemberNotFoundFault xmlns="http://schemas.datacontract.org/2004/07/HP.SOAQ.ServiceSimulation.Demo" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><Reason>2 members matched, be more specific to select one.</Reason></MemberNotFoundFault></detail></s:Fault></s:Body></s:Envelope>
+$$$$$$ Response Body For Transaction With Id 9 Ended $$$$$$
+
+****** Start Log Message ******
+
+Start Frames Hierarchy Tree Dump
+/ServiceSimulation/Demo/ClaimProcessingService/ClaimProcessingService
+End Frames Hierarchy Tree Dump
+
+$$$$$$ End Log Message $$$$$$
+
+****** Request Header For Transaction With Id 10 ******
+POST /ServiceSimulation/Demo/ClaimProcessingService/ClaimProcessingService HTTP/1.1
+Content-Type: text/xml; charset=utf-8
+SOAPAction: "http://hp.com/SOAQ/ServiceSimulation/2010/demo/01/IClaimProcessing/enterClaim"
+Host: localhost:8102
+Content-Length: 717
+Expect: 100-continue
+Accept-Encoding: gzip, deflate
+
+
+$$$$$$ Request Header For Transaction With Id 10 Ended $$$$$$
+
+****** Request Body For Transaction With Id 10 ******
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"><s:Body><enterClaim xmlns="http://hp.com/SOAQ/ServiceSimulation/2010/demo/01"><claim xmlns:a="http://schemas.datacontract.org/2004/07/HP.SOAQ.ServiceSimulation.Demo" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><a:adjustedAmount>0</a:adjustedAmount><a:approvalStatus i:nil="true"/><a:approved>false</a:approved><a:claimedAmount>29.9</a:claimedAmount><a:date>2010-01-01T00:00:00</a:date><a:description>Klacid 500mg tbl 14</a:description><a:firstName>Karel</a:firstName><a:lastName>Got (fail: not in system)</a:lastName><a:memberId i:nil="true"/><a:reimbursed>false</a:reimbursed><a:socialSecurityNumber/></claim></enterClaim></s:Body></s:Envelope>
+$$$$$$ Request Body For Transaction With Id 10 Ended $$$$$$
+
+****** Response Header For Transaction With Id 10 ******
+HTTP/1.1 100 Continue
+
+HTTP/1.1 500 Internal Server Error
+Content-Length: 464
+Content-Type: text/xml; charset=utf-8
+Server: Microsoft-HTTPAPI/2.0
+Date: Mon, 01 Aug 2011 09:35:37 GMT
+
+
+$$$$$$ Response Header For Transaction With Id 10 Ended $$$$$$
+
+****** Response Body For Transaction With Id 10 ******
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"><s:Body><s:Fault><faultcode>s:Client</faultcode><faultstring xml:lang="en-US">The creator of this fault did not specify a Reason.</faultstring><detail><MemberNotFoundFault xmlns="http://schemas.datacontract.org/2004/07/HP.SOAQ.ServiceSimulation.Demo" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><Reason>Member not found.</Reason></MemberNotFoundFault></detail></s:Fault></s:Body></s:Envelope>
+$$$$$$ Response Body For Transaction With Id 10 Ended $$$$$$
+
+****** Start Log Message ******
+
+Start Frames Hierarchy Tree Dump
+/ServiceSimulation/Demo/ClaimProcessingService/ClaimProcessingService
+End Frames Hierarchy Tree Dump
+
+$$$$$$ End Log Message $$$$$$
+
+****** Request Header For Transaction With Id 11 ******
+POST /ServiceSimulation/Demo/ClaimProcessingService/ClaimProcessingService HTTP/1.1
+Content-Type: text/xml; charset=utf-8
+SOAPAction: "http://hp.com/SOAQ/ServiceSimulation/2010/demo/01/IClaimProcessing/enterClaim"
+Host: localhost:8102
+Content-Length: 727
+Expect: 100-continue
+Accept-Encoding: gzip, deflate
+
+
+$$$$$$ Request Header For Transaction With Id 11 Ended $$$$$$
+
+****** Request Body For Transaction With Id 11 ******
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"><s:Body><enterClaim xmlns="http://hp.com/SOAQ/ServiceSimulation/2010/demo/01"><claim xmlns:a="http://schemas.datacontract.org/2004/07/HP.SOAQ.ServiceSimulation.Demo" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><a:adjustedAmount>0</a:adjustedAmount><a:approvalStatus i:nil="true"/><a:approved>false</a:approved><a:claimedAmount>400</a:claimedAmount><a:date>2010-02-01T00:00:00</a:date><a:description>ear surgery</a:description><a:firstName>Sherlock</a:firstName><a:lastName>Holmes</a:lastName><a:memberId i:nil="true"/><a:reimbursed>false</a:reimbursed><a:socialSecurityNumber>332-10-0002</a:socialSecurityNumber></claim></enterClaim></s:Body></s:Envelope>
+$$$$$$ Request Body For Transaction With Id 11 Ended $$$$$$
+
+****** Response Header For Transaction With Id 11 ******
+HTTP/1.1 100 Continue
+
+HTTP/1.1 200 OK
+Content-Length: 378
+Content-Type: text/xml; charset=utf-8
+Server: Microsoft-HTTPAPI/2.0
+Date: Mon, 01 Aug 2011 09:35:39 GMT
+
+
+$$$$$$ Response Header For Transaction With Id 11 Ended $$$$$$
+
+****** Response Body For Transaction With Id 11 ******
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"><s:Body><enterClaimResponse xmlns="http://hp.com/SOAQ/ServiceSimulation/2010/demo/01"><enterClaimResult xmlns:a="http://schemas.datacontract.org/2004/07/HP.SOAQ.ServiceSimulation.Demo" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><a:id>11</a:id></enterClaimResult></enterClaimResponse></s:Body></s:Envelope>
+$$$$$$ Response Body For Transaction With Id 11 Ended $$$$$$
+
+****** Start Log Message ******
+
+Start Frames Hierarchy Tree Dump
+/ServiceSimulation/Demo/ClaimProcessingService/ClaimProcessingService
+End Frames Hierarchy Tree Dump
+
+$$$$$$ End Log Message $$$$$$
+
+****** Add Event For Transaction With Id 11 ****** (Location Flag : tFlagInsertEnd, Location ID : 11)
+	web_custom_request("ClaimProcessingService_3",
+		"URL=http://localhost:8102/ServiceSimulation/Demo/ClaimProcessingService/ClaimProcessingService",
+		"Method=POST",
+		"Resource=0",
+		"RecContentType=text/xml",
+		"Referer=",
+		"Snapshot=t3.inf",
+		"Mode=HTML",
+		"EncType=text/xml; charset=utf-8",
+		"Body=<s:Envelope xmlns:s=\"http://schemas.xmlsoap.org/soap/envelope/\"><s:Body><enterClaim xmlns=\"http://hp.com/SOAQ/ServiceSimulation/2010/demo/01\"><claim xmlns:a=\"http://schemas.datacontract.org/2004/07/HP.SOAQ.ServiceSimulation.Demo\" xmlns:i=\"http://www.w3.org/2001/XMLSchema-instance\"><a:adjustedAmount>0</a:adjustedAmount><a:approvalStatus i:nil=\"true\"/><a:approved>false</a:approved><a:claimedAmount>400</a:claimedAmount><a:date>2010-02-01T00:00:00</a:date><a:description>ear surgery</a:description><a:firstName>Sherlock</a:firstName><a:lastName>Holmes</a:lastName><a:memberId i:nil=\"true\"/><a:reimbursed>false</a:reimbursed><a:socialSecurityNumber>332-10-0002</a:socialSecurityNumber></claim></enterClaim></s:Body></s:Envelope>",
+		LAST);
+
+
+$$$$$$ Add Event For Transaction With Id 11 Ended $$$$$$
+
+****** Add Event For Transaction With Id 0 ****** (Location Flag : tFlagInsertBefore, Location ID : 8)
+	web_add_header("SOAPAction",
+		"\"http://hp.com/SOAQ/ServiceSimulation/2010/demo/01/IClaimProcessing/getClaim\"");
+
+
+$$$$$$ Add Event For Transaction With Id 0 Ended $$$$$$
+
+WebServices notify: Applying SOAP conversion on web_custom_request
+****** Request Header For Transaction With Id 12 ******
+POST /ServiceSimulation/Demo/ClaimProcessingService/ClaimProcessingService HTTP/1.1
+Content-Type: text/xml; charset=utf-8
+SOAPAction: "http://hp.com/SOAQ/ServiceSimulation/2010/demo/01/IClaimProcessing/getClaim"
+Host: localhost:8102
+Content-Length: 340
+Expect: 100-continue
+Accept-Encoding: gzip, deflate
+
+
+$$$$$$ Request Header For Transaction With Id 12 Ended $$$$$$
+
+****** Request Body For Transaction With Id 12 ******
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"><s:Body><getClaim xmlns="http://hp.com/SOAQ/ServiceSimulation/2010/demo/01"><claimId xmlns:a="http://schemas.datacontract.org/2004/07/HP.SOAQ.ServiceSimulation.Demo" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><a:id>11</a:id></claimId></getClaim></s:Body></s:Envelope>
+$$$$$$ Request Body For Transaction With Id 12 Ended $$$$$$
+
+****** Response Header For Transaction With Id 12 ******
+HTTP/1.1 100 Continue
+
+HTTP/1.1 200 OK
+Content-Length: 800
+Content-Type: text/xml; charset=utf-8
+Server: Microsoft-HTTPAPI/2.0
+Date: Mon, 01 Aug 2011 09:35:39 GMT
+
+
+$$$$$$ Response Header For Transaction With Id 12 Ended $$$$$$
+
+****** Response Body For Transaction With Id 12 ******
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"><s:Body><getClaimResponse xmlns="http://hp.com/SOAQ/ServiceSimulation/2010/demo/01"><getClaimResult xmlns:a="http://schemas.datacontract.org/2004/07/HP.SOAQ.ServiceSimulation.Demo" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><a:adjustedAmount>0</a:adjustedAmount><a:approvalStatus>approved within plan limit</a:approvalStatus><a:approved>true</a:approved><a:claimedAmount>400</a:claimedAmount><a:date>2010-02-01T00:00:00</a:date><a:description>ear surgery</a:description><a:firstName>Sherlock</a:firstName><a:lastName>Holmes</a:lastName><a:memberId><a:id>2</a:id></a:memberId><a:reimbursed>false</a:reimbursed><a:socialSecurityNumber>332-10-0002</a:socialSecurityNumber></getClaimResult></getClaimResponse></s:Body></s:Envelope>
+$$$$$$ Response Body For Transaction With Id 12 Ended $$$$$$
+
+****** Start Log Message ******
+
+Start Frames Hierarchy Tree Dump
+/ServiceSimulation/Demo/ClaimProcessingService/ClaimProcessingService
+End Frames Hierarchy Tree Dump
+
+$$$$$$ End Log Message $$$$$$
+
+****** Add Event For Transaction With Id 12 ****** (Location Flag : tFlagInsertEnd, Location ID : 12)
+	web_custom_request("ClaimProcessingService_4",
+		"URL=http://localhost:8102/ServiceSimulation/Demo/ClaimProcessingService/ClaimProcessingService",
+		"Method=POST",
+		"Resource=0",
+		"RecContentType=text/xml",
+		"Referer=",
+		"Snapshot=t4.inf",
+		"Mode=HTML",
+		"EncType=text/xml; charset=utf-8",
+		"Body=<s:Envelope xmlns:s=\"http://schemas.xmlsoap.org/soap/envelope/\"><s:Body><getClaim xmlns=\"http://hp.com/SOAQ/ServiceSimulation/2010/demo/01\"><claimId xmlns:a=\"http://schemas.datacontract.org/2004/07/HP.SOAQ.ServiceSimulation.Demo\" xmlns:i=\"http://www.w3.org/2001/XMLSchema-instance\"><a:id>11</a:id></claimId></getClaim></s:Body></s:Envelope>",
+		LAST);
+
+
+$$$$$$ Add Event For Transaction With Id 12 Ended $$$$$$
+
+****** Add Event For Transaction With Id 0 ****** (Location Flag : tFlagInsertBefore, Location ID : 11)
+	web_add_header("SOAPAction",
+		"\"http://hp.com/SOAQ/ServiceSimulation/2010/demo/01/IClaimProcessing/enterClaim\"");
+
+
+$$$$$$ Add Event For Transaction With Id 0 Ended $$$$$$
+
+WebServices notify: Applying SOAP conversion on web_custom_request
+****** Add Event For Transaction With Id 0 ****** (Location Flag : tFlagInsertBefore, Location ID : 12)
+	web_add_header("SOAPAction",
+		"\"http://hp.com/SOAQ/ServiceSimulation/2010/demo/01/IClaimProcessing/getClaim\"");
+
+
+$$$$$$ Add Event For Transaction With Id 0 Ended $$$$$$
+

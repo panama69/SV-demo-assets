@@ -1,0 +1,6 @@
+c:\opt\sv\trunk\net\Demo\ClaimApprovalPerformanceTesting\Application\TIBCOClaimProcessingService\obj\x86\Debug\ResolveAssemblyReference.cache
+c:\opt\sv\trunk\net\Demo\ClaimApprovalPerformanceTesting\Application\bin\Debug\TIBCOClaimProcessingService.exe.config
+c:\opt\sv\trunk\net\Demo\ClaimApprovalPerformanceTesting\Application\bin\Debug\TIBCOClaimProcessingService.exe
+c:\opt\sv\trunk\net\Demo\ClaimApprovalPerformanceTesting\Application\bin\Debug\TIBCOClaimProcessingService.pdb
+c:\opt\sv\trunk\net\Demo\ClaimApprovalPerformanceTesting\Application\TIBCOClaimProcessingService\obj\x86\Debug\TIBCOClaimProcessingService.exe
+c:\opt\sv\trunk\net\Demo\ClaimApprovalPerformanceTesting\Application\TIBCOClaimProcessingService\obj\x86\Debug\TIBCOClaimProcessingService.pdb

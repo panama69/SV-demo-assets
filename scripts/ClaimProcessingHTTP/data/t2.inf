@@ -1,0 +1,11 @@
+[t2]
+FileName1=t2.xml
+URL1=http://localhost:8102/ServiceSimulation/Demo/ClaimProcessingService/ClaimProcessingService
+Total=1
+RequestHeaderFile=t2_RequestHeader.txt
+RequestBodyFile=t2_RequestBody.txt
+ResponseHeaderFile=t2_ResponseHeader.txt
+ContentType=text/xml
+SnapshotXmlFile=snapshot_2.xml
+[ProtocolInfo]
+ProtocolId=QTWeb

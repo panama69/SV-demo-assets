@@ -1,0 +1,19 @@
+Index: MemberAccountsService.cs
+===================================================================
+--- MemberAccountsService.cs	(revision 3499)
++++ MemberAccountsService.cs	(working copy)
+@@ -18,9 +18,13 @@
+             Uri baseAddress = new Uri("http://localhost:8101/ServiceSimulation/Demo/" + SERVICE_NAME);
+             ServiceHost selfHost = new ServiceHost(typeof(MemberAccounts), baseAddress);
+ 
++            BasicHttpBinding binding = new BasicHttpBinding() { Namespace = "http://hp.com/SOAQ/ServiceSimulation/2010/demo/01" };
++            binding.Security.Mode = BasicHttpSecurityMode.TransportCredentialOnly;
++            binding.Security.Transport.ClientCredentialType = HttpClientCredentialType.Ntlm;
++
+             try {
+                 // add service endpoint
+-                selfHost.AddServiceEndpoint(typeof(IMemberAccounts), new BasicHttpBinding() { Namespace = "http://hp.com/SOAQ/ServiceSimulation/2010/demo/01" }, SERVICE_NAME);
++                selfHost.AddServiceEndpoint(typeof(IMemberAccounts), binding, SERVICE_NAME);
+ 
+                 // enable WSDL
+                 ServiceMetadataBehavior smb = new ServiceMetadataBehavior();

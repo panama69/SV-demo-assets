@@ -1,0 +1,5 @@
+c:\opt\sv\trunk\net\Demo\ClaimApprovalPerformanceTesting\Application\bin\Debug\ApprovalService.exe
+c:\opt\sv\trunk\net\Demo\ClaimApprovalPerformanceTesting\Application\bin\Debug\ApprovalService.pdb
+c:\opt\sv\trunk\net\Demo\ClaimApprovalPerformanceTesting\Application\ApprovalService\obj\x86\Debug\ResolveAssemblyReference.cache
+c:\opt\sv\trunk\net\Demo\ClaimApprovalPerformanceTesting\Application\ApprovalService\obj\x86\Debug\ApprovalService.exe
+c:\opt\sv\trunk\net\Demo\ClaimApprovalPerformanceTesting\Application\ApprovalService\obj\x86\Debug\ApprovalService.pdb

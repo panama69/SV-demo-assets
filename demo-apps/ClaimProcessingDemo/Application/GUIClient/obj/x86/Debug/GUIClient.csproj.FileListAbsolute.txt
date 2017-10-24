@@ -1,0 +1,13 @@
+c:\opt\sv\trunk\net\Demo\ClaimProcessingDemo\Application\GUIClient\bin\Debug\GUIClient.exe.config
+c:\opt\sv\trunk\net\Demo\ClaimProcessingDemo\Application\GUIClient\bin\Debug\GUIClient.exe
+c:\opt\sv\trunk\net\Demo\ClaimProcessingDemo\Application\GUIClient\bin\Debug\GUIClient.pdb
+c:\opt\sv\trunk\net\Demo\ClaimProcessingDemo\Application\GUIClient\obj\x86\Debug\ResolveAssemblyReference.cache
+c:\opt\sv\trunk\net\Demo\ClaimProcessingDemo\Application\GUIClient\obj\x86\Debug\HP.SOAQ.ServiceSimulation.Demo.EnterClaimForm.resources
+c:\opt\sv\trunk\net\Demo\ClaimProcessingDemo\Application\GUIClient\obj\x86\Debug\HP.SOAQ.ServiceSimulation.Demo.Properties.Resources.resources
+c:\opt\sv\trunk\net\Demo\ClaimProcessingDemo\Application\GUIClient\obj\x86\Debug\GenerateResource.read.1.tlog
+c:\opt\sv\trunk\net\Demo\ClaimProcessingDemo\Application\GUIClient\obj\x86\Debug\GenerateResource.write.1.tlog
+c:\opt\sv\trunk\net\Demo\ClaimProcessingDemo\Application\GUIClient\obj\x86\Debug\GUIClient.exe
+c:\opt\sv\trunk\net\Demo\ClaimProcessingDemo\Application\GUIClient\obj\x86\Debug\GUIClient.pdb
+C:\tmp\SV-demo-assets\app\ClaimProcessingDemo\Application\GUIClient\bin\Debug\GUIClient.exe.config
+C:\tmp\SV-demo-assets\app\ClaimProcessingDemo\Application\GUIClient\obj\x86\Debug\GUIClient.exe
+C:\tmp\SV-demo-assets\app\ClaimProcessingDemo\Application\GUIClient\obj\x86\Debug\GUIClient.pdb

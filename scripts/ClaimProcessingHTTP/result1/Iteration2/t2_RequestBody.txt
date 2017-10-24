@@ -1,0 +1,1 @@
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"><s:Body><getClaim xmlns="http://hp.com/SOAQ/ServiceSimulation/2010/demo/01"><claimId xmlns:a="http://schemas.datacontract.org/2004/07/HP.SOAQ.ServiceSimulation.Demo" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><a:id>868</a:id></claimId></getClaim></s:Body></s:Envelope>

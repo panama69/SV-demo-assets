@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<services>
+  <service>
+    <name>MemberAccounts</name>
+    <id>0</id>
+    <ports>
+      <port>
+        <name>BasicHttpBinding_IMemberAccounts</name>
+        <id>0</id>
+      </port>
+    </ports>
+  </service>
+</services>

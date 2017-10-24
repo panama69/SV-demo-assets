@@ -1,0 +1,4 @@
+Action.c(39): Claim Created claimId = 867
+Action.c(39): Claim Created claimId = 868
+Warning: Extension LrXml.dll reports error -1 on call to function ExtPerThreadTerminate
+Warning: Vuser failed to terminate extension.

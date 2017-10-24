@@ -1,0 +1,5 @@
+<Modules>
+  <Module PersistentId="1C42EC70-6582-456A-9FFF-F643DE33C5E8" ModuleId="GUIClient" />
+  <Module PersistentId="d:Miscellaneous Files" ModuleId="System.Windows.Forms" />
+  <Module PersistentId="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" ModuleId="System.Windows.Forms_1" />
+</Modules>

@@ -1,0 +1,5 @@
+C:\opt\sv\trunk\net\Demo\ClaimApprovalPerformanceTesting\Application\bin\Debug\HP.SV.Demo.TIBCOCommon.dll
+C:\opt\sv\trunk\net\Demo\ClaimApprovalPerformanceTesting\Application\bin\Debug\HP.SV.Demo.TIBCOCommon.pdb
+C:\opt\sv\trunk\net\Demo\ClaimApprovalPerformanceTesting\Application\TIBCOCommon\obj\Debug\ResolveAssemblyReference.cache
+C:\opt\sv\trunk\net\Demo\ClaimApprovalPerformanceTesting\Application\TIBCOCommon\obj\Debug\HP.SV.Demo.TIBCOCommon.dll
+C:\opt\sv\trunk\net\Demo\ClaimApprovalPerformanceTesting\Application\TIBCOCommon\obj\Debug\HP.SV.Demo.TIBCOCommon.pdb

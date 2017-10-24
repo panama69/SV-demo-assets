@@ -1,0 +1,5 @@
+[parameter:NewParam]
+Format="%d"
+OriginalValue="targetHost"
+ParamName="NewParam"
+Type="CurrentIteration"

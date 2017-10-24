@@ -1,0 +1,9 @@
+c:\opt\sv\trunk\net\Demo\ClaimApprovalPerformanceTesting\Application\TIBCOMemberAccountsService\bin\Debug\TIBCOMemberAccountsService.exe
+c:\opt\sv\trunk\net\Demo\ClaimApprovalPerformanceTesting\Application\TIBCOMemberAccountsService\bin\Debug\TIBCOMemberAccountsService.pdb
+c:\opt\sv\trunk\net\Demo\ClaimApprovalPerformanceTesting\Application\TIBCOMemberAccountsService\bin\Debug\Types.dll
+c:\opt\sv\trunk\net\Demo\ClaimApprovalPerformanceTesting\Application\TIBCOMemberAccountsService\bin\Debug\Types.pdb
+c:\opt\sv\trunk\net\Demo\ClaimApprovalPerformanceTesting\Application\TIBCOMemberAccountsService\obj\x86\Debug\ResolveAssemblyReference.cache
+c:\opt\sv\trunk\net\Demo\ClaimApprovalPerformanceTesting\Application\TIBCOMemberAccountsService\obj\x86\Debug\TIBCOMemberAccountsService.exe
+c:\opt\sv\trunk\net\Demo\ClaimApprovalPerformanceTesting\Application\TIBCOMemberAccountsService\obj\x86\Debug\TIBCOMemberAccountsService.pdb
+c:\opt\sv\trunk\net\Demo\ClaimApprovalPerformanceTesting\Application\bin\Debug\TIBCOMemberAccountsService.exe
+c:\opt\sv\trunk\net\Demo\ClaimApprovalPerformanceTesting\Application\bin\Debug\TIBCOMemberAccountsService.pdb
