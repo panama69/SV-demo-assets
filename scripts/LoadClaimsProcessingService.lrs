@@ -14,7 +14,7 @@ GlobalDir=
 }
 
 {ScenarioPrivateConfig
-Path=C:\tmp\SV-demo-assets\scripts\LoadClaimsProcessingService.lrs
+Path=C:\tmp\flynn\SV-demo-assets\scripts\LoadClaimsProcessingService.lrs
 Author=hpswadm
 Subject=Claim Processing Scenario1 - short
 Description=
@@ -193,22 +193,24 @@ HostSettingsEnableTerminal=0
 
 {TestChief
 
-{claimprocessinghttp
-UiName=ClaimProcessingHTTP
+{claimprocessinghttp_1
+UiName=claimprocessinghttp_1
 Type=1
 SubType=Multi+WS_SOAP
 ScriptType=10
-Path=C:\tmp\SV-demo-assets\scripts\ClaimProcessingHTTP\ClaimProcessingHTTP.usr
+Path=.\ClaimProcessingHTTP\ClaimProcessingHTTP.usr
 EmulatedLocation=None
 NVAnalytics=0
-Config=[CommandArguments]\r\ntargetHost="DockerClient"\r\n~targetHost="Target Machine for the load"\r\n[ModemSpeed]\r\nEnableModemSpeed="0"\r\nCustomModemSpeed=""\r\nEnableCustomModemSpeed="0"\r\nModemSpeed=128000\r\n[WEB]\r\nStartRecordingIsDst="1"\r\nScreenAvailWidth="1680"\r\nNavigatorBrowserLanguage="en-US"\r\nUTF8InputOutput="0"\r\nNavigatorUserLanguage="en-US"\r\nRecorderWinCodePage="1252"\r\nUseCustomAgent="0"\r\nProxyUseBrowser="0"\r\nProxyAutoConfigScriptURL=""\r\nProxyPassword=""\r\nSaveSnapshotResources="0"\r\nSearchForImages="1"\r\nProxyUseProxyServer="0"\r\nHttpVer="1.1"\r\nProxyUseProxy="0"\r\nAnalogMode="0"\r\nResetContext="1"\r\nStartRecordingGMT="2011/08/01 09:27:49"\r\nProxyUseAutoConfigScript="0"\r\nProxyUseSame="0"\r\nUserHomePage=""\r\nScreenWidth="1680"\r\nScreenAvailHeight="1010"\r\nBrowserAcceptLanguage="None"\r\nProxyHTTPSHost=""\r\nBrowserType="Microsoft Internet Explorer 4.0"\r\nProxyNoLocal="0"\r\nProxyHTTPHost=""\r\nNavigatorSystemLanguage="en-US"\r\nSimulateCache="0"\r\nDisableAED="1"\r\nEnableChecks="0"\r\nProxyHTTPPort="0"\r\nWebRecorderVersion="10"\r\nBrowserAcceptEncoding="gzip, deflate"\r\nProxyBypass=""\r\nUseDataFormatExtensions="0"\r\nKeepAlive="Yes"\r\nProxyUserName=""\r\nProxyHTTPSPort="0"\r\nScreenHeight="1050"\r\nCustomUserAgent=""\r\n[Iterations]\r\nRandomMax="90"\r\nRandomMin="60"\r\nIterationPace="IterationASAP"\r\nStartEvery="60"\r\nNumOfIterations="1"\r\n[General]\r\nContinueOnError=0\r\nautomatic_nested_transactions="1"\r\nXlBridgeTimeout="120"\r\nUseThreads=1\r\niter_ends_val=fixed\r\nDefaultRunLogic="uspvRK.81"\r\nAutomaticTransactionsPerFunc=0\r\niter_begins_val=fixed\r\nFailTransOnErrorMsg=0\r\nAutomaticTransactions=1\r\n[JMS]\r\nSecurityPrincipal=""\r\nauto_generate_selector="0"\r\nConnectionFactory=""\r\nJNDI_provider_URL=""\r\nmsg_timeout="1"\r\nconnections_per_process="1"\r\nJNDI_InitialContextFactory=""\r\nuser_define_timeout="20"\r\nVM_Params=""\r\nUse_external_VM="0"\r\njvm_home="%JDK_HOME%"\r\nSecurityCredentials=""\r\nClasspath="%CLASSPATH%"\r\n[Log]\r\nMsgClassParameters=0\r\nMsgClassData=0\r\nLogOptions=LogBrief\r\nMsgClassFull=0\r\nAutoLog=1\r\nAutoLogBufferSize=1\r\nIncludeEnvInfo=1\r\nPrintTimeStamp=0\r\n[ThinkTime]\r\nOptions=RECORDED\r\nFactor=1.000000\r\nThinkTimeRandomHigh=150\r\nThinkTimeRandomLow=50\r\nLimit=1\r\nLimitFlag=0\r\n[WebServices]\r\nClientEmulation="Recorded"\r\nToolkit=".Net"\r\nversion="2"\r\n
-ConfigUsp=[Profile Actions]\r\nMercIniTreeFather=""\r\nMercIniTreeSectionName="Profile Actions"\r\nProfile Actions name=vuser_init,Action,vuser_end\r\n[RunLogicEndRoot]\r\nMercIniTreeFather=""\r\nMercIniTreeSectionName="RunLogicEndRoot"\r\nMercIniTreeSons="vuser_end"\r\nName="End"\r\nRunLogicActionOrder="vuser_end"\r\nRunLogicActionType="VuserEnd"\r\nRunLogicNumOfIterations="1"\r\nRunLogicObjectKind="Group"\r\nRunLogicRunMode="Sequential"\r\n[RunLogicEndRoot:vuser_end]\r\nMercIniTreeFather="RunLogicEndRoot"\r\nMercIniTreeSectionName="vuser_end"\r\nName="vuser_end"\r\nRunLogicActionType="VuserEnd"\r\nRunLogicObjectKind="Action"\r\n[RunLogicErrorHandlerRoot]\r\nMercIniTreeFather=""\r\nMercIniTreeSectionName="RunLogicErrorHandlerRoot"\r\nMercIniTreeSons="vuser_errorhandler"\r\nName="ErrorHandler"\r\nRunLogicActionOrder="vuser_errorhandler"\r\nRunLogicActionType="VuserErrorHandler"\r\nRunLogicNumOfIterations="1"\r\nRunLogicObjectKind="Group"\r\nRunLogicRunMode="Sequential"\r\n[RunLogicErrorHandlerRoot:vuser_errorhandler]\r\nMercIniTreeFather="RunLogicErrorHandlerRoot"\r\nMercIniTreeSectionName="vuser_errorhandler"\r\nName="vuser_errorhandler"\r\nRunLogicActionType="VuserErrorHandler"\r\nRunLogicObjectKind="Action"\r\n[RunLogicInitRoot]\r\nMercIniTreeFather=""\r\nMercIniTreeSectionName="RunLogicInitRoot"\r\nMercIniTreeSons="vuser_init"\r\nName="Init"\r\nRunLogicActionOrder="vuser_init"\r\nRunLogicActionType="VuserInit"\r\nRunLogicNumOfIterations="1"\r\nRunLogicObjectKind="Group"\r\nRunLogicRunMode="Sequential"\r\n[RunLogicInitRoot:vuser_init]\r\nMercIniTreeFather="RunLogicInitRoot"\r\nMercIniTreeSectionName="vuser_init"\r\nName="vuser_init"\r\nRunLogicActionType="VuserInit"\r\nRunLogicObjectKind="Action"\r\n[RunLogicRunRoot]\r\nMercIniTreeFather=""\r\nMercIniTreeSectionName="RunLogicRunRoot"\r\nMercIniTreeSons="Action"\r\nName="Run"\r\nRunLogicActionOrder="Action"\r\nRunLogicActionType="VuserRun"\r\nRunLogicAfterPaceMax="90.000"\r\nRunLogicAfterPaceMin="60.000"\r\nRunLogicNumOfIterations="1"\r\nRunLogicObjectKind="Group"\r\nRunLogicPaceConstAfterTime="60.000"\r\nRunLogicPaceConstTime="60.000"\r\nRunLogicPaceType="Asap"\r\nRunLogicRandomPaceMax="90.000"\r\nRunLogicRandomPaceMin="60.000"\r\nRunLogicRunMode="Sequential"\r\n[RunLogicRunRoot:Action]\r\nMercIniTreeFather="RunLogicRunRoot"\r\nMercIniTreeSectionName="Action"\r\nName="Action"\r\nRunLogicActionType="VuserRun"\r\nRunLogicObjectKind="Action"\r\n
+Config=[CommandArguments]\r\ntargetHost="DockerClient"\r\n~targetHost="Target Machine for the load"\r\n[ModemSpeed]\r\nEnableModemSpeed="0"\r\nCustomModemSpeed=""\r\nEnableCustomModemSpeed="0"\r\n[WEB]\r\nStartRecordingIsDst="1"\r\nScreenAvailWidth="1680"\r\nNavigatorBrowserLanguage="en-US"\r\nUTF8InputOutput="0"\r\nNavigatorUserLanguage="en-US"\r\nUseCustomAgent="0"\r\nRecorderWinCodePage="1252"\r\nProxyUseBrowser="0"\r\nProxyAutoConfigScriptURL=""\r\nProxyPassword=""\r\nSaveSnapshotResources=0\r\nSearchForImages="1"\r\nProxyUseProxyServer="0"\r\nHttpVer="1.1"\r\nProxyUseProxy="0"\r\nAnalogMode="0"\r\nStartRecordingGMT="2011/08/01 09:27:49"\r\nResetContext="1"\r\nProxyUseAutoConfigScript="0"\r\nUserHomePage=""\r\nProxyUseSame="0"\r\nScreenWidth="1680"\r\nScreenAvailHeight="1010"\r\nBrowserAcceptLanguage="None"\r\nProxyHTTPSHost=""\r\nBrowserType="Microsoft Internet Explorer 4.0"\r\nProxyNoLocal="0"\r\nProxyHTTPHost=""\r\nSimulateCache="0"\r\nNavigatorSystemLanguage="en-US"\r\nDisableAED="1"\r\nEnableChecks="0"\r\nProxyHTTPPort="0"\r\nWebRecorderVersion="10"\r\nBrowserAcceptEncoding="gzip, deflate"\r\nUseDataFormatExtensions="0"\r\nProxyBypass=""\r\nKeepAlive="Yes"\r\nProxyUserName=""\r\nProxyHTTPSPort="0"\r\nScreenHeight="1050"\r\nCustomUserAgent=""\r\n[Iterations]\r\nRandomMax="90"\r\nRandomMin="60"\r\nIterationPace="IterationASAP"\r\nStartEvery="60"\r\nNumOfIterations="1"\r\n[General]\r\nContinueOnError="0"\r\nXlBridgeTimeout="120"\r\nautomatic_nested_transactions="1"\r\nUseThreads="1"\r\niter_ends_val="fixed"\r\nDefaultRunLogic="uspUtv.307"\r\nAutomaticTransactionsPerFunc="0"\r\niter_begins_val="fixed"\r\nFailTransOnErrorMsg="0"\r\n[JMS]\r\nSecurityPrincipal=""\r\nauto_generate_selector="0"\r\nConnectionFactory=""\r\nJNDI_provider_URL=""\r\nmsg_timeout="1"\r\nconnections_per_process="1"\r\nJNDI_InitialContextFactory=""\r\nuser_define_timeout="20"\r\nVM_Params=""\r\nUse_external_VM="0"\r\njvm_home="%JDK_HOME%"\r\nSecurityCredentials=""\r\nClasspath="%CLASSPATH%"\r\n[Log]\r\nMsgClassParameters="1"\r\nLogOptions="LogDisabled"\r\nAutoLogBufferSize="1"\r\nIncludeEnvInfo="1"\r\nPrintTimeStamp="0"\r\nMsgClassFull="1"\r\nAutoLog="0"\r\nMsgClassData="1"\r\nLogDetail="1"\r\n[ThinkTime]\r\nOptions=RECORDED\r\nFactor="1.000000"\r\nThinkTimeRandomLow="50"\r\nThinkTimeRandomHigh="150"\r\nLimit="1"\r\nLimitFlag="0"\r\n[WebServices]\r\nToolkit=".Net"\r\nClientEmulation="Recorded"\r\nversion="2"\r\n
+ConfigUsp=[Profile Actions]\r\nMercIniTreeFather=""\r\nMercIniTreeSectionName="Profile Actions"\r\nProfile Actions name=vuser_init,Action,vuser_end\r\n[RunLogicEndRoot]\r\nMercIniTreeFather=""\r\nMercIniTreeSectionName="RunLogicEndRoot"\r\nMercIniTreeSons="vuser_end"\r\nName="End"\r\nRunLogicActionOrder="vuser_end"\r\nRunLogicActionType="VuserEnd"\r\nRunLogicNumOfIterations="1"\r\nRunLogicObjectKind="Group"\r\nRunLogicRunMode="Sequential"\r\n[RunLogicEndRoot:vuser_end]\r\nMercIniTreeFather="RunLogicEndRoot"\r\nMercIniTreeSectionName="vuser_end"\r\nName="vuser_end"\r\nRunLogicActionType="VuserEnd"\r\nRunLogicObjectKind="Action"\r\n[RunLogicErrorHandlerRoot]\r\nMercIniTreeFather=""\r\nMercIniTreeSectionName="RunLogicErrorHandlerRoot"\r\nMercIniTreeSons="vuser_errorhandler"\r\nName="ErrorHandler"\r\nRunLogicActionOrder="vuser_errorhandler"\r\nRunLogicActionType="VuserErrorHandler"\r\nRunLogicNumOfIterations="1"\r\nRunLogicObjectKind="Group"\r\nRunLogicRunMode="Sequential"\r\n[RunLogicErrorHandlerRoot:vuser_errorhandler]\r\nMercIniTreeFather="RunLogicErrorHandlerRoot"\r\nMercIniTreeSectionName="vuser_errorhandler"\r\nName="vuser_errorhandler"\r\nRunLogicActionType="VuserErrorHandler"\r\nRunLogicObjectKind="Action"\r\n[RunLogicInitRoot]\r\nMercIniTreeFather=""\r\nMercIniTreeSectionName="RunLogicInitRoot"\r\nMercIniTreeSons="vuser_init"\r\nName="Init"\r\nRunLogicActionOrder="vuser_init"\r\nRunLogicActionType="VuserInit"\r\nRunLogicNumOfIterations="1"\r\nRunLogicObjectKind="Group"\r\nRunLogicRunMode="Sequential"\r\n[RunLogicInitRoot:vuser_init]\r\nMercIniTreeFather="RunLogicInitRoot"\r\nMercIniTreeSectionName="vuser_init"\r\nName="vuser_init"\r\nRunLogicActionType="VuserInit"\r\nRunLogicObjectKind="Action"\r\n[RunLogicRunRoot]\r\nMercIniTreeFather=""\r\nMercIniTreeSectionName="RunLogicRunRoot"\r\nMercIniTreeSons="Action"\r\nName="Run"\r\nRunLogicActionOrder="Action"\r\nRunLogicActionType="VuserRun"\r\nRunLogicNumOfIterations="2"\r\nRunLogicObjectKind="Group"\r\nRunLogicRunMode="Sequential"\r\n[RunLogicRunRoot:Action]\r\nMercIniTreeFather="RunLogicRunRoot"\r\nMercIniTreeSectionName="Action"\r\nName="Action"\r\nRunLogicActionType="VuserRun"\r\nRunLogicObjectKind="Action"\r\n
 Param=
 TDPath=
 TDServer=
 TDDatabase=
 Platform=All
 AstraSubType=0
+Trans=CreateClaim
+Trans=GetClaim
 }
 }
 
@@ -217,25 +219,25 @@ AstraSubType=0
 {ClaimProcessing
 
 {3
-5=claimprocessinghttp
+5=claimprocessinghttp_1
 9=localhost
 SEED_NUM=0
 }
 
 {2
-5=claimprocessinghttp
+5=claimprocessinghttp_1
 9=localhost
 SEED_NUM=0
 }
 
 {1
-5=claimprocessinghttp
+5=claimprocessinghttp_1
 9=localhost
 SEED_NUM=0
 }
 
 {ChiefSettings
-5=claimprocessinghttp
+5=claimprocessinghttp_1
 9=localhost
 GroupParam=
 Enabled=1
@@ -259,8 +261,8 @@ GraphTop=0
 GraphLeft=225
 TreeViewTop=0
 TreeViewHeight=220
-LegenedTop=412
-LegenedWidth=1726
+LegenedTop=223
+LegenedWidth=1440
 HostNameIdMap=
 LegenedLeft=0
 DisplayMeasDialog=1
@@ -5023,7 +5025,7 @@ ItemsNumber=IntV1|0
 }
 
 {ScenarioDiagnostics
-XMLData=<Mediators distribution = "1" enabled= "1" ><Mediator type= "SARM" enabled= "0" ><Machine name = "" type = "Win2000" ><Connection><Firewall enabled="0" listener=""/></Connection></Machine><TOPOLOGY></TOPOLOGY></Mediator><Mediator type= "OracleDB" enabled= "0" ><Machine name = "" type = "Win2000" ><Connection><Firewall enabled="0" listener=""/></Connection></Machine><TOPOLOGY></TOPOLOGY></Mediator><Mediator type= "WebPage" enabled= "1" ></Mediator><Mediator type= "J2EE" enabled= "0" ></Mediator><Mediator type= "SiebelDB" enabled= "0" ><Machine name = "" type = "Win2000" ><Connection><Firewall enabled="0" listener=""/></Connection></Machine><TOPOLOGY></TOPOLOGY></Mediator><Mediator type="SAP" enabled="0"><Machine name="" type="Win2000"><Connection><Firewall enabled="0" listener=""/></Connection></Machine><TOPOLOGY><SERVER host="" instance="" RouterString=""><LOGIN username="" password="59ef817be" client_num=""/></SERVER></TOPOLOGY></Mediator></Mediators>
+XMLData=<Mediators distribution = "1" enabled= "1" ><Mediator type= "SARM" enabled= "0" ><Machine name = "" type = "Win2000" ><Connection><Firewall enabled="0" listener=""/></Connection></Machine><TOPOLOGY></TOPOLOGY></Mediator><Mediator type= "OracleDB" enabled= "0" ><Machine name = "" type = "Win2000" ><Connection><Firewall enabled="0" listener=""/></Connection></Machine><TOPOLOGY></TOPOLOGY></Mediator><Mediator type= "WebPage" enabled= "1" ></Mediator><Mediator type= "J2EE" enabled= "0" ></Mediator><Mediator type= "SiebelDB" enabled= "0" ><Machine name = "" type = "Win2000" ><Connection><Firewall enabled="0" listener=""/></Connection></Machine><TOPOLOGY></TOPOLOGY></Mediator><Mediator type="SAP" enabled="0"><Machine name="" type="Win2000"><Connection><Firewall enabled="0" listener=""/></Connection></Machine><TOPOLOGY><SERVER host="" instance="" RouterString=""><LOGIN username="" password="59efa950e" client_num=""/></SERVER></TOPOLOGY></Mediator></Mediators>
 }
 
 {ScenarioAlertsConfig
@@ -5158,6 +5160,6 @@ ClaimProcessing=00000000-0000-0000-0000-000000000000
 }
 
 {LocAssignedToTest
-ClaimProcessingHTTP=00000000-0000-0000-0000-000000000000
+claimprocessinghttp_1=00000000-0000-0000-0000-000000000000
 }
 }
