@@ -24,12 +24,12 @@ Groups=1
 Vusers=3
 Tranzactions=0
 Rendezvous=0
-Result_file=c:\users\administrator\appdata\local\temp\res\res.lrr
+Result_file=c:\temp\res\res.lrr
 ResCleanName=res
 ResSymName=
 DEFAULT_NFS_LESS_MODE=1
 AutoSetResults=0
-AutoOverwriteResults=1
+AutoOverwriteResults=0
 BaseResultsName=res
 MaxVuserSeedNumberUsed=0
 PlannedNumOfVusers=10
@@ -146,7 +146,7 @@ VuQuitTO=120
 80:HostUnixDefaultShell=csh
 81:HostUnixShellCommand=
 91:HostInitQuota=50
-93:ScenarioTestType=2
+93:ScenarioTestType=0
 94:OverrideRdpFile=0
 95:UserRemoteTmpDir=
 96:DontSendDATFile=0
@@ -193,15 +193,15 @@ HostSettingsEnableTerminal=0
 
 {TestChief
 
-{claimprocessinghttp_1_1_1_1
-UiName=claimprocessinghttp_1_1_1_1
+{claimprocessinghttp
+UiName=ClaimProcessingHTTP
 Type=1
 SubType=Multi+WS_SOAP
 ScriptType=10
-Path=C:\Jenkins\workspace\Run_LoadRunner\scripts\ClaimProcessingHTTP\ClaimProcessingHTTP.usr
+Path=C:\tmp\flynn\SV-demo-assets\scripts\ClaimProcessingHTTP\ClaimProcessingHTTP.usr
 EmulatedLocation=None
 NVAnalytics=0
-Config=[CommandArguments]\r\ntargetHost="DockerClient"\r\n~targetHost="Target Machine for the load"\r\n[ModemSpeed]\r\nEnableModemSpeed="0"\r\nCustomModemSpeed=""\r\nEnableCustomModemSpeed="0"\r\n[WEB]\r\nStartRecordingIsDst="1"\r\nScreenAvailWidth="1680"\r\nNavigatorBrowserLanguage="en-US"\r\nUTF8InputOutput="0"\r\nNavigatorUserLanguage="en-US"\r\nUseCustomAgent="0"\r\nRecorderWinCodePage="1252"\r\nProxyUseBrowser="0"\r\nProxyAutoConfigScriptURL=""\r\nProxyPassword=""\r\nSaveSnapshotResources=0\r\nSearchForImages="1"\r\nProxyUseProxyServer="0"\r\nHttpVer="1.1"\r\nProxyUseProxy="0"\r\nAnalogMode="0"\r\nStartRecordingGMT="2011/08/01 09:27:49"\r\nResetContext="1"\r\nProxyUseAutoConfigScript="0"\r\nUserHomePage=""\r\nProxyUseSame="0"\r\nScreenWidth="1680"\r\nScreenAvailHeight="1010"\r\nBrowserAcceptLanguage="None"\r\nProxyHTTPSHost=""\r\nBrowserType="Microsoft Internet Explorer 4.0"\r\nProxyNoLocal="0"\r\nProxyHTTPHost=""\r\nSimulateCache="0"\r\nNavigatorSystemLanguage="en-US"\r\nDisableAED="1"\r\nEnableChecks="0"\r\nProxyHTTPPort="0"\r\nWebRecorderVersion="10"\r\nBrowserAcceptEncoding="gzip, deflate"\r\nUseDataFormatExtensions="0"\r\nProxyBypass=""\r\nKeepAlive="Yes"\r\nProxyUserName=""\r\nProxyHTTPSPort="0"\r\nScreenHeight="1050"\r\nCustomUserAgent=""\r\n[Iterations]\r\nRandomMax="90"\r\nRandomMin="60"\r\nIterationPace="IterationASAP"\r\nStartEvery="60"\r\nNumOfIterations="1"\r\n[General]\r\nContinueOnError="0"\r\nXlBridgeTimeout="120"\r\nautomatic_nested_transactions="1"\r\nUseThreads="1"\r\niter_ends_val="fixed"\r\nDefaultRunLogic="usp4nr.329"\r\nAutomaticTransactionsPerFunc="0"\r\niter_begins_val="fixed"\r\nFailTransOnErrorMsg="0"\r\n[JMS]\r\nSecurityPrincipal=""\r\nauto_generate_selector="0"\r\nConnectionFactory=""\r\nJNDI_provider_URL=""\r\nmsg_timeout="1"\r\nconnections_per_process="1"\r\nJNDI_InitialContextFactory=""\r\nuser_define_timeout="20"\r\nVM_Params=""\r\nUse_external_VM="0"\r\njvm_home="%JDK_HOME%"\r\nSecurityCredentials=""\r\nClasspath="%CLASSPATH%"\r\n[Log]\r\nMsgClassParameters="1"\r\nLogOptions="LogDisabled"\r\nAutoLogBufferSize="1"\r\nIncludeEnvInfo="1"\r\nPrintTimeStamp="0"\r\nMsgClassFull="1"\r\nAutoLog="0"\r\nMsgClassData="1"\r\nLogDetail="1"\r\n[ThinkTime]\r\nOptions=RECORDED\r\nFactor="1.000000"\r\nThinkTimeRandomLow="50"\r\nThinkTimeRandomHigh="150"\r\nLimit="1"\r\nLimitFlag="0"\r\n[WebServices]\r\nToolkit=".Net"\r\nClientEmulation="Recorded"\r\nversion="2"\r\n
+Config=[CommandArguments]\r\ntargetHost="DockerClient"\r\n~targetHost="Target Machine for the load"\r\n[ModemSpeed]\r\nEnableModemSpeed="0"\r\nCustomModemSpeed=""\r\nEnableCustomModemSpeed="0"\r\n[WEB]\r\nStartRecordingIsDst="1"\r\nScreenAvailWidth="1680"\r\nNavigatorBrowserLanguage="en-US"\r\nUTF8InputOutput="0"\r\nNavigatorUserLanguage="en-US"\r\nUseCustomAgent="0"\r\nRecorderWinCodePage="1252"\r\nProxyUseBrowser="0"\r\nProxyAutoConfigScriptURL=""\r\nProxyPassword=""\r\nSaveSnapshotResources=0\r\nSearchForImages="1"\r\nProxyUseProxyServer="0"\r\nHttpVer="1.1"\r\nProxyUseProxy="0"\r\nAnalogMode="0"\r\nStartRecordingGMT="2011/08/01 09:27:49"\r\nResetContext="1"\r\nProxyUseAutoConfigScript="0"\r\nUserHomePage=""\r\nProxyUseSame="0"\r\nScreenWidth="1680"\r\nScreenAvailHeight="1010"\r\nBrowserAcceptLanguage="None"\r\nProxyHTTPSHost=""\r\nBrowserType="Microsoft Internet Explorer 4.0"\r\nProxyNoLocal="0"\r\nProxyHTTPHost=""\r\nSimulateCache="0"\r\nNavigatorSystemLanguage="en-US"\r\nDisableAED="1"\r\nEnableChecks="0"\r\nProxyHTTPPort="0"\r\nWebRecorderVersion="10"\r\nBrowserAcceptEncoding="gzip, deflate"\r\nUseDataFormatExtensions="0"\r\nProxyBypass=""\r\nKeepAlive="Yes"\r\nProxyUserName=""\r\nProxyHTTPSPort="0"\r\nScreenHeight="1050"\r\nCustomUserAgent=""\r\n[Iterations]\r\nRandomMax="90"\r\nRandomMin="60"\r\nIterationPace="IterationASAP"\r\nStartEvery="60"\r\nNumOfIterations="1"\r\n[General]\r\nContinueOnError="0"\r\nXlBridgeTimeout="120"\r\nautomatic_nested_transactions="1"\r\nUseThreads="1"\r\niter_ends_val="fixed"\r\nDefaultRunLogic=uspQQU.659\r\nAutomaticTransactionsPerFunc="0"\r\niter_begins_val="fixed"\r\nFailTransOnErrorMsg="0"\r\n[JMS]\r\nSecurityPrincipal=""\r\nauto_generate_selector="0"\r\nConnectionFactory=""\r\nJNDI_provider_URL=""\r\nmsg_timeout="1"\r\nconnections_per_process="1"\r\nJNDI_InitialContextFactory=""\r\nuser_define_timeout="20"\r\nVM_Params=""\r\nUse_external_VM="0"\r\njvm_home="%JDK_HOME%"\r\nSecurityCredentials=""\r\nClasspath="%CLASSPATH%"\r\n[Log]\r\nMsgClassParameters="1"\r\nLogOptions="LogDisabled"\r\nAutoLogBufferSize="1"\r\nIncludeEnvInfo="1"\r\nPrintTimeStamp="0"\r\nMsgClassFull="1"\r\nAutoLog="0"\r\nMsgClassData="1"\r\nLogDetail="1"\r\n[ThinkTime]\r\nOptions=RECORDED\r\nFactor="1.000000"\r\nThinkTimeRandomLow="50"\r\nThinkTimeRandomHigh="150"\r\nLimit="1"\r\nLimitFlag="0"\r\n[WebServices]\r\nToolkit=".Net"\r\nClientEmulation="Recorded"\r\nversion="2"\r\n
 ConfigUsp=[Profile Actions]\r\nMercIniTreeFather=""\r\nMercIniTreeSectionName="Profile Actions"\r\nProfile Actions name=vuser_init,Action,vuser_end\r\n[RunLogicEndRoot]\r\nMercIniTreeFather=""\r\nMercIniTreeSectionName="RunLogicEndRoot"\r\nMercIniTreeSons="vuser_end"\r\nName="End"\r\nRunLogicActionOrder="vuser_end"\r\nRunLogicActionType="VuserEnd"\r\nRunLogicNumOfIterations="1"\r\nRunLogicObjectKind="Group"\r\nRunLogicRunMode="Sequential"\r\n[RunLogicEndRoot:vuser_end]\r\nMercIniTreeFather="RunLogicEndRoot"\r\nMercIniTreeSectionName="vuser_end"\r\nName="vuser_end"\r\nRunLogicActionType="VuserEnd"\r\nRunLogicObjectKind="Action"\r\n[RunLogicErrorHandlerRoot]\r\nMercIniTreeFather=""\r\nMercIniTreeSectionName="RunLogicErrorHandlerRoot"\r\nMercIniTreeSons="vuser_errorhandler"\r\nName="ErrorHandler"\r\nRunLogicActionOrder="vuser_errorhandler"\r\nRunLogicActionType="VuserErrorHandler"\r\nRunLogicNumOfIterations="1"\r\nRunLogicObjectKind="Group"\r\nRunLogicRunMode="Sequential"\r\n[RunLogicErrorHandlerRoot:vuser_errorhandler]\r\nMercIniTreeFather="RunLogicErrorHandlerRoot"\r\nMercIniTreeSectionName="vuser_errorhandler"\r\nName="vuser_errorhandler"\r\nRunLogicActionType="VuserErrorHandler"\r\nRunLogicObjectKind="Action"\r\n[RunLogicInitRoot]\r\nMercIniTreeFather=""\r\nMercIniTreeSectionName="RunLogicInitRoot"\r\nMercIniTreeSons="vuser_init"\r\nName="Init"\r\nRunLogicActionOrder="vuser_init"\r\nRunLogicActionType="VuserInit"\r\nRunLogicNumOfIterations="1"\r\nRunLogicObjectKind="Group"\r\nRunLogicRunMode="Sequential"\r\n[RunLogicInitRoot:vuser_init]\r\nMercIniTreeFather="RunLogicInitRoot"\r\nMercIniTreeSectionName="vuser_init"\r\nName="vuser_init"\r\nRunLogicActionType="VuserInit"\r\nRunLogicObjectKind="Action"\r\n[RunLogicRunRoot]\r\nMercIniTreeFather=""\r\nMercIniTreeSectionName="RunLogicRunRoot"\r\nMercIniTreeSons="Action"\r\nName="Run"\r\nRunLogicActionOrder="Action"\r\nRunLogicActionType="VuserRun"\r\nRunLogicNumOfIterations="2"\r\nRunLogicObjectKind="Group"\r\nRunLogicRunMode="Sequential"\r\n[RunLogicRunRoot:Action]\r\nMercIniTreeFather="RunLogicRunRoot"\r\nMercIniTreeSectionName="Action"\r\nName="Action"\r\nRunLogicActionType="VuserRun"\r\nRunLogicObjectKind="Action"\r\n
 Param=
 TDPath=
@@ -209,8 +209,8 @@ TDServer=
 TDDatabase=
 Platform=All
 AstraSubType=0
-Trans=CreateClaim
 Trans=GetClaim
+Trans=CreateClaim
 }
 }
 
@@ -219,25 +219,25 @@ Trans=GetClaim
 {ClaimProcessing
 
 {3
-5=claimprocessinghttp_1_1_1_1
+5=claimprocessinghttp
 9=localhost
 SEED_NUM=0
 }
 
 {2
-5=claimprocessinghttp_1_1_1_1
+5=claimprocessinghttp
 9=localhost
 SEED_NUM=0
 }
 
 {1
-5=claimprocessinghttp_1_1_1_1
+5=claimprocessinghttp
 9=localhost
 SEED_NUM=0
 }
 
 {ChiefSettings
-5=claimprocessinghttp_1_1_1_1
+5=claimprocessinghttp
 9=localhost
 GroupParam=
 Enabled=1
@@ -5037,7 +5037,7 @@ ItemsNumber=IntV1|0
 }
 
 {ScenarioDiagnostics
-XMLData=<Mediators distribution = "1" enabled= "1" ><Mediator type= "SARM" enabled= "0" ><Machine name = "" type = "Win2000" ><Connection><Firewall enabled="0" listener=""/></Connection></Machine><TOPOLOGY></TOPOLOGY></Mediator><Mediator type= "OracleDB" enabled= "0" ><Machine name = "" type = "Win2000" ><Connection><Firewall enabled="0" listener=""/></Connection></Machine><TOPOLOGY></TOPOLOGY></Mediator><Mediator type= "WebPage" enabled= "1" ></Mediator><Mediator type= "J2EE" enabled= "0" ></Mediator><Mediator type= "SiebelDB" enabled= "0" ><Machine name = "" type = "Win2000" ><Connection><Firewall enabled="0" listener=""/></Connection></Machine><TOPOLOGY></TOPOLOGY></Mediator><Mediator type="SAP" enabled="0"><Machine name="" type="Win2000"><Connection><Firewall enabled="0" listener=""/></Connection></Machine><TOPOLOGY><SERVER host="" instance="" RouterString=""><LOGIN username="" password="59efaee5e" client_num=""/></SERVER></TOPOLOGY></Mediator></Mediators>
+XMLData=<Mediators distribution = "1" enabled= "1" ><Mediator type= "SARM" enabled= "0" ><Machine name = "" type = "Win2000" ><Connection><Firewall enabled="0" listener=""/></Connection></Machine><TOPOLOGY></TOPOLOGY></Mediator><Mediator type= "OracleDB" enabled= "0" ><Machine name = "" type = "Win2000" ><Connection><Firewall enabled="0" listener=""/></Connection></Machine><TOPOLOGY></TOPOLOGY></Mediator><Mediator type= "WebPage" enabled= "1" ></Mediator><Mediator type= "J2EE" enabled= "0" ></Mediator><Mediator type= "SiebelDB" enabled= "0" ><Machine name = "" type = "Win2000" ><Connection><Firewall enabled="0" listener=""/></Connection></Machine><TOPOLOGY></TOPOLOGY></Mediator><Mediator type="SAP" enabled="0"><Machine name="" type="Win2000"><Connection><Firewall enabled="0" listener=""/></Connection></Machine><TOPOLOGY><SERVER host="" instance="" RouterString=""><LOGIN username="" password="59f15fffe" client_num=""/></SERVER></TOPOLOGY></Mediator></Mediators>
 }
 
 {ScenarioAlertsConfig
@@ -5135,12 +5135,12 @@ XMLData=<Mediators distribution = "1" enabled= "1" ><Mediator type= "SARM" enabl
 }
 
 {ScenarioSLAConfig
-<?xml version="1.0" encoding="UTF-8"?><SLA Version="1.0"><TxList><Tx>vuser_end_Transaction</Tx><Tx>vuser_init_Transaction</Tx><Tx>GetClaim</Tx><Tx>CreateClaim</Tx><Tx>Action_Transaction</Tx></TxList><SLARules><TrackingPeriodType>Default</TrackingPeriodType><TrackingPeriodValue></TrackingPeriodValue><TrackingPeriodTimeScale></TrackingPeriodTimeScale></SLARules></SLA>
+<?xml version="1.0" encoding="UTF-8"?><SLA Version="1.0"><TxList><Tx>vuser_end_Transaction</Tx><Tx>vuser_init_Transaction</Tx><Tx>GetClaim</Tx><Tx>CreateClaim</Tx><Tx>Action_Transaction</Tx></TxList><SLARules><TrackingPeriodType>Default</TrackingPeriodType><TrackingPeriodValue></TrackingPeriodValue><TrackingPeriodTimeScale></TrackingPeriodTimeScale><RulesGroup Type="PercentileRule"><Name>Percentile Based Rules</Name><PercentileRule Name="transaction_response_time_percentile_Action_Transaction"><Percentage>90</Percentage><Value>2.9</Value><Measurement>transaction_response_time_percentile</Measurement><SubMeasurement>Action_Transaction</SubMeasurement></PercentileRule><PercentileRule Name="transaction_response_time_percentile_CreateClaim"><Percentage>90</Percentage><Value>1.2</Value><Measurement>transaction_response_time_percentile</Measurement><SubMeasurement>CreateClaim</SubMeasurement></PercentileRule></RulesGroup></SLARules></SLA>
 }
 
 {ScenarioSEVConfig
-LEN=540
-< E m u l a t i o n C o n f i g u r a t i o n   x m l n s : i = " h t t p : / / w w w . w 3 . o r g / 2 0 0 1 / X M L S c h e m a - i n s t a n c e " > < E m u l a t i o n s   / > < I s D i s a b l e d > t r u e < / I s D i s a b l e d > < L a s t D e p l o y m e n t C h e c k > 0 0 0 1 - 0 1 - 0 1 T 0 0 : 0 0 : 0 0 < / L a s t D e p l o y m e n t C h e c k > < U p d a t e S e r v i c e s T o S t a n d B y M o d e > f a l s e < / U p d a t e S e r v i c e s T o S t a n d B y M o d e > < / E m u l a t i o n C o n f i g u r a t i o n > 
+LEN=542
+< E m u l a t i o n C o n f i g u r a t i o n   x m l n s : i = " h t t p : / / w w w . w 3 . o r g / 2 0 0 1 / X M L S c h e m a - i n s t a n c e " > < E m u l a t i o n s   / > < I s D i s a b l e d > f a l s e < / I s D i s a b l e d > < L a s t D e p l o y m e n t C h e c k > 0 0 0 1 - 0 1 - 0 1 T 0 0 : 0 0 : 0 0 < / L a s t D e p l o y m e n t C h e c k > < U p d a t e S e r v i c e s T o S t a n d B y M o d e > f a l s e < / U p d a t e S e r v i c e s T o S t a n d B y M o d e > < / E m u l a t i o n C o n f i g u r a t i o n > 
 }
 
 {ScenarioWANEmualtionSetting
@@ -5150,16 +5150,6 @@ WANEmulationMode=1
 {WANEmulationLocationXML
 <locations>
 <location id="00000000-0000-0000-0000-000000000000" name="None"><emulation><modes><mode type="custom"><params><param name="latency">0</param><param name="packet_loss">0</param><param name="bandwidthDown">0</param><param name="bandwidthUp">0</param></params></mode></modes></emulation><configuration version="2.0"><settings><setting type="settings"><params><param name="capture_packets">false</param><param name="shared_bandwidth">false</param></params></setting><setting type="ip_filter"><params><param name="mode">exclude</param></params></setting></settings></configuration><description></description></location>
-<location id="33280316-F852-4469-BA72-6827E9CBBAE3" name="China to US EC"><emulation><modes><mode type="custom"><params><param name="latency">210</param><param name="packet_loss">1</param><param name="bandwidthDown">4000</param><param name="bandwidthUp">2000</param></params></mode></modes></emulation><configuration version="2.0"><settings><setting type="settings"><params><param name="capture_packets">false</param><param name="shared_bandwidth">true</param></params></setting><setting type="ip_filter"><params><param name="mode">exclude</param></params></setting></settings></configuration><description>Client located in China. Server located on US - East Coast.</description></location>
-<location id="369A359C-FE6B-4DA9-9716-B278BCE528E1" name="3G Busy"><emulation><modes><mode type="custom"><params><param name="latency">200</param><param name="packet_loss">0.5</param><param name="bandwidthDown">384</param><param name="bandwidthUp">128</param></params></mode></modes></emulation><configuration version="2.0"><settings><setting type="settings"><params><param name="capture_packets">false</param><param name="shared_bandwidth">false</param></params></setting><setting type="ip_filter"><params><param name="mode">exclude</param></params></setting></settings></configuration><description>3rd generation mobile network, poor communication quality, individual bandwidth.</description></location>
-<location id="395E095B-5B0A-42E0-8E8E-923EA9944F71" name="Satellite"><emulation><modes><mode type="custom"><params><param name="latency">600</param><param name="packet_loss">0</param><param name="bandwidthDown">2000</param><param name="bandwidthUp">1000</param></params></mode></modes></emulation><configuration version="2.0"><settings><setting type="settings"><params><param name="capture_packets">false</param><param name="shared_bandwidth">true</param></params></setting><setting type="ip_filter"><params><param name="mode">exclude</param></params></setting></settings></configuration><description>Client-server communication is via satellite.</description></location>
-<location id="4755CD65-17FC-483D-AC2A-3C1400838FB4" name="2.5G Busy"><emulation><modes><mode type="custom"><params><param name="latency">300</param><param name="packet_loss">0.5</param><param name="bandwidthDown">128</param><param name="bandwidthUp">56</param></params></mode></modes></emulation><configuration version="2.0"><settings><setting type="settings"><params><param name="capture_packets">false</param><param name="shared_bandwidth">false</param></params></setting><setting type="ip_filter"><params><param name="mode">exclude</param></params></setting></settings></configuration><description>2.5 generation mobile network, poor communication quality, individual bandwidth.</description></location>
-<location id="638EA376-033C-45F8-8A85-5A5EEBC4E82E" name="4G Good"><emulation><modes><mode type="custom"><params><param name="latency">40</param><param name="packet_loss">0</param><param name="bandwidthDown">10000</param><param name="bandwidthUp">7500</param></params></mode></modes></emulation><configuration version="2.0"><settings><setting type="settings"><params><param name="capture_packets">false</param><param name="shared_bandwidth">false</param></params></setting><setting type="ip_filter"><params><param name="mode">exclude</param></params></setting></settings></configuration><description>4th generation mobile network, good communication quality, individual bandwidth.</description></location>
-<location id="81C98456-EAAB-4554-921D-4FFD2E258847" name="3G Typical"><emulation><modes><mode type="custom"><params><param name="latency">120</param><param name="packet_loss">0</param><param name="bandwidthDown">512</param><param name="bandwidthUp">256</param></params></mode></modes></emulation><configuration version="2.0"><settings><setting type="settings"><params><param name="capture_packets">false</param><param name="shared_bandwidth">false</param></params></setting><setting type="ip_filter"><params><param name="mode">exclude</param></params></setting></settings></configuration><description>3rd generation mobile network, fair communication quality, individual bandwidth.</description></location>
-<location id="89249DC8-3B26-432F-9A68-C3C5F2093887" name="AUS to US EC"><emulation><modes><mode type="custom"><params><param name="latency">120</param><param name="packet_loss">0.5</param><param name="bandwidthDown">4000</param><param name="bandwidthUp">2000</param></params></mode></modes></emulation><configuration version="2.0"><settings><setting type="settings"><params><param name="capture_packets">false</param><param name="shared_bandwidth">true</param></params></setting><setting type="ip_filter"><params><param name="mode">exclude</param></params></setting></settings></configuration><description>Client located in Australia. Server located on US - East Coast.</description></location>
-<location id="C1727DF3-F02B-449B-ACFF-456DB5824831" name="India to US EC"><emulation><modes><mode type="custom"><params><param name="latency">160</param><param name="packet_loss">0.5</param><param name="bandwidthDown">5000</param><param name="bandwidthUp">2000</param></params></mode></modes></emulation><configuration version="2.0"><settings><setting type="settings"><params><param name="capture_packets">false</param><param name="shared_bandwidth">true</param></params></setting><setting type="ip_filter"><params><param name="mode">exclude</param></params></setting></settings></configuration><description>Client located in India. Server located on US - East Coast.</description></location>
-<location id="EE550FDB-49F2-4596-9602-D196653EB210" name="3G Good"><emulation><modes><mode type="custom"><params><param name="latency">80</param><param name="packet_loss">0</param><param name="bandwidthDown">2000</param><param name="bandwidthUp">512</param></params></mode></modes></emulation><configuration version="2.0"><settings><setting type="settings"><params><param name="capture_packets">false</param><param name="shared_bandwidth">false</param></params></setting><setting type="ip_filter"><params><param name="mode">exclude</param></params></setting></settings></configuration><description>3rd generation mobile network, good communication quality, individual bandwidth.</description></location>
-<location id="F0AB3E0C-4D41-4B1F-B9D0-81F4ABB132FC" name="London to US EC"><emulation><modes><mode type="custom"><params><param name="latency">55</param><param name="packet_loss">0</param><param name="bandwidthDown">10000</param><param name="bandwidthUp">4000</param></params></mode></modes></emulation><configuration version="2.0"><settings><setting type="settings"><params><param name="capture_packets">false</param><param name="shared_bandwidth">true</param></params></setting><setting type="ip_filter"><params><param name="mode">exclude</param></params></setting></settings></configuration><description>Client located in London. Server located on US - East Coast.</description></location>
 </locations>
 }
 
@@ -5172,6 +5162,6 @@ ClaimProcessing=00000000-0000-0000-0000-000000000000
 }
 
 {LocAssignedToTest
-claimprocessinghttp_1_1_1_1=00000000-0000-0000-0000-000000000000
+ClaimProcessingHTTP=00000000-0000-0000-0000-000000000000
 }
 }
