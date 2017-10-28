@@ -11,4 +11,4 @@ start "TIBCOClaimProcessingService using http://localhost:7200/[Approval;Exchang
 :continue
 start "ApprovalService" demo-apps\ClaimApprovalPerformanceTesting\Application\bin\Debug\ApprovalService.exe
 start "ExchangeRateService" demo-apps\ClaimApprovalPerformanceTesting\Application\bin\Debug\ExchangeRateService.exe
-start "GUIClient" ..\ClaimProcessingDemo\Application\GUIClient\bin\Debug\GUIClient.exe
+start "GUIClient" demo-apps\ClaimProcessingDemos\Application\GUIClient\bin\Debug\GUIClient.exe
