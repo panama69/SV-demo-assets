@@ -1,6 +1,6 @@
 @echo off
-taskkill /IM MemberAccountsService.exe
-taskkill /IM ClaimProcessingService.exe
-taskkill /IM ApprovalService.exe
-taskkill /IM ExchangeRateService.exe
-taskkill /IM GUIClient.exe
+taskkill /IM MemberAccountsService.exe /T
+taskkill /IM ClaimProcessingService.exe /T
+taskkill /IM ApprovalService.exe /T
+taskkill /IM ExchangeRateService.exe /T
+taskkill /IM GUIClient.exe /T

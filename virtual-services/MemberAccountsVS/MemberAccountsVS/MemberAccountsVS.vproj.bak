@@ -12,20 +12,5 @@
   <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
     <PlatformTarget>x86</PlatformTarget>
   </PropertyGroup>
-  <ItemGroup>
-    <None Include="Delay2sec.vspfmodel" />
-    <None Include="LearnedUnderLoad.vspfmodel" />
-    <None Include="MemberAccounts Data Model Dataset 000.vsdataset" />
-    <None Include="MemberAccounts Data Model Dataset 001.vsdataset" />
-    <None Include="MemberAccounts Data Model Dataset 002.vsdataset" />
-    <None Include="MemberAccounts Data Model Dataset 003.vsdataset" />
-    <None Include="MemberAccounts Data Model Dataset 004.vsdataset" />
-    <None Include="MemberAccounts Data Model Dataset.vsdataset" />
-    <None Include="MemberAccounts Data Model.vsmodel" />
-    <None Include="MemberAccounts Offline Performance.vspfmodel" />
-    <None Include="MemberAccounts Performance Model.vspfmodel" />
-    <None Include="MemberAccounts Service Description.vsdsc" />
-    <None Include="MemberAccounts.vs" />
-    <None Include="MemberAccounts.vsmf" />
-  </ItemGroup>
+  <ItemGroup><None Include="Delay2sec.vspfmodel" /><None Include="LearnedUnderLoad.vspfmodel" /><None Include="MemberAccounts Data Model Dataset 000.vsdataset" /><None Include="MemberAccounts Data Model Dataset 001.vsdataset" /><None Include="MemberAccounts Data Model Dataset 002.vsdataset" /><None Include="MemberAccounts Data Model Dataset 003.vsdataset" /><None Include="MemberAccounts Data Model Dataset 004.vsdataset" /><None Include="MemberAccounts Data Model Dataset.vsdataset" /><None Include="MemberAccounts Data Model.vsmodel" /><None Include="MemberAccounts Offline Performance.vspfmodel" /><None Include="MemberAccounts Performance Model.vspfmodel" /><None Include="MemberAccounts Service Description.vsdsc" /><None Include="MemberAccounts.vs" /><None Include="MemberAccounts.vsmf" /></ItemGroup>
 </Project>
