@@ -1,0 +1,3 @@
+start "MemberAccountsService" demo-apps\ClaimProcessingDemo\Application\MemberAccountsService\bin\Debug\MemberAccountsService.exe
+start "ClaimProcessingService using http://dockerclient:6070/MemberAccounts" demo-apps\ClaimProcessingDemo\Application\ClaimProcessingService\bin\Debug\ClaimProcessingService.exe http://dockerclient:6070/MemberAccounts
+start "GUIClient" demo-apps\ClaimProcessingDemo\Application\GUIClient\bin\Debug\GUIClient.exe
