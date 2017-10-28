@@ -12,3 +12,4 @@ start "TIBCOClaimProcessingService using http://localhost:7200/[Approval;Exchang
 start "ApprovalService" demo-apps\ClaimApprovalPerformanceTesting\Application\bin\Debug\ApprovalService.exe
 start "ExchangeRateService" demo-apps\ClaimApprovalPerformanceTesting\Application\bin\Debug\ExchangeRateService.exe
 start "GUIClient" demo-apps\ClaimProcessingDemo\Application\GUIClient\bin\Debug\GUIClient.exe
+ping.exe -n 6 -w 1 127.0.0.1 >nul 2>&1
